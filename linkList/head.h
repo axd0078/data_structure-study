@@ -8,13 +8,13 @@ typedef struct LNode
 
 bool initLinkList(linkList* list){
     *list = (LNode*)malloc(sizeof(LNode));
-    (*list)->next = NULL;
+    (*list)->next = NULL; //创建链表时在这里置空指针域，不置空会导致头插法的最后一个节点的指针域变成野指针
     return true;
 }
 
 bool insertListByPos(linkList list,int i,int e){//插入到第i个位置
     if(i<1) return false;
-    LNode* p = list;
+    LNode* p = list;       //getElem(list,i-1);
     int j=0; //当前在第几个节点
     while(p!=NULL&&j<i-1){//说明要找第i-1个节点
         p = p->next;
@@ -33,7 +33,7 @@ bool insertListByPos(linkList list,int i,int e){//插入到第i个位置
 
 bool insertListByNode(linkList list,LNode* p,int e){//指定节点后插入
     if(p==NULL || list==NULL) return false;
-    LNode* temp = list;
+    LNode* temp = list;//locateElem(list,p->data) -- 只可以用于数据域唯一
     while(temp!=NULL){
         if(temp==p)
             break;
@@ -63,7 +63,7 @@ bool insertListByNodeBefore(linkList list,LNode* p,int e){//指定节点前插�
 
 bool deleteListByPos(linkList list,int i,int* e){
     if(i<1|| list == NULL || e == NULL) return false;
-    LNode* p = list;
+    LNode* p = list;//getElem(list,i);
     int j=0;
     while(p!=NULL&&j<i-1){//找到第i-1个节点
         p = p->next;
@@ -91,3 +91,47 @@ bool deleteListByNode(linkList list,LNode* p,int* e){//删除指定节点
     return true;
 }
 
+int getLen(linkList list){
+    if(list==NULL) return -1;
+    int len = 0;
+    LNode* p = list;
+    while(p->next!=NULL){
+        p = p->next;
+        len++;
+    }
+    return len;
+}
+
+LNode* getElem(linkList list,int i){
+    if(i<1) return NULL;
+    LNode* p = list;
+    int j=0;
+    while(p!=NULL && j<i){
+        p = p->next;
+        j++;
+    }
+    return p;
+}
+
+LNode* locateElem(linkList list,int e){
+    LNode* p = list->next;
+    while(p!=NULL && p->data!=e){
+        p = p->next;
+    }
+    return p;
+}
+
+bool creatListTail(linkList list,int* nums,int numsSize){
+    if(list->next!=NULL) return false;
+    LNode *newNode,*tail;
+    tail = list;
+    for(int i=0;i<numsSize;i++){
+        newNode = (LNode*)malloc(sizeof(LNode));
+        if(newNode==NULL) return false;
+        newNode->data = nums[i];
+        tail->next = newNode;
+        newNode->next = NULL;
+        tail = newNode;
+    }
+    return true;
+}
