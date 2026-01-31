@@ -33,6 +33,9 @@ bool insertListByPos(linkList list,int i,int e){
 
 bool insertListByNode(linkList list,LNode* p,int e){
     if(p==NULL) return false;
+    while(1){
+
+    }
     
 
 }
