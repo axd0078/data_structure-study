@@ -13,7 +13,7 @@ bool deleteByValue(sqList* list,int value){
 	}
 	list->length = length;
 	return true;
-}
+}//把length看作下一个能存放数的位置
 
 void testDeleteByValue() {
     printf("测试 deleteByValue 函数\n");

@@ -5,16 +5,16 @@ void calMulMax(sqList* list,int* res){
         return;
     int min = list->data[list->length-1];
     int max = min;
-    for(int j=list->length-1;j>=0;j--){
-        if(list->data[j]>max) max = list->data[j];
-        else if(list->data[j]<min) min = list->data[j];
-        if(list->data[j]>=0)
-            res[j] = list->data[j] * max;
+    for(int i=list->length-1;i>=0;i--){
+        if(list->data[i]>max) max = list->data[i];
+        else if(list->data[i]<min) min = list->data[i];
+        if(list->data[i]>=0)
+            res[i] = list->data[i] * max;
         else
-            res[j] = list->data[j] * min;
+            res[i] = list->data[i] * min;
 
     }
-}
+}//关键条件是i<j,所以可以把max和min所对应的值看作j所对应的值
 
 void testCalMulMax() {
     printf("测试 calMulMax 函数\n");

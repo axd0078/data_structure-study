@@ -15,7 +15,7 @@ bool insertValue(sqList* list,int value){
 		}
 	}
 	return listInsert(list,list->length+1,value);
-}
+}//还可以使用折半查找
 
 void testInsertValue() {
     printf("测试 insertValue 函数\n");

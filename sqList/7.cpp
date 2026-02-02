@@ -22,7 +22,7 @@ bool exchange(int* nums,int pivot,int numsSize){//index
 	reverse(nums,0,pivot);
 	reverse(nums,pivot+1,numsSize-1);
 	return true;
-}
+}//先整体逆向，再前半部分逆向，再后半部分逆向
 
 void testExchange() {
     printf("测试 exchange 函数\n");

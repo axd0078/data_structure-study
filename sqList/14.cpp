@@ -15,7 +15,7 @@ int findMinDistance(sqList* list1,sqList* list2,sqList* list3){
                     + abs(list2->data[j]-list3->data[k]) + abs(list1->data[i]-list3->data[k]);
         if(temp<distance)
             distance = temp;
-        
+        //找三个中的最小值并移动对应指针，确实是为了让差值尽可能快速减小。
         int min = findMin(list1->data[i],list2->data[j],list3->data[k]);
         if(min==list1->data[i])
             i++;

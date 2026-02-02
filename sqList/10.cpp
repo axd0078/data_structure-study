@@ -30,7 +30,7 @@ bool listMove(sqList* list,int place){//place
     if(place == 0)  // 不需要移动
         return true;
 	return exchange(list->data,place-1,list->length);
-}
+}//移动可以类似于交换整体
 
 void testListMove() {
     printf("测试 listMove 函数\n");
