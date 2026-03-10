@@ -1,10 +1,12 @@
-# 数据结构学习代码（顺序表 + 链表 + 栈）
+# 数据结构学习代码（顺序表 + 链表 + 栈 + 队列 + 字符串）
 
 本仓库是一个 **C/C++ 风格的数据结构刷题与练习集合**，核心围绕：
 
 - 顺序表（`sqList/`）
 - 单链表（`linkList/`）
 - 栈（`stack/`）
+- 队列（`queue/`）
+- 字符串（`string/`）
 
 代码特点：
 
@@ -12,6 +14,8 @@
 - 顺序表题目统一复用 `sqList/dynamic.h` 中的动态顺序表实现；
 - 链表题目复用 `linkList/head.h` 中的带头结点单链表工具函数；
 - 栈包含顺序栈和链栈两种实现；
+- 队列包含顺序队列和链队列两种实现；
+- 字符串部分包含基础串匹配算法（朴素、KMP）及改进的 NextVal 算法；
 - 注释较多，强调"指针移动逻辑"和"就地修改"思路。
 
 ---
@@ -21,6 +25,7 @@
 ```text
 .
 ├── README.md
+├── LICENSE
 ├── sqList
 │   ├── dynamic.h        # 动态顺序表定义与基础操作
 │   ├── static.cpp       # 静态顺序表实现示例
@@ -30,11 +35,19 @@
 │   ├── nohead.h         # 无头结点结构草稿
 │   ├── 1.cpp ~ 5.cpp    # 链表基础题
 │   └── 17.cpp ~ 20.cpp  # 链表进阶题
-└── stack
-    ├── sequence
-    │   └── stack.h      # 顺序栈实现
-    └── link
-        └── stack.h      # 链栈实现
+├── stack
+│   ├── sequence
+│   │   └── stack.h      # 顺序栈实现
+│   ├── link
+│   │   └── stack.h      # 链栈实现
+│   ├── eval.cpp         # 表达式求值（栈应用）
+│   └── kuohao.cpp       # 括号匹配（栈应用）
+├── queue
+│   ├── sequence.h       # 顺序队列实现
+│   └── link.h           # 链队列实现
+└── string
+    ├── string.h         # 字符串定义与 KMP 算法
+    └── test_kmp.c       # KMP 算法测试示例
 ```
 
 ---
@@ -55,11 +68,24 @@ g++ -std=c++11 sqList/6.cpp -o /tmp/sq6 && /tmp/sq6
 g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 ```
 
+### 3）运行栈应用示例
+
+```bash
+g++ -std=c++11 stack/eval.cpp -o /tmp/eval && /tmp/eval
+g++ -std=c++11 stack/kuohao.cpp -o /tmp/kuohao && /tmp/kuohao
+```
+
+### 4）运行字符串算法测试
+
+```bash
+gcc string/test_kmp.c -o /tmp/kmp && /tmp/kmp
+```
+
 ---
 
 ## 公共基础代码解析
 
-## `sqList/dynamic.h`（动态顺序表）
+### `sqList/dynamic.h`（动态顺序表）
 
 实现了顺序表基础能力：
 
@@ -72,7 +98,7 @@ g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 
 > 备注：该头文件中同时包含声明与实现，练习代码可直接 `#include "dynamic.h"` 使用。
 
-## `linkList/head.h`（带头结点单链表）
+### `linkList/head.h`（带头结点单链表）
 
 实现了链表的常见基础操作：
 
@@ -84,7 +110,7 @@ g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 
 这套工具是 `linkList/*.cpp` 题目的公共依赖。
 
-## `stack/sequence/stack.h`（顺序栈）
+### `stack/sequence/stack.h`（顺序栈）
 
 实现了顺序栈（静态数组）基础操作：
 
@@ -97,7 +123,7 @@ g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 - `getStackLength()`：获取栈长度
 - `clearStack()`：清空栈
 
-## `stack/link/stack.h`（链栈）
+### `stack/link/stack.h`（链栈）
 
 实现了链栈（带头结点）基础操作：
 
@@ -107,6 +133,34 @@ g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 - `popStack()`：出栈
 - `getTopStack()`：获取栈顶元素
 - `destroyStack()`：销毁栈
+
+### `queue/sequence.h`（顺序队列）
+
+实现了顺序队列（循环数组）基础操作：
+
+- `initQueue()`：初始化队列
+- `isEmptyQueue()`：判断队列是否为空
+- `pushQueue()`：入队
+- `popQueue()`：出队
+- `getTopQueue()`：获取队头元素
+
+### `queue/link.h`（链队列）
+
+实现了链队列（带头结点）基础操作：
+
+- `initQueue()`：初始化队列
+- `isEmptyQueue()`：判断队列是否为空
+- `pushQueue()`：入队
+- `popQueue()`：出队
+- `getTopQueue()`：获取队头元素
+
+### `string/string.h`（字符串与 KMP 算法）
+
+实现了字符串基础操作与 KMP 模式匹配：
+
+- `Index()`：朴素串匹配算法（Brute‑Force）
+- `getNext()`：计算 KMP 算法的 next 数组（下标从 0 开始）
+- `getNextVal()`：计算改进的 nextval 数组（相同字符跳转优化）
 
 ---
 
@@ -178,22 +232,68 @@ g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 
 ---
 
+## 栈应用示例（`stack/`）
+
+| 文件 | 功能 | 核心思路 |
+|---|---|---|
+| `eval.cpp` | 表达式求值（支持 +‑*/ 与括号） | 双栈（操作数栈 + 运算符栈）配合优先级表 |
+| `kuohao.cpp` | 括号匹配（支持 ()、[]、{}） | 单栈左括号入栈，右括号弹出匹配 |
+
+---
+
+## 队列实现总览（`queue/`）
+
+### 顺序队列（`sequence.h`）
+
+| 函数 | 功能 |
+|---|---|
+| `initQueue()` | 初始化顺序队列 |
+| `isEmptyQueue()` | 判断队列是否为空 |
+| `pushQueue()` | 入队 |
+| `popQueue()` | 出队 |
+| `getTopQueue()` | 获取队头元素 |
+
+### 链队列（`link.h`）
+
+| 函数 | 功能 |
+|---|---|
+| `initQueue()` | 初始化链队列 |
+| `isEmptyQueue()` | 判断队列是否为空 |
+| `pushQueue()` | 入队 |
+| `popQueue()` | 出队 |
+| `getTopQueue()` | 获取队头元素 |
+
+---
+
+## 字符串算法总览（`string/`）
+
+| 文件 | 功能 | 核心思路 |
+|---|---|---|
+| `string.h` | 字符串结构定义、KMP 算法实现 | 朴素匹配、next 数组、nextval 优化 |
+| `test_kmp.c` | KMP 算法测试 | 验证 next 与 nextval 数组的正确性 |
+
+---
+
 ## 重点题（推荐优先理解）
 
 结合代码复杂度和技巧性，建议重点看：
 
 - 顺序表：`11.cpp`（中位数归并思想）、`12.cpp`（主元素）、`14.cpp`（三指针最小距离）、`15.cpp`（后缀 min/max）
 - 链表：`20.cpp`（链表重排，包含找中点 + 逆置 + 合并）
+- 栈：`eval.cpp`（表达式求值，综合运用双栈）、`kuohao.cpp`（括号匹配）
+- 字符串：`getNext()` 与 `getNextVal()`（KMP 核心）
 
 ---
 
 ## 学习路径建议
 
-1. 先看基础容器实现：`sqList/dynamic.h`、`linkList/head.h`、`stack/sequence/stack.h`、`stack/link/stack.h`
+1. 先看基础容器实现：`sqList/dynamic.h`、`linkList/head.h`、`stack/sequence/stack.h`、`stack/link/stack.h`、`queue/sequence.h`、`queue/link.h`
 2. 顺序表部分按难度：`2 -> 3/4 -> 5/6 -> 7/10 -> 11/14/15`
 3. 链表部分按难度：`1/4 -> 2/3 -> 17 -> 5/18 -> 20`
-4. 栈部分：顺序栈和链栈可并行学习，理解栈的"后进先出"特性
-5. 对每个题目，重点追踪：
+4. 栈部分：顺序栈和链栈可并行学习，理解栈的"后进先出"特性，重点看两个应用示例
+5. 队列部分：对照栈学习，理解"先进先出"特性，对比顺序/链式实现的差异
+6. 字符串部分：先理解朴素匹配，再学习 KMP 的 next 数组构造思想，最后理解 nextval 优化
+7. 对每个题目，重点追踪：
    - 循环不变量（当前已处理区间是什么）
    - 指针含义（谁是前驱、谁会移动、谁保持不动）
    - 边界条件（空表、单节点、越界位置）
@@ -207,9 +307,10 @@ g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
 - `sqList/dynamic.h` 使用"头文件内实现"，工程化时建议拆分为 `.h + .c/.cpp`。
 - 题目文件多为单测风格 `main`，可后续统一为测试框架（如 GoogleTest）。
 - 顺序栈可考虑添加动态扩容版本。
+- 队列和字符串部分可补充更多练习题目。
 
 ---
 
 ## License
 
-当前仓库未声明许可证；如需开源发布，建议补充 `LICENSE` 文件。
+MIT License - 查看 [LICENSE](LICENSE) 文件了解详情。
