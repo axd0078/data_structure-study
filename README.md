@@ -1,4 +1,4 @@
-# 数据结构学习代码（顺序表 + 链表 + 栈 + 队列 + 字符串）
+# 数据结构学习代码（顺序表 + 链表 + 栈 + 队列 + 字符串 + 二叉树 + 并查集）
 
 本仓库是一个 **C/C++ 风格的数据结构刷题与练习集合**，核心围绕：
 
@@ -7,6 +7,8 @@
 - 栈（`stack/`）
 - 队列（`queue/`）
 - 字符串（`string/`）
+- 二叉树（`binaryTree/`）
+- 并查集（`DSU/`）
 
 代码特点：
 
@@ -16,7 +18,9 @@
 - 栈包含顺序栈和链栈两种实现；
 - 队列包含顺序队列和链队列两种实现；
 - 字符串部分包含基础串匹配算法（朴素、KMP）及改进的 NextVal 算法；
-- 注释较多，强调"指针移动逻辑"和"就地修改"思路。
+- 二叉树部分包含顺序存储和线索二叉树两种实现；
+- 注释较多，强调"指针移动逻辑"和"就地修改"思路；
+- 并查集部分包含基础实现与按秩合并 + 路径压缩两种优化实现。
 
 ---
 
@@ -45,9 +49,16 @@
 ├── queue
 │   ├── sequence.h       # 顺序队列实现
 │   └── link.h           # 链队列实现
-└── string
-    ├── string.h         # 字符串定义与 KMP 算法
-    └── test_kmp.c       # KMP 算法测试示例
+├── string
+│   ├── string.h         # 字符串定义与 KMP 算法
+│   └── test_kmp.c       # KMP 算法测试示例
+└── binaryTree
+    ├── main.c           # 二叉树测试示例
+    ├── sequence.h       # 顺序存储二叉树实现
+    └── threadTree.h     # 线索二叉树实现
+└── DSU
+    ├── dsu.h            # 并查集定义与算法实现
+    └── test_dsu.cpp     # 并查集测试示例
 ```
 
 ---
@@ -79,6 +90,18 @@ g++ -std=c++11 stack/kuohao.cpp -o /tmp/kuohao && /tmp/kuohao
 
 ```bash
 gcc string/test_kmp.c -o /tmp/kmp && /tmp/kmp
+```
+
+### 5）运行二叉树测试
+
+```bash
+gcc binaryTree/main.c -o /tmp/binaryTree && /tmp/binaryTree
+```
+
+### 6）运行并查集测试
+
+```bash
+g++ -std=c++11 DSU/test_dsu.cpp -o /tmp/dsu && /tmp/dsu
 ```
 
 ---
@@ -161,6 +184,43 @@ gcc string/test_kmp.c -o /tmp/kmp && /tmp/kmp
 - `Index()`：朴素串匹配算法（Brute‑Force）
 - `getNext()`：计算 KMP 算法的 next 数组（下标从 0 开始）
 - `getNextVal()`：计算改进的 nextval 数组（相同字符跳转优化）
+
+### `binaryTree/sequence.h`（顺序存储二叉树）
+
+实现了二叉树的顺序存储结构：
+
+- `initTree()`：初始化二叉树
+- `createTree()`：创建二叉树，按顺序输入节点值
+
+### `binaryTree/threadTree.h`（线索二叉树）
+
+实现了线索二叉树的相关操作：
+
+- `newThreadNode()`：创建新的线索二叉树节点
+- `inThread()`：中序线索化二叉树
+- `creatThreadTree()`：创建线索二叉树
+- `firstNode()`：获取中序遍历的第一个节点
+- `nextNode()`：获取中序遍历的下一个节点
+- `lastNode()`：获取中序遍历的最后一个节点
+- `priorNode()`：获取中序遍历的前一个节点
+- `inOrder()`：中序遍历线索二叉树
+- `reverseInOrder()`：逆序中序遍历线索二叉树
+- `freeThreadTree()`：释放线索二叉树内存
+
+### `DSU/dsu.h`（并查集）
+
+实现了并查集（Disjoint Set Union）的基础与优化版本：
+
+**基础实现：**
+- `init()`：初始化并查集，所有元素各自为一个集合（用 `-1` 标记根节点）
+- `find()`：查找元素所在集合的根节点（无优化）
+- `unionSet()`：合并两个集合（直接将 root1 挂到 root2 下）
+
+**优化实现（按秩合并 + 路径压缩）：**
+- `unionPro()`：按大小合并，将规模较小的集合并入规模较大的集合，降低树高
+- `findPro()`：查找根节点时顺带路径压缩，使后续查找更快（接近 O(1)）
+
+> 存储规则：`s[i] < 0` 表示 `i` 是根节点，`|s[i]|` 为集合大小；`s[i] >= 0` 表示 `i` 的父节点是 `s[i]`。
 
 ---
 
@@ -323,21 +383,8 @@ g++ -std=c++11 eval.cpp -o eval_test
 - 链表：`20.cpp`（链表重排，包含找中点 + 逆置 + 合并）
 - 栈：`eval.cpp`（表达式求值，综合运用双栈）、`kuohao.cpp`（括号匹配）
 - 字符串：`getNext()` 与 `getNextVal()`（KMP 核心）
-
----
-
-## 学习路径建议
-
-1. 先看基础容器实现：`sqList/dynamic.h`、`linkList/head.h`、`stack/sequence/stack.h`、`stack/link/stack.h`、`queue/sequence.h`、`queue/link.h`
-2. 顺序表部分按难度：`2 -> 3/4 -> 5/6 -> 7/10 -> 11/14/15`
-3. 链表部分按难度：`1/4 -> 2/3 -> 17 -> 5/18 -> 20`
-4. 栈部分：顺序栈和链栈可并行学习，理解栈的"后进先出"特性，重点看两个应用示例
-5. 队列部分：对照栈学习，理解"先进先出"特性，对比顺序/链式实现的差异
-6. 字符串部分：先理解朴素匹配，再学习 KMP 的 next 数组构造思想，最后理解 nextval 优化
-7. 对每个题目，重点追踪：
-   - 循环不变量（当前已处理区间是什么）
-   - 指针含义（谁是前驱、谁会移动、谁保持不动）
-   - 边界条件（空表、单节点、越界位置）
+- 二叉树：`threadTree.h`（线索二叉树的实现，包括中序线索化和遍历）
+- 并查集：`dsu.h` 中的 `unionPro()` + `findPro()`（按秩合并与路径压缩，理解其均摊复杂度优势）
 
 ---
 
@@ -349,6 +396,8 @@ g++ -std=c++11 eval.cpp -o eval_test
 - 题目文件多为单测风格 `main`，可后续统一为测试框架（如 GoogleTest）。
 - 顺序栈可考虑添加动态扩容版本。
 - 队列和字符串部分可补充更多练习题目。
+- 二叉树部分可补充更多遍历算法（如前序、后序线索化）和应用示例。
+- 并查集目前固定容量为 `SIZE=100`，可改为动态分配；`unionSet` 未处理自环（`root1==root2` 时跳过），`unionPro` 在自环情况下存在 bug（双倍计数），可进一步改进。
 
 ---
 
