@@ -42,3 +42,5 @@
 
 # IDE and editor directories
 .vscode/
+
+.qoder/

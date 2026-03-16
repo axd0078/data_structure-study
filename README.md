@@ -50,8 +50,9 @@
 │   ├── sequence.h       # 顺序队列实现
 │   └── link.h           # 链队列实现
 ├── string
-│   ├── string.h         # 字符串定义与 KMP 算法
-│   └── test_kmp.c       # KMP 算法测试示例
+│   ├── string.h              # 字符串定义与 KMP 算法
+│   ├── test_kmp.c            # KMP 算法测试示例
+│   └── findmaxsuffix.cpp     # 最长公共前缀长度（字典序极值法）
 └── binaryTree
     ├── main.c           # 二叉树测试示例
     ├── sequence.h       # 顺序存储二叉树实现
@@ -90,6 +91,7 @@ g++ -std=c++11 stack/kuohao.cpp -o /tmp/kuohao && /tmp/kuohao
 
 ```bash
 gcc string/test_kmp.c -o /tmp/kmp && /tmp/kmp
+g++ -std=c++11 string/findmaxsuffix.cpp -o /tmp/findmaxsuffix && /tmp/findmaxsuffix
 ```
 
 ### 5）运行二叉树测试
@@ -184,6 +186,14 @@ g++ -std=c++11 DSU/test_dsu.cpp -o /tmp/dsu && /tmp/dsu
 - `Index()`：朴素串匹配算法（Brute‑Force）
 - `getNext()`：计算 KMP 算法的 next 数组（下标从 0 开始）
 - `getNextVal()`：计算改进的 nextval 数组（相同字符跳转优化）
+
+### `string/findmaxsuffix.cpp`（最长公共前缀）
+
+实现了高效求解字符串数组最长公共前缀长度的算法：
+
+- **核心思想**：只需比较字典序最小和最大的两个字符串，其公共前缀即为全局最长公共前缀
+- **时间复杂度**：O(n + L)，优于逐一比较的 O(n × L)
+- **测试用例**：包含正常情况、无公共前缀、全部相同、单字符串、空数组等边界测试
 
 ### `binaryTree/sequence.h`（顺序存储二叉树）
 
@@ -372,6 +382,7 @@ g++ -std=c++11 eval.cpp -o eval_test
 |---|---|---|
 | `string.h` | 字符串结构定义、KMP 算法实现 | 朴素匹配、next 数组、nextval 优化 |
 | `test_kmp.c` | KMP 算法测试 | 验证 next 与 nextval 数组的正确性 |
+| `findmaxsuffix.cpp` | 最长公共前缀长度 | 字典序极值法（只比较最小/最大串） |
 
 ---
 
@@ -382,7 +393,7 @@ g++ -std=c++11 eval.cpp -o eval_test
 - 顺序表：`11.cpp`（中位数归并思想）、`12.cpp`（主元素）、`14.cpp`（三指针最小距离）、`15.cpp`（后缀 min/max）
 - 链表：`20.cpp`（链表重排，包含找中点 + 逆置 + 合并）
 - 栈：`eval.cpp`（表达式求值，综合运用双栈）、`kuohao.cpp`（括号匹配）
-- 字符串：`getNext()` 与 `getNextVal()`（KMP 核心）
+- 字符串：`getNext()` 与 `getNextVal()`（KMP 核心）、`findmaxsuffix.cpp`（字典序极值法求最长公共前缀）
 - 二叉树：`threadTree.h`（线索二叉树的实现，包括中序线索化和遍历）
 - 并查集：`dsu.h` 中的 `unionPro()` + `findPro()`（按秩合并与路径压缩，理解其均摊复杂度优势）
 
