@@ -31,20 +31,20 @@ bool insertListByPos(linkList list,int i,int e){//插入到第i个位置
     return true;
 }//插入操作不需要修改头指针本身，只需要修改链表内部的节点链接关系
 
-bool insertListByNode(linkList list,LNode* p,int e){//指定节点后插入
-    if(p==NULL || list==NULL) return false;
+LNode* insertListByNode(linkList list,LNode* p,int e){//指定节点后插入
+    if(p==NULL || list==NULL) return NULL;
     LNode* temp = list;//locateElem(list,p->data) -- 只可以用于数据域唯一
     while(temp!=NULL){
         if(temp==p)
             break;
         temp = temp->next;
     }
-    if(temp==NULL) return false;
+    if(temp==NULL) return NULL;
     LNode* newNode = (LNode*)malloc(sizeof(LNode));
     newNode->data = e;
     newNode->next = p->next;
     p->next = newNode;
-    return true;
+    return newNode;
 }
 
 bool insertListByNodeBefore(linkList list,LNode* p,int e){//指定节点前插入
@@ -134,4 +134,15 @@ bool creatListTail(linkList list,int* nums,int numsSize){
         tail = newNode;
     }
     return true;
+}
+
+void destroyList(linkList* list){//销毁链表，释放所有节点内存
+    if(list == NULL || *list == NULL) return;
+    LNode* p = *list;
+    while(p != NULL){
+        LNode* q = p->next;
+        free(p);
+        p = q;
+    }
+    *list = NULL;//置为空指针，避免野指针
 }

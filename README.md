@@ -26,37 +26,59 @@
 
 ## 目录结构
 
-```text
+```
 .
 ├── README.md
 ├── LICENSE
 ├── sqList
 │   ├── dynamic.h        # 动态顺序表定义与基础操作
-│   ├── static.cpp       # 静态顺序表实现示例
-│   ├── 1.cpp ~ 15.cpp   # 顺序表题目练习
+│   ├── static-array-demo.cpp  # 静态顺序表实现示例
+│   ├── delete-min.cpp          # 删除最小元素
+│   ├── reverse-inplace.cpp     # 就地逆置
+│   ├── delete-by-value.cpp     # 删除指定值
+│   ├── delete-range.cpp        # 删除区间值
+│   ├── remove-duplicates.cpp   # 有序表去重
+│   ├── merge-sorted.cpp        # 合并两个有序表
+│   ├── array-swap.cpp          # 分段交换
+│   ├── insert-or-replace.cpp   # 插入或替换
+│   ├── common-elements.cpp     # 三数组公共元素
+│   ├── rotate-left.cpp         # 循环左移
+│   ├── median-two-sorted.cpp   # 两有序表中位数
+│   ├── majority-element.cpp    # 主元素
+│   ├── first-missing-positive.cpp  # 最小缺失正整数
+│   ├── min-distance-three-arrays.cpp  # 三数组最小距离
+│   └── max-product-suffix.cpp  # 后缀最大乘积
 ├── linkList
-│   ├── head.h           # 带头结点单链表定义与基础操作
-│   ├── nohead.h         # 无头结点结构草稿
-│   ├── 1.cpp ~ 5.cpp    # 链表基础题
-│   └── 17.cpp ~ 20.cpp  # 链表进阶题
+│   ├── head.h                      # 带头结点单链表定义与基础操作
+│   ├── list-no-head.h              # 无头结点结构草稿
+│   ├── delete-by-value.cpp         # 删除值为 x 的节点
+│   ├── delete-min.cpp              # 删除最小值节点
+│   ├── reverse-list.cpp            # 链表逆置
+│   ├── delete-range.cpp            # 删除区间节点
+│   ├── intersection-node.cpp       # 相交节点查找
+│   ├── kth-from-end.cpp            # 倒数第 k 个节点
+│   ├── intersection-check.cpp      # 相交节点判断
+│   ├── remove-duplicate-abs.cpp    # 删除绝对值重复节点
+│   ├── reorder-list.cpp            # 链表重排
+│   └── merge-two-sorted-lists.cpp  # 合并两个有序链表
 ├── stack
 │   ├── sequence
 │   │   └── stack.h      # 顺序栈实现
 │   ├── link
 │   │   └── stack.h      # 链栈实现
-│   ├── eval.cpp         # 表达式求值（栈应用）
-│   └── kuohao.cpp       # 括号匹配（栈应用）
+│   ├── expression-eval.cpp  # 表达式求值（栈应用）
+│   └── bracket-match.cpp    # 括号匹配（栈应用）
 ├── queue
 │   ├── sequence.h       # 顺序队列实现
 │   └── link.h           # 链队列实现
 ├── string
 │   ├── string.h              # 字符串定义与 KMP 算法
-│   ├── test_kmp.c            # KMP 算法测试示例
-│   └── findmaxsuffix.cpp     # 最长公共前缀长度（字典序极值法）
+│   ├── kmp-test.c            # KMP 算法测试示例
+│   └── longest-common-prefix.cpp  # 最长公共前缀长度（字典序极值法）
 └── binaryTree
-    ├── main.c           # 二叉树测试示例
-    ├── sequence.h       # 顺序存储二叉树实现
-    └── threadTree.h     # 线索二叉树实现
+    ├── binarytree-demo.c  # 二叉树测试示例
+    ├── sequence.h         # 顺序存储二叉树实现
+    └── threadTree.h       # 线索二叉树实现
 └── DSU
     ├── dsu.h            # 并查集定义与算法实现
     └── test_dsu.cpp     # 并查集测试示例
@@ -71,39 +93,43 @@
 ### 1）运行某个顺序表题目
 
 ```bash
-g++ -std=c++11 sqList/6.cpp -o /tmp/sq6 && /tmp/sq6
+g++ -std=c++11 sqList/delete-min.cpp -o delete_min && ./delete_min
+g++ -std=c++11 sqList/reverse-inplace.cpp -o reverse && ./reverse
+# ... 其他题目类似，单文件编译运行
 ```
 
 ### 2）运行某个链表题目
 
 ```bash
-g++ -std=c++11 linkList/20.cpp -o /tmp/ll20 && /tmp/ll20
+g++ -std=c++11 linkList/delete-by-value.cpp -o delete_val && ./delete_val
+g++ -std=c++11 linkList/merge-two-sorted-lists.cpp -o merge && ./merge
+# ... 其他题目类似
 ```
 
 ### 3）运行栈应用示例
 
 ```bash
-g++ -std=c++11 stack/eval.cpp -o /tmp/eval && /tmp/eval
-g++ -std=c++11 stack/kuohao.cpp -o /tmp/kuohao && /tmp/kuohao
+g++ -std=c++11 stack/expression-eval.cpp -o expr_eval && ./expr_eval
+g++ -std=c++11 stack/bracket-match.cpp -o bracket && ./bracket
 ```
 
 ### 4）运行字符串算法测试
 
 ```bash
-gcc string/test_kmp.c -o /tmp/kmp && /tmp/kmp
-g++ -std=c++11 string/findmaxsuffix.cpp -o /tmp/findmaxsuffix && /tmp/findmaxsuffix
+gcc string/kmp-test.c -o kmp_test && ./kmp_test
+g++ -std=c++11 string/longest-common-prefix.cpp -o lcp && ./lcp
 ```
 
 ### 5）运行二叉树测试
 
 ```bash
-gcc binaryTree/main.c -o /tmp/binaryTree && /tmp/binaryTree
+gcc binaryTree/binarytree-demo.c -o bt_demo && ./bt_demo
 ```
 
 ### 6）运行并查集测试
 
 ```bash
-g++ -std=c++11 DSU/test_dsu.cpp -o /tmp/dsu && /tmp/dsu
+g++ -std=c++11 DSU/test_dsu.cpp -o dsu_test && ./dsu_test
 ```
 
 ---
@@ -327,7 +353,7 @@ g++ -std=c++11 DSU/test_dsu.cpp -o /tmp/dsu && /tmp/dsu
 
 `eval.cpp` 文件中包含完整的测试代码，可直接运行测试多种表达式：
 
-```cpp
+```
 // 测试用例包括：
 testExpression("1+2");                   // 简单表达式
 testExpression("123+456");               // 多位数加法  
@@ -339,7 +365,7 @@ testExpression("3+4*2/(1-5)");           // 复杂表达式（含负数除法）
 ```
 
 **运行测试**：
-```bash
+```
 cd stack
 g++ -std=c++11 eval.cpp -o eval_test
 ./eval_test
@@ -390,10 +416,10 @@ g++ -std=c++11 eval.cpp -o eval_test
 
 结合代码复杂度和技巧性，建议重点看：
 
-- 顺序表：`11.cpp`（中位数归并思想）、`12.cpp`（主元素）、`14.cpp`（三指针最小距离）、`15.cpp`（后缀 min/max）
-- 链表：`20.cpp`（链表重排，包含找中点 + 逆置 + 合并）
-- 栈：`eval.cpp`（表达式求值，综合运用双栈）、`kuohao.cpp`（括号匹配）
-- 字符串：`getNext()` 与 `getNextVal()`（KMP 核心）、`findmaxsuffix.cpp`（字典序极值法求最长公共前缀）
+- 顺序表：`median-two-sorted.cpp`（中位数归并思想）、`majority-element.cpp`（主元素）、`min-distance-three-arrays.cpp`（三指针最小距离）、`max-product-suffix.cpp`（后缀 min/max）
+- 链表：`reorder-list.cpp`（链表重排，包含找中点 + 逆置 + 合并）、`merge-two-sorted-lists.cpp`（合并两个有序链表）
+- 栈：`expression-eval.cpp`（表达式求值，综合运用双栈）、`bracket-match.cpp`（括号匹配）
+- 字符串：`getNext()` 与 `getNextVal()`（KMP 核心）、`longest-common-prefix.cpp`（字典序极值法求最长公共前缀）
 - 二叉树：`threadTree.h`（线索二叉树的实现，包括中序线索化和遍历）
 - 并查集：`dsu.h` 中的 `unionPro()` + `findPro()`（按秩合并与路径压缩，理解其均摊复杂度优势）
 
