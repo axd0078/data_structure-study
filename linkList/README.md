@@ -23,6 +23,7 @@
 | `remove-duplicate-abs.cpp` | 删除绝对值重复 | flags 标记去重 |
 | `reorder-list.cpp` | 链表重排 | 快慢指针找中点+逆置+合并 |
 | `merge-two-sorted-lists.cpp` | 合并两个有序链表 | 双指针归并 |
+| `detect-cycle.cpp` | 环形链表检测 | Floyd判环算法 |
 
 ## head.h 接口
 

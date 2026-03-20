@@ -1,6 +1,3 @@
-#ifndef DYNAMIC_H
-#define DYNAMIC_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>  // 添加这行来支持 bool 类型
@@ -12,9 +9,6 @@ typedef struct{
 	int maxSize,length;
 }sqList;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 sqList* initList();
 void expandList(sqList* list, int extraSize);
@@ -23,11 +17,6 @@ bool listDelete(sqList* list, int i, int* e);
 int listSearch(sqList* list, int e);
 void listPrint(sqList* list);
 
-#ifdef __cplusplus
-}
-#endif
-
-#endif
 
 sqList* initList(){
 	sqList* list = (sqList*)malloc(sizeof(sqList));

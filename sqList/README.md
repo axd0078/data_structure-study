@@ -28,6 +28,7 @@
 | `first-missing-positive.cpp` | 最小缺失正整数 | 辅助标记数组 |
 | `min-distance-three-arrays.cpp` | 三数组最小距离 | 三指针+移动最小 |
 | `max-product-suffix.cpp` | 后缀最大乘积 | 反向维护 min/max |
+| `find-duplicate.cpp` | 寻找重复数 | Floyd判环算法 |
 
 ## dynamic.h 接口
 
