@@ -12,6 +12,7 @@
 | `linkList_impl.h` | 邻接表实现 |
 | `BFS.cpp` | 广度优先搜索 |
 | `DFS.cpp` | 深度优先搜索 |
+| `floyd.cpp` | Floyd最短路径算法 |
 | `test_graph.c` | 测试示例 |
 
 ## 存储结构
@@ -51,12 +52,13 @@ typedef struct {
 } LGraph;
 ```
 
-## 遍历算法
+## 核心算法
 
 | 算法 | 文件 | 说明 |
 |------|------|------|
 | BFS | `BFS.cpp` | 广度优先搜索，使用队列 |
 | DFS | `DFS.cpp` | 深度优先搜索，递归/栈实现 |
+| Floyd | `floyd.cpp` | 多源最短路径，动态规划 |
 
 ## 运行示例
 
@@ -66,6 +68,9 @@ g++ -std=c++11 BFS.cpp -o test && ./test
 
 # DFS 测试
 g++ -std=c++11 DFS.cpp -o test && ./test
+
+# Floyd 最短路径
+g++ -std=c++11 floyd.cpp -o test && ./test
 
 # 图结构测试
 gcc test_graph.c -o test && ./test
