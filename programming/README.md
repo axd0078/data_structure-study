@@ -13,6 +13,14 @@
 | `dijkstra.cpp` | 最短路径 | ⭐⭐⭐ | Dijkstra O(n²) |
 | `merge.cpp` | 区间合并 | ⭐⭐⭐ | 排序 + 贪心 |
 
+### 补充题目
+
+详见 [test/](./test/README.md)
+
+| 文件 | 题目 | 难度 | 核心算法 |
+|------|------|------|----------|
+| `test/abbreviation-check.cpp` | 缩写检查 | ⭐⭐ | 字符串处理 |
+
 ---
 
 ## 三数之和
