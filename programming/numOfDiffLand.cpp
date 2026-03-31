@@ -25,7 +25,7 @@ public:
                     vector<vector<int>> path;    //记录当前岛屿的形状，path 要记录相对坐标，不能直接记录绝对坐标
                     grid[i][j] = 0;     //标记为已访问
                     dfs(grid,i,j,i,j,path);   //从(i,j)出发进行DFS，记录路径
-                    s.insert(path);     //将当前岛屿的形状加入集合
+                    s.insert(path);     //将当前岛屿的形状加入集合，如果已经存在，就不会存入
                 }
             }
         }
