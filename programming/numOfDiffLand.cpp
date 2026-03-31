@@ -10,7 +10,7 @@ class Solution{
 
     int m,n;    //网格的行数列数，共享
 
-    set<vector<vector<int>>> s;     //存储岛屿形状的集合,具有自动去重功能
+    set<vector<vector<int>>> s;     //存储岛屿形状的集合,具有自动去重
 
 public:
     int numDistinctIslands(vector<vector<int>>& grid){
