@@ -25,6 +25,8 @@
 | `meeting.cpp` | 会议室数量 | 排序 + 双指针 | `O(n log n)` |
 | `countPrimes.cpp` | 计数质数 | 埃氏筛 | `O(n log log n)` |
 | `countMatchingSubsequences.cpp` | 匹配子序列数量 | 倒排索引 + `upper_bound` | `O(|s| + 单词总长度 × log |s|)` |
+| `minEatingSpeed.cpp` | 爱吃香蕉的珂珂 | 二分答案 | `O(n log M)` |
+| `shipWithDays.cpp` | 在 D 天内送达包裹的能力 | 二分答案 | `O(n log S)` |
 | `numOfLand.cpp` | 岛屿数量 | DFS 淹没岛屿 | `O(mn)` |
 | `numOfLand2.cpp` | 封闭岛屿数量 | 先淹边界再 DFS 统计 | `O(mn)` |
 | `sizeOfLand.cpp` | 封闭岛屿总面积 | DFS 统计面积 | `O(mn)` |
@@ -36,7 +38,7 @@
 ## 核心内容
 
 - 数组与双指针：`a+b+c=0.cpp`、`merge.cpp`、`meeting.cpp`
-- 二分与序列问题：`find-mid.cpp`、`lis-binary.cpp`
+- 二分与序列问题：`find-mid.cpp`、`lis-binary.cpp`、`minEatingSpeed.cpp`、`shipWithDays.cpp`
 - 图与搜索：`dijkstra.cpp` 以及一组岛屿类 DFS 题
 - 其他常见技巧：筛法统计质数、匹配子序列的索引加速、矩阵原地标记
 
@@ -46,6 +48,8 @@
 g++ -std=c++11 a+b+c=0.cpp -o test && ./test
 g++ -std=c++11 countPrimes.cpp -o test && ./test
 g++ -std=c++11 countMatchingSubsequences.cpp -o test && ./test
+g++ -std=c++11 minEatingSpeed.cpp -o test && ./test
+g++ -std=c++11 shipWithDays.cpp -o test && ./test
 g++ -std=c++11 numOfDiffLand.cpp -o test && ./test
 g++ -std=c++11 sonOfLand.cpp -o test && ./test
 ```
@@ -53,6 +57,7 @@ g++ -std=c++11 sonOfLand.cpp -o test && ./test
 ## 注意事项
 
 - 每个题目的输入格式都由对应文件中的 `main` 决定，运行前建议先阅读源码。
+- `minEatingSpeed.cpp` 和 `shipWithDays.cpp` 都属于“二分答案”题型，核心是对可行性进行单调性判断。
 - 岛屿类题目的当前命名约定为：
   - `numOfLand.cpp`：岛屿数量
   - `numOfLand2.cpp`：封闭岛屿数量
