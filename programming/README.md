@@ -23,6 +23,8 @@
 | `dijkstra.cpp` | 最短路径 | Dijkstra（邻接矩阵版） | `O(n^2)` |
 | `merge.cpp` | 区间合并 | 排序 + 区间合并 | `O(n log n)` |
 | `meeting.cpp` | 会议室数量 | 排序 + 双指针 | `O(n log n)` |
+| `rain.cpp` | 盛最多水的容器 | 双指针 | `O(n)` |
+| `rain-plus.cpp` | 接雨水 | 双指针 + 左右最大值维护 | `O(n)` |
 | `countPrimes.cpp` | 计数质数 | 埃氏筛 | `O(n log log n)` |
 | `countMatchingSubsequences.cpp` | 匹配子序列数量 | 倒排索引 + `upper_bound` | `O(|s| + 单词总长度 × log |s|)` |
 | `minEatingSpeed.cpp` | 爱吃香蕉的珂珂 | 二分答案 | `O(n log M)` |
@@ -37,7 +39,7 @@
 
 ## 核心内容
 
-- 数组与双指针：`a+b+c=0.cpp`、`merge.cpp`、`meeting.cpp`
+- 数组与双指针：`a+b+c=0.cpp`、`merge.cpp`、`meeting.cpp`、`rain.cpp`、`rain-plus.cpp`
 - 二分与序列问题：`find-mid.cpp`、`lis-binary.cpp`、`minEatingSpeed.cpp`、`shipWithDays.cpp`
 - 图与搜索：`dijkstra.cpp` 以及一组岛屿类 DFS 题
 - 其他常见技巧：筛法统计质数、匹配子序列的索引加速、矩阵原地标记
@@ -48,6 +50,8 @@
 g++ -std=c++11 a+b+c=0.cpp -o test && ./test
 g++ -std=c++11 countPrimes.cpp -o test && ./test
 g++ -std=c++11 countMatchingSubsequences.cpp -o test && ./test
+g++ -std=c++11 rain.cpp -o test && ./test
+g++ -std=c++11 rain-plus.cpp -o test && ./test
 g++ -std=c++11 minEatingSpeed.cpp -o test && ./test
 g++ -std=c++11 shipWithDays.cpp -o test && ./test
 g++ -std=c++11 numOfDiffLand.cpp -o test && ./test
@@ -57,6 +61,9 @@ g++ -std=c++11 sonOfLand.cpp -o test && ./test
 ## 注意事项
 
 - 每个题目的输入格式都由对应文件中的 `main` 决定，运行前建议先阅读源码。
+- `rain.cpp` 和 `rain-plus.cpp` 都属于双指针题，但关注点不同：
+  - `rain.cpp` 求的是两条边围成的最大容量
+  - `rain-plus.cpp` 求的是柱状图能够接住的雨水总量
 - `minEatingSpeed.cpp` 和 `shipWithDays.cpp` 都属于“二分答案”题型，核心是对可行性进行单调性判断。
 - 岛屿类题目的当前命名约定为：
   - `numOfLand.cpp`：岛屿数量
