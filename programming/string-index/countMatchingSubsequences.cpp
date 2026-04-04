@@ -12,19 +12,20 @@ public:
         vector<vector<int>> index(26);
         for(int i = 0;i<s.size();i++){
             index[s[i] - 'a'].push_back(i);
-        }//灏嗗瓧绗︿覆 s 涓殑鍏ㄩ儴鐨勫瓧绗︾殑浣嶇疆鎸夌収瀵瑰簲鐨勫瓧绗﹁繘琛屽瓨鍌?
-        //浠ゅ叾涓烘暟缁?index 鍏朵腑 index[c] 瀛樺偍鐨勬槸瀛楃涓?s 涓瓧绗︿负 c 鐨勪粠灏忓埌澶ф帓鍒楃殑浣嶇疆銆?
+        }
+        // 将字符串 s 中每个字符出现的位置按字符分类保存。
+        // 例如 index[c] 中存的是字符 c 在 s 中所有出现下标，且天然有序。
 
         int res = words.size();
-        for(auto &w: words){    //鑼冨洿 based for
-            if(w.size() > s.size()){    //鍗曡瘝姣斿簭鍒楅暱锛屼竴瀹氫笉鏄瓙搴忓垪
+        for(auto &w: words){    // 范围 for
+            if(w.size() > s.size()){    // 单词比原串更长，不可能是子序列
                 res--;
                 continue;
             }
             int p = -1;
             for(char c: w){
                 auto& ps = index[c - 'a'];
-                auto it = upper_bound(ps.begin(),ps.end(),p);//鎵惧埌绗竴涓弗鏍煎ぇ浜?p 鐨勪綅缃?
+                auto it = upper_bound(ps.begin(),ps.end(),p);// 找到第一个严格大于 p 的位置
                 if(it == ps.end()){
                     --res;
                     break;
