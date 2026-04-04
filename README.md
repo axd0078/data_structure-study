@@ -25,7 +25,7 @@
 | [DSU](./DSU) | 并查集 | 基础并查集、路径压缩、按集合大小合并 |
 | [graph](./graph) | 图 | 邻接矩阵、邻接表、BFS、DFS、Floyd |
 | [search](./search) | 查找 | 顺序查找与二分查找 |
-| [programming](./programming) | 综合题目 | 双指针、二分、DFS、筛法、子序列索引等题目合集 |
+| [programming](./programming) | 综合题目 | 已按算法思想分组的双指针、二分、图搜索、动态规划等题目 |
 | [summary](./summary) | 学习总结 | 指针安全与编码经验类笔记 |
 
 ## 推荐学习路径
@@ -45,7 +45,7 @@
 ```bash
 g++ -std=c++11 sqList/delete-min.cpp -o test && ./test
 g++ -std=c++11 sort/testExchangeSort.cpp -o test && ./test
-g++ -std=c++11 programming/countMatchingSubsequences.cpp -o test && ./test
+g++ -std=c++11 programming/string-index/countMatchingSubsequences.cpp -o test && ./test
 gcc graph/test_graph.c -o test && ./test
 ```
 
