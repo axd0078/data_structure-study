@@ -43,6 +43,7 @@
 | 文件 | 题目 | 核心算法 | 复杂度 |
 |------|------|----------|--------|
 | `lis.cpp` | 最长递增子序列 | 动态规划 / 二分优化对照实现 | `O(n^2)` 或 `O(n log n)` |
+| `maxSubArray.cpp` | 最大子数组和 | Kadane 动态规划 | `O(n)` |
 
 ### 图搜索与最短路 `graph-search/`
 
@@ -76,6 +77,7 @@
 g++ -std=c++11 double-pointer-and-greedy/rain.cpp -o test && ./test
 g++ -std=c++11 binary-search/minEatingSpeed.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/lis.cpp -o test && ./test
+g++ -std=c++11 dynamic-programming/maxSubArray.cpp -o test && ./test
 g++ -std=c++11 graph-search/numOfDiffLand.cpp -o test && ./test
 g++ -std=c++11 string-index/countMatchingSubsequences.cpp -o test && ./test
 g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
