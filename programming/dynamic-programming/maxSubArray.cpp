@@ -19,6 +19,7 @@ public:
             res = max(res, pre);
         }
         return res;
+        //这里只需要关联到底加不加前一个状态，所以不需要dp数组
     }
 };
 

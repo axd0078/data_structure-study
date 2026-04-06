@@ -43,7 +43,9 @@
 | 文件 | 题目 | 核心算法 | 复杂度 |
 |------|------|----------|--------|
 | `lis.cpp` | 最长递增子序列 | 动态规划 / 二分优化对照实现 | `O(n^2)` 或 `O(n log n)` |
+| `lcis.cpp` | 最长连续递增子序列 | 线性动态规划 | `O(n)` |
 | `maxSubArray.cpp` | 最大子数组和 | Kadane 动态规划 | `O(n)` |
+| `maxEnvelopes.cpp` | 俄罗斯套娃信封问题 | 排序 + LIS 优化 | `O(n log n)` |
 
 ### 图搜索与最短路 `graph-search/`
 
@@ -77,7 +79,9 @@
 g++ -std=c++11 double-pointer-and-greedy/rain.cpp -o test && ./test
 g++ -std=c++11 binary-search/minEatingSpeed.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/lis.cpp -o test && ./test
+g++ -std=c++11 dynamic-programming/lcis.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/maxSubArray.cpp -o test && ./test
+g++ -std=c++11 dynamic-programming/maxEnvelopes.cpp -o test && ./test
 g++ -std=c++11 graph-search/numOfDiffLand.cpp -o test && ./test
 g++ -std=c++11 string-index/countMatchingSubsequences.cpp -o test && ./test
 g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
@@ -88,7 +92,9 @@ g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
 - 每个题目的输入格式都由对应文件中的 `main` 决定，运行前建议先阅读源码。
 - `rain.cpp` 和 `rain-plus.cpp` 都属于双指针题，但关注点不同：
   - `rain.cpp` 求的是两条边围成的最大容量
-  - `rain-plus.cpp` 求的是柱状图能够接住的雨水总量
+- `rain-plus.cpp` 求的是柱状图能够接住的雨水总量
 - `minEatingSpeed.cpp` 和 `shipWithDays.cpp` 都属于“二分答案”题型，核心是对可行性进行单调性判断。
 - `lis.cpp` 同时保留了朴素动态规划和二分优化两个版本，适合对照学习。
+- `lcis.cpp` 更适合用来理解“连续递增”和“普通 LIS”在状态转移上的区别。
+- `maxEnvelopes.cpp` 先按宽度排序，再在高度维度上做 LIS，是二维问题降维的典型例子。
 - 岛屿类题目集中在 `graph-search/` 目录，方便统一复习 DFS 网格搜索。

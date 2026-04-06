@@ -35,7 +35,7 @@ public:
 
         vector<int> dp(n, 0);
         dp[0] = nums[0];
-        int end = 0;
+        int end = 0;//dp数组下标
 
         for (int i = 1; i < n; i++) {
             if (nums[i] > dp[end]) {
@@ -50,13 +50,13 @@ public:
                         left = mid + 1;
                     } else {
                         right = mid;
-                    }
+                    }//与常规二分查找不同，这里要去找最右边的目标值 如果目标值就是mid，这里做right = mid + 1 就会被错过
                 }
-                dp[left] = nums[i];
+                dp[left] = nums[i]; //从右往左二分，去找第一个大于等于nums[i]的数来被nums[i]替换
             }
         }
 
-        return end + 1;
+        return end + 1;//下标变成长度
     }
 };
 
