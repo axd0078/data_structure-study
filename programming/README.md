@@ -43,11 +43,13 @@
 
 | 文件 | 题目 | 核心算法 | 复杂度 |
 |------|------|----------|--------|
+| `coinChange.cpp` | 零钱兑换 | 完全背包动态规划 | `O(amount × 硬币种类数)` |
 | `lis.cpp` | 最长递增子序列 | 动态规划 / 二分优化对照实现 | `O(n^2)` 或 `O(n log n)` |
 | `eraseOverlapIntervals.cpp` | 无重叠区间 | 区间调度 + 前缀 DP / 二分 | `O(n log n)` |
 | `lcis.cpp` | 最长连续递增子序列 | 线性动态规划 | `O(n)` |
 | `maxSubArray.cpp` | 最大子数组和 | Kadane 动态规划 | `O(n)` |
 | `maxEnvelopes.cpp` | 俄罗斯套娃信封问题 | 排序 + LIS 优化 | `O(n log n)` |
+| `numSquare.cpp` | 完全平方数 | 动态规划 | `O(n√n)` |
 
 ### 图搜索与最短路 `graph-search/`
 
@@ -64,7 +66,10 @@
 
 | 文件 | 题目 | 核心算法 | 复杂度 |
 |------|------|----------|--------|
+| `arrayPairSum.cpp` | 数组拆分 | 排序 + 贪心配对 | `O(n log n)` |
+| `candy.cpp` | 分发糖果 | 双向趋势计数贪心 | `O(n)` |
 | `findMinArrowShots.cpp` | 用最少数量的箭引爆气球 | 按右端点排序 + 贪心选点 | `O(n log n)` |
+| `maxProfit.cpp` | 买卖股票的最佳时机 II | 贪心累加上升段 | `O(n)` |
 
 ### 字符串索引 `string-index/`
 
@@ -86,13 +91,18 @@
 ```bash
 g++ -std=c++11 double-pointer-and-greedy/rain.cpp -o test && ./test
 g++ -std=c++11 binary-search/minEatingSpeed.cpp -o test && ./test
+g++ -std=c++11 dynamic-programming/coinChange.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/lis.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/eraseOverlapIntervals.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/lcis.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/maxSubArray.cpp -o test && ./test
 g++ -std=c++11 dynamic-programming/maxEnvelopes.cpp -o test && ./test
+g++ -std=c++11 dynamic-programming/numSquare.cpp -o test && ./test
 g++ -std=c++11 graph-search/numOfDiffLand.cpp -o test && ./test
+g++ -std=c++11 greedy/arrayPairSum.cpp -o test && ./test
+g++ -std=c++11 greedy/candy.cpp -o test && ./test
 g++ -std=c++11 greedy/findMinArrowShots.cpp -o test && ./test
+g++ -std=c++11 greedy/maxProfit.cpp -o test && ./test
 g++ -std=c++11 string-index/countMatchingSubsequences.cpp -o test && ./test
 g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
 ```
@@ -104,9 +114,12 @@ g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
   - `rain.cpp` 求的是两条边围成的最大容量
 - `rain-plus.cpp` 求的是柱状图能够接住的雨水总量
 - `minEatingSpeed.cpp` 和 `shipWithDays.cpp` 都属于“二分答案”题型，核心是对可行性进行单调性判断。
+- `coinChange.cpp` 和 `numSquare.cpp` 都是典型完全背包 / 一维动态规划题，适合对比状态转移写法。
 - `lis.cpp` 同时保留了朴素动态规划和二分优化两个版本，适合对照学习。
 - `eraseOverlapIntervals.cpp` 目标是删最少区间，本质上等价于“保留最多个互不重叠区间”。
 - `lcis.cpp` 更适合用来理解“连续递增”和“普通 LIS”在状态转移上的区别。
 - `maxEnvelopes.cpp` 先按宽度排序，再在高度维度上做 LIS，是二维问题降维的典型例子。
+- `arrayPairSum.cpp`、`findMinArrowShots.cpp`、`maxProfit.cpp` 都体现了“局部最优推动全局最优”的贪心思路。
+- `candy.cpp` 属于带回看修正的贪心题，比普通区间贪心更适合练状态维护。
 - `findMinArrowShots.cpp` 和无重叠区间题都属于典型区间贪心，核心是优先按右端点排序。
 - 岛屿类题目集中在 `graph-search/` 目录，方便统一复习 DFS 网格搜索。
