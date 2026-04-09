@@ -1,4 +1,4 @@
-#include "dynamic.h"
+﻿#include "dynamic.h"
 
 // Floyd判环算法找重复数字
 // 数组长度n+1，值范围1~n，必有一个重复数字

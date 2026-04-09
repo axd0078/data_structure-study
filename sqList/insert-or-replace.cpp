@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "dynamic.h"
 
 bool insertValue(sqList* list,int value){

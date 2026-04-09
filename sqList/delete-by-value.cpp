@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "dynamic.h"
 
 bool deleteByValue(sqList* list,int value){

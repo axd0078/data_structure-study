@@ -1,4 +1,4 @@
-#include "dynamic.h"
+﻿#include "dynamic.h"
 
 void calMulMax(sqList* list,int* res){
     if(list==NULL && res==NULL)

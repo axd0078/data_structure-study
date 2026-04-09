@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 #include <stdio.h>
 
 // Floyd判环算法：检测链表是否有环，并返回环的入口节点

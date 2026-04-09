@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 
 void changeList(linkList list){
     LNode *p,*q,*s,*r;

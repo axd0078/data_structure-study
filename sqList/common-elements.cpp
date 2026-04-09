@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "dynamic.h"
 
 bool findSame(int* a,int* b,int* c,int numsSize){

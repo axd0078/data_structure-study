@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -10,13 +10,13 @@ public:
     int findMinArrowShots(vector<vector<int>>& points) {
         sort(points.begin(),points.end(),[](const vector<int>& a,const vector<int>& b){
             return a[1] < b[1];
-        });//鎸夌収鍙宠竟鐣屾帓搴忥紝濡傛灉绠殑浣嶇疆瓒呰繃浜嗗彸杈圭晫锛岄偅涔堜竴瀹氬皠涓嶅埌浜?
+        });//按右边界排序；如果箭的位置超过当前右边界，就一定射不到该气球
 
         int pos = points[0][1];
         int ans = 1;
 
         for(const vector<int>& balloon:points){
-            if(balloon[0]>pos){//鍒ゅ畾鏉′欢:宸﹁竟鐣岃秴杩噋os
+            if(balloon[0]>pos){//判定条件：当前气球左边界大于 pos
                 pos = balloon[1];
                 ans++;
             }

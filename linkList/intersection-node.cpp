@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 
 LNode* findSame(linkList list1,linkList list2){
     int len1 = getLen(list1);

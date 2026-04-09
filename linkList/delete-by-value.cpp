@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 bool deleteByValue(linkList list,int x){
     if(list==NULL||list->next==NULL)
         return false;

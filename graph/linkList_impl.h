@@ -1,4 +1,4 @@
-#ifndef LINKLIST_IMPL_H
+﻿#ifndef LINKLIST_IMPL_H
 #define LINKLIST_IMPL_H
 
 #include "linkList.h"

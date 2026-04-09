@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 bool deleteByRange(linkList list,int x,int y){
     if(list==NULL||list->next==NULL)
         return false;

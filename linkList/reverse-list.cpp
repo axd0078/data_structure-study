@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 
 bool reverseList(linkList list){
     // 1. 安全性检查：链表必须存在

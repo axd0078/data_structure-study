@@ -1,4 +1,4 @@
-#include "dynamic.h"
+﻿#include "dynamic.h"
 int abs(int num){
     return num>=0?num:(-num);
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 int search(int* arr,int len,int target){
     int low = 0,high = len;

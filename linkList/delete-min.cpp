@@ -1,4 +1,4 @@
-#include "head.h"
+﻿#include "head.h"
 
 bool deleteMin(linkList list,int* min){
     if(list==NULL||list->next==NULL)

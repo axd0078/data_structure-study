@@ -1,4 +1,4 @@
-#include "../sqList/dynamic.h"
+﻿#include "../sqList/dynamic.h"
 
 int searchSeq(sqList* list,int key){
     list->data[0] = key;    //哨兵，不用判断越界

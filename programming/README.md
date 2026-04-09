@@ -1,4 +1,4 @@
-# 综合编程题 (Programming)
+﻿# 综合编程题 (Programming)
 
 ## 模块简介
 
@@ -68,8 +68,12 @@
 |------|------|----------|--------|
 | `arrayPairSum.cpp` | 数组拆分 | 排序 + 贪心配对 | `O(n log n)` |
 | `candy.cpp` | 分发糖果 | 双向趋势计数贪心 | `O(n)` |
+| `eraseOverlapIntervals.cpp` | 无重叠区间 | 按右端点排序 + 区间贪心 | `O(n log n)` |
 | `findMinArrowShots.cpp` | 用最少数量的箭引爆气球 | 按右端点排序 + 贪心选点 | `O(n log n)` |
 | `maxProfit.cpp` | 买卖股票的最佳时机 II | 贪心累加上升段 | `O(n)` |
+| `maxSubArray.cpp` | 最大子数组和 | 贪心维护当前贡献和 | `O(n)` |
+| `meeting.cpp` | 会议室数量 | 排序 + 小根堆 | `O(n log n)` |
+| `wiggleMaxLength.cpp` | 摆动序列 | 贪心记录趋势变化 | `O(n)` |
 
 ### 字符串索引 `string-index/`
 
@@ -101,8 +105,12 @@ g++ -std=c++11 dynamic-programming/numSquare.cpp -o test && ./test
 g++ -std=c++11 graph-search/numOfDiffLand.cpp -o test && ./test
 g++ -std=c++11 greedy/arrayPairSum.cpp -o test && ./test
 g++ -std=c++11 greedy/candy.cpp -o test && ./test
+g++ -std=c++11 greedy/eraseOverlapIntervals.cpp -o test && ./test
 g++ -std=c++11 greedy/findMinArrowShots.cpp -o test && ./test
 g++ -std=c++11 greedy/maxProfit.cpp -o test && ./test
+g++ -std=c++11 greedy/maxSubArray.cpp -o test && ./test
+g++ -std=c++11 greedy/meeting.cpp -o test && ./test
+g++ -std=c++11 greedy/wiggleMaxLength.cpp -o test && ./test
 g++ -std=c++11 string-index/countMatchingSubsequences.cpp -o test && ./test
 g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
 ```
@@ -122,4 +130,6 @@ g++ -std=c++11 math-and-simulation/countPrimes.cpp -o test && ./test
 - `arrayPairSum.cpp`、`findMinArrowShots.cpp`、`maxProfit.cpp` 都体现了“局部最优推动全局最优”的贪心思路。
 - `candy.cpp` 属于带回看修正的贪心题，比普通区间贪心更适合练状态维护。
 - `findMinArrowShots.cpp` 和无重叠区间题都属于典型区间贪心，核心是优先按右端点排序。
+- `maxSubArray.cpp`、`eraseOverlapIntervals.cpp` 和 `meeting.cpp` 现在都保留了不同思路版本，适合横向对比同题多解。
+- `wiggleMaxLength.cpp` 适合用来体会“只保留趋势转折点”这一类贪心判断。
 - 岛屿类题目集中在 `graph-search/` 目录，方便统一复习 DFS 网格搜索。

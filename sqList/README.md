@@ -1,4 +1,4 @@
-# 顺序表 (Sequential List)
+﻿# 顺序表 (Sequential List)
 
 ## 模块简介
 
