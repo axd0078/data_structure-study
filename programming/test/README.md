@@ -9,6 +9,7 @@
 | 文件 | 说明 |
 |------|------|
 | `abbreviation-check.cpp` | 缩写检查 |
+| `bestAttract.cpp` | 最佳异性缘筛选 |
 | `boss-time.cpp` | 老板空闲时间统计 |
 | `deliver_takeout.cpp` | 外卖配送路径统计 |
 | `greedy_multi_round_selection.cpp` | 多轮推荐筛选 |
@@ -20,6 +21,7 @@
 | 文件 | 题目 | 核心算法 | 复杂度 |
 |------|------|----------|--------|
 | `abbreviation-check.cpp` | 缩写检查 | 字符串扫描与规则比对 | `O(n)` |
+| `bestAttract.cpp` | 最佳异性缘筛选 | Floyd 多源最短路 + 分组最小化最大距离 | `O(n^3)` |
 | `boss-time.cpp` | 老板空闲时间统计 | 区间排序 + 空档扫描 | `O(n log n)` |
 | `deliver_takeout.cpp` | 外卖配送路径统计 | 树上访问标记 + 深度抵扣 | `O(n + m)` |
 | `greedy_multi_round_selection.cpp` | 多轮推荐筛选 | 分数分桶 + 贪心计数 | `O(n + R)` |
@@ -29,6 +31,8 @@
 ## 核心内容
 
 `abbreviation-check.cpp` 用于判断一个以下划线分隔的字符串与其缩写是否匹配。核心做法是提取首字符以及每个下划线后的字符，再与目标缩写进行比较。
+
+`bestAttract.cpp` 使用 Floyd 计算所有人之间的最短距离，再分别在女性和男性候选中选择对异性最大距离最小的编号集合。
 
 `boss-time.cpp` 将忙碌时间段转换成秒数并按开始时间排序，通过相邻区间之间的空档输出老板的空闲时间。
 
@@ -44,6 +48,7 @@
 
 ```bash
 g++ -std=c++11 abbreviation-check.cpp -o test && ./test
+g++ -std=c++11 bestAttract.cpp -o test && ./test
 g++ -std=c++11 boss-time.cpp -o test && ./test
 g++ -std=c++11 deliver_takeout.cpp -o test && ./test
 g++ -std=c++11 greedy_multi_round_selection.cpp -o test && ./test
@@ -54,6 +59,7 @@ g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
 ## 注意事项
 
 - 每个题目的输入格式都由对应文件中的 `main` 决定，运行前建议先阅读源码。
+- `bestAttract.cpp` 的边输入使用 `编号:距离` 形式，结果分两行输出女性和男性候选编号。
 - `boss-time.cpp` 按 `HH:MM:SS - HH:MM:SS` 格式读取每个忙碌区间。
 - `deliver_takeout.cpp` 会随着订单逐步输出当前最短配送总路程。
 - `greedy_multi_round_selection.cpp` 中天梯赛分数段固定按 `175` 到 `290` 统计。
