@@ -8,6 +8,7 @@
 
 | 文件 | 说明 |
 |------|------|
+| `ladder_input_output_guide.md` | 天梯赛常用输入输出函数总结 |
 | `null_pointer_check_guide.md` | 空指针检查指南 |
 | `programming_problem_solving_guide.md` | 程序设计题按算法类型分类的解题思路总结 |
 
@@ -27,10 +28,18 @@
 - 综合题中如何把业务描述转成区间、图、树、栈队列或动态统计问题
 - 树上子树统计问题中从朴素查询到 DFS 序 + 树状数组的优化思路
 
+`ladder_input_output_guide.md` 总结了天梯赛中 C、C++、Python 常用输入输出写法，重点总结：
+
+- 不同数据形态应该选择哪种输入函数或读取方式
+- C/C++/Python 中普通数字、整行字符串、EOF、大量数据和固定格式的读法
+- 小数、数组、多行结果等常见输出格式
+- `getline`、`%c`、含空格字符串和 Python 大输入的常见坑
+
 ## 阅读方式
 
 该目录以 Markdown 笔记为主，不包含需要编译的源码文件。可以直接打开对应文档阅读：
 
+- `ladder_input_output_guide.md`
 - `null_pointer_check_guide.md`
 - `programming_problem_solving_guide.md`
 
@@ -38,4 +47,5 @@
 
 - 适合在刷链表、树、图等指针密集题目前后配合阅读。
 - 适合在复习 `programming` 目录中的综合编程题时，先按算法类型定位解题方向。
+- 适合在天梯赛刷题前快速复习 C、C++、Python 的输入输出模板。
 - 如果后续新增新的工程经验或踩坑记录，建议继续按主题在本目录沉淀文档。
