@@ -21,6 +21,7 @@
 | `qinshidangan.cpp` | 寝室档案二叉编号 |
 | `random-fail.cpp` | 随机输赢策略模拟 |
 | `safe-cell.cpp` | 安全格子统计 |
+| `stack-calculator.cpp` | 堆栈计算器 |
 | `stack_sequence_builder.cpp.cpp` | 栈辅助序列构造 |
 
 ## 题目列表
@@ -40,6 +41,7 @@
 | `qinshidangan.cpp` | 寝室档案二叉编号 | 字符路径模拟完全二叉树编号 | `O(MN)` |
 | `random-fail.cpp` | 随机输赢策略模拟 | 周期计数 + 石头剪刀布映射 | `O(t)` |
 | `safe-cell.cpp` | 安全格子统计 | 行列去重标记 + 容斥统计 | `O(q + n + m)` |
+| `stack-calculator.cpp` | 堆栈计算器 | 双栈模拟逆序计算 | `O(n)` |
 | `stack_sequence_builder.cpp.cpp` | 栈辅助序列构造 | 栈 + 队列模拟 | `O(n)` |
 
 ## 核心内容
@@ -66,6 +68,8 @@
 
 `safe-cell.cpp` 用布尔数组记录被攻击过的行和列，再用容斥关系从总格子数中扣除不安全格子，避免重复攻击造成重复扣减。
 
+`stack-calculator.cpp` 将数字栈和运算符栈按输入顺序压栈，每次弹出两个数字和一个运算符执行 `n2 op n1`，遇到除数为 `0` 时按题目格式输出错误并终止。
+
 `stack_sequence_builder.cpp.cpp` 使用队列表示传送带、栈表示辅助盒子，按非递增序列规则构造并输出每一条松枝。
 
 ## 运行方式
@@ -84,6 +88,7 @@ g++ -std=c++11 nursing-center-pro.cpp -o test && ./test
 g++ -std=c++11 qinshidangan.cpp -o test && ./test
 gcc random-fail.cpp -o test && ./test
 g++ -std=c++11 safe-cell.cpp -o test && ./test
+g++ -std=c++11 stack-calculator.cpp -o test && ./test
 g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
 ```
 
@@ -100,5 +105,6 @@ g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
 - `qinshidangan.cpp` 按路径字符逐层更新完全二叉树中的节点编号。
 - `random-fail.cpp` 虽然扩展名是 `.cpp`，但使用的是 C 风格输入输出，`gcc` 或 `g++` 都可编译。
 - `safe-cell.cpp` 需要注意同一行或同一列被多次攻击时只能计算一次影响。
+- `stack-calculator.cpp` 的除法判断分母是先弹出的 `n1`，错误输出中的分子是后弹出的 `n2`。
 - `stack_sequence_builder.cpp.cpp` 文件名暂按当前源码保留，编译时请使用完整文件名。
 - 如果后续继续扩展补充题，建议保持“一题一文件 + 当前 README 统一索引”的组织方式。
