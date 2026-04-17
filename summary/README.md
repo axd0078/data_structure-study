@@ -9,7 +9,10 @@
 | 文件 | 说明 |
 |------|------|
 | `ladder_input_output_guide.md` | 天梯赛常用输入输出函数总结 |
+| `ladder_common_algorithms_templates.md` | 程序设计天梯赛常用算法思想与代码模板 |
+| `ladder_data_structures_and_sorting.md` | 天梯赛常用数据结构、方法与 C/C++ 排序写法 |
 | `null_pointer_check_guide.md` | 空指针检查指南 |
+| `programming_code_algorithm_flow.md` | `programming` 目录所有源码的逐题算法流程总结 |
 | `programming_problem_solving_guide.md` | 程序设计题按算法类型分类的解题思路总结 |
 
 ## 当前内容
@@ -35,12 +38,36 @@
 - 小数、数组、多行结果等常见输出格式
 - `getline`、`%c`、含空格字符串和 Python 大输入的常见坑
 
+`programming_code_algorithm_flow.md` 按 `programming` 目录中的源码逐题整理，重点总结：
+
+- 每个程序的思路和数据结构设计
+- 每个程序的输入输出处理方式
+- 双指针、二分、动态规划、图搜索、贪心、模拟等题目的算法细节和易错点
+- `test` 综合题中如何把业务描述转换成数组、图、树、栈队列或动态统计
+
+`ladder_common_algorithms_templates.md` 面向程序设计天梯赛常见题型，重点总结：
+
+- 枚举、模拟、字符串、双指针、二分、贪心、动态规划等基础算法模板
+- DFS/BFS、Dijkstra、Floyd、并查集、树与 DFS 序、树状数组等常见图和树算法
+- 前缀和、差分、素数筛、最大公约数等高频数学与预处理写法
+- 每类算法的适用信号、模板代码和常见坑
+
+`ladder_data_structures_and_sorting.md` 补充天梯赛常用容器和排序写法，重点总结：
+
+- C 数组、结构体数组、二维数组、字符数组、链表节点写法
+- C++ `vector`、`string`、`pair`、`stack`、`queue`、`deque`、堆、集合、映射、`bitset` 的常用方法
+- 图的邻接矩阵、邻接表、边数组存法
+- C `qsort` 与 C++ `sort/stable_sort` 的升序、降序和自定义比较器写法
+
 ## 阅读方式
 
 该目录以 Markdown 笔记为主，不包含需要编译的源码文件。可以直接打开对应文档阅读：
 
 - `ladder_input_output_guide.md`
+- `ladder_common_algorithms_templates.md`
+- `ladder_data_structures_and_sorting.md`
 - `null_pointer_check_guide.md`
+- `programming_code_algorithm_flow.md`
 - `programming_problem_solving_guide.md`
 
 ## 学习建议

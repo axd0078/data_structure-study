@@ -26,7 +26,7 @@
 | [graph](./graph) | 图 | 邻接矩阵、邻接表、BFS、DFS、Floyd |
 | [search](./search) | 查找 | 顺序查找与二分查找 |
 | [programming](./programming) | 综合题目 | 已按算法思想分组的双指针、二分、图搜索、动态规划、贪心等题目 |
-| [summary](./summary) | 学习总结 | 指针安全与编码经验类笔记 |
+| [summary](./summary) | 学习总结 | 指针安全、输入输出、算法模板、数据结构与刷题复盘笔记 |
 
 ## 推荐学习路径
 
@@ -34,7 +34,7 @@
 2. `sort` -> `string` -> `search`
 3. `binaryTree` -> `DSU` -> `graph`
 4. `programming` 中的综合题用于巩固算法思维
-5. `summary` 可作为刷题或写指针代码时的补充阅读
+5. `summary` 可作为刷题、复习模板和写指针代码时的补充阅读
 
 ## 运行方式
 
