@@ -18,6 +18,7 @@
 | `nursing-center.cpp` | 养老院管理统计朴素版 |
 | `nursing-center-plus.cpp` | 养老院管理统计维护计数版 |
 | `nursing-center-pro.cpp` | 养老院管理统计树状数组版 |
+| `opposite-number.cpp` | 相反数对统计 |
 | `qinshidangan.cpp` | 寝室档案二叉编号 |
 | `random-fail.cpp` | 随机输赢策略模拟 |
 | `safe-cell.cpp` | 安全格子统计 |
@@ -38,6 +39,7 @@
 | `nursing-center.cpp` | 养老院管理统计朴素版 | 祖先链逐个查询 | 查询 `O(Nh)` |
 | `nursing-center-plus.cpp` | 养老院管理统计维护计数版 | 祖先链增减计数 | 查询 `O(1)`，转移 `O(h)` |
 | `nursing-center-pro.cpp` | 养老院管理统计树状数组版 | DFS 序 + 树状数组 | `O((N + M) log V)` |
+| `opposite-number.cpp` | 相反数对统计 | 哈希集合查找相反数 | `O(n)` |
 | `qinshidangan.cpp` | 寝室档案二叉编号 | 字符路径模拟完全二叉树编号 | `O(MN)` |
 | `random-fail.cpp` | 随机输赢策略模拟 | 周期计数 + 石头剪刀布映射 | `O(t)` |
 | `safe-cell.cpp` | 安全格子统计 | 行列去重标记 + 容斥统计 | `O(q + n + m)` |
@@ -62,6 +64,8 @@
 
 `nursing-center.cpp`、`nursing-center-plus.cpp` 和 `nursing-center-pro.cpp` 是同一类养老院管理统计题的三版实现，分别对应朴素祖先查询、维护祖先计数和 DFS 序 + 树状数组优化。
 
+`opposite-number.cpp` 使用哈希集合保存输入数字，只统计正数 `x` 是否存在对应的 `-x`，避免重复计算同一组相反数。
+
 `qinshidangan.cpp` 把由 `y` / 非 `y` 字符组成的路径映射到完全二叉树编号，用于快速输出每条路径对应的档案位置。
 
 `random-fail.cpp` 根据给定轮次周期决定何时故意输一局，其余轮次输出能赢当前手势的选择。
@@ -85,6 +89,7 @@ g++ -std=c++11 guacaipiao.cpp -o test && ./test
 g++ -std=c++11 nursing-center.cpp -o test && ./test
 g++ -std=c++11 nursing-center-plus.cpp -o test && ./test
 g++ -std=c++11 nursing-center-pro.cpp -o test && ./test
+g++ -std=c++11 opposite-number.cpp -o test && ./test
 g++ -std=c++11 qinshidangan.cpp -o test && ./test
 gcc random-fail.cpp -o test && ./test
 g++ -std=c++11 safe-cell.cpp -o test && ./test
@@ -102,6 +107,7 @@ g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
 - `guacaipiao.cpp` 的奖金映射由九宫格选择后的和值决定。
 - `greedy_multi_round_selection.cpp` 中天梯赛分数段固定按 `175` 到 `290` 统计。
 - `nursing-center-pro.cpp` 使用树状数组，下标必须保持从 `1` 开始。
+- `opposite-number.cpp` 只遍历集合中的正数，因此一对 `x` 和 `-x` 只会被统计一次。
 - `qinshidangan.cpp` 按路径字符逐层更新完全二叉树中的节点编号。
 - `random-fail.cpp` 虽然扩展名是 `.cpp`，但使用的是 C 风格输入输出，`gcc` 或 `g++` 都可编译。
 - `safe-cell.cpp` 需要注意同一行或同一列被多次攻击时只能计算一次影响。
