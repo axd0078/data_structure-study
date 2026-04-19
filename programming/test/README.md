@@ -24,6 +24,7 @@
 | `safe-cell.cpp` | 安全格子统计 |
 | `stack-calculator.cpp` | 堆栈计算器 |
 | `stack_sequence_builder.cpp.cpp` | 栈辅助序列构造 |
+| `window.cpp` | 窗口点击模拟 |
 
 ## 题目列表
 
@@ -45,6 +46,7 @@
 | `safe-cell.cpp` | 安全格子统计 | 行列去重标记 + 容斥统计 | `O(q + n + m)` |
 | `stack-calculator.cpp` | 堆栈计算器 | 双栈模拟逆序计算 | `O(n)` |
 | `stack_sequence_builder.cpp.cpp` | 栈辅助序列构造 | 栈 + 队列模拟 | `O(n)` |
+| `window.cpp` | 窗口点击模拟 | 逆序查找顶层窗口 + 点击后置顶 | `O(nm)` |
 
 ## 核心内容
 
@@ -76,6 +78,8 @@
 
 `stack_sequence_builder.cpp.cpp` 使用队列表示传送带、栈表示辅助盒子，按非递增序列规则构造并输出每一条松枝。
 
+`window.cpp` 用数组顺序表示窗口从底到顶的层级，每次点击从末尾向前查找最上层命中窗口，命中后输出窗口编号并把它移动到顶层。
+
 ## 运行方式
 
 ```bash
@@ -95,6 +99,7 @@ gcc random-fail.cpp -o test && ./test
 g++ -std=c++11 safe-cell.cpp -o test && ./test
 g++ -std=c++11 stack-calculator.cpp -o test && ./test
 g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
+g++ -std=c++11 window.cpp -o test && ./test
 ```
 
 ## 注意事项
@@ -113,4 +118,5 @@ g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
 - `safe-cell.cpp` 需要注意同一行或同一列被多次攻击时只能计算一次影响。
 - `stack-calculator.cpp` 的除法判断分母是先弹出的 `n1`，错误输出中的分子是后弹出的 `n2`。
 - `stack_sequence_builder.cpp.cpp` 文件名暂按当前源码保留，编译时请使用完整文件名。
+- `window.cpp` 的窗口边界按闭区间判断，命中窗口后要移动到数组末尾表示置顶。
 - 如果后续继续扩展补充题，建议保持“一题一文件 + 当前 README 统一索引”的组织方式。
