@@ -15,7 +15,7 @@
 | `greedy/` | 贪心与区间调度类题目 |
 | `string-index/` | 字符串索引与检索优化题 |
 | `math-and-simulation/` | 数学筛法、矩阵模拟等题目 |
-| `test/` | 补充练习题与单独 README |
+| `test/` | 补充练习题、GPLT 赛题归档与单独 README |
 | `README.md` | 当前目录总览 |
 
 ## 分类总览
