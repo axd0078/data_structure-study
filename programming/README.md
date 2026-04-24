@@ -2,7 +2,7 @@
 
 ## 模块简介
 
-`programming` 目录现在按算法思想重新分组，便于按专题刷题和回顾。当前覆盖双指针、二分、动态规划、图搜索、贪心、字符串索引、数学与模拟等方向，大多数文件都包含独立的 `main`，可以单文件编译运行。
+`programming` 目录现在按算法思想重新分组，便于按专题刷题和回顾。当前覆盖双指针、二分、动态规划、图搜索、贪心、字符串索引、数学与模拟等方向，`test/` 子目录还补充了单文件练习以及按题号 / 年份归档的 CSP、GPLT 赛题。
 
 ## 文件结构
 
@@ -15,7 +15,7 @@
 | `greedy/` | 贪心与区间调度类题目 |
 | `string-index/` | 字符串索引与检索优化题 |
 | `math-and-simulation/` | 数学筛法、矩阵模拟等题目 |
-| `test/` | 补充练习题、GPLT 赛题归档与单独 README |
+| `test/` | 补充练习题、CSP / GPLT 赛题归档与单独 README |
 | `README.md` | 当前目录总览 |
 
 ## 分类总览
@@ -91,7 +91,7 @@
 | `countPrimes.cpp` | 计数质数 | 埃氏筛 | `O(n log log n)` |
 | `set-matrix-zeroes.cpp` | 矩阵置零 | 标记数组 | `O(mn)` |
 
-额外补充题见 [test/README.md](./test/README.md)。
+额外补充题与赛题归档见 [test/README.md](./test/README.md)。
 
 ## 运行方式
 

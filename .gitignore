@@ -43,6 +43,4 @@
 # IDE and editor directories
 .vscode/
 
-.qoder/
-
-cpp-learning/
+cpp-learning/solution

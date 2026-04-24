@@ -2,7 +2,7 @@
 
 ## 模块简介
 
-`programming/test` 目录用于存放补充练习题，和主目录下的综合题目相互补充。
+`programming/test` 目录用于存放补充练习题，和主目录下的综合题目相互补充。当前目录既保留单文件补充题，也包含按题号 / 年份归档的 CSP、GPLT 赛题。
 
 ## 文件结构
 
@@ -12,6 +12,7 @@
 | `bestAttract.cpp` | 最佳异性缘筛选 |
 | `boss-time.cpp` | 老板空闲时间统计 |
 | `chihuoguo.cpp` | 吃火锅文本检索 |
+| `csp/` | CSP 赛题按题号归档 |
 | `deliver_takeout.cpp` | 外卖配送路径统计 |
 | `gplt/` | GPLT 赛题练习按年份归档 |
 | `greedy_multi_round_selection.cpp` | 多轮推荐筛选 |
@@ -35,6 +36,14 @@
 | `bestAttract.cpp` | 最佳异性缘筛选 | Floyd 多源最短路 + 分组最小化最大距离 | `O(n^3)` |
 | `boss-time.cpp` | 老板空闲时间统计 | 区间排序 + 空档扫描 | `O(n log n)` |
 | `chihuoguo.cpp` | 吃火锅文本检索 | 整行读取 + 子串查找 | `O(L)` |
+| `csp/1/1.cpp` | 相反数对统计 | 哈希集合查找相反数 | `O(n)` |
+| `csp/1/2.cpp` | 窗口点击模拟 | 逆序查找顶层窗口 + 点击后置顶 | `O(nm)` |
+| `csp/37/1.cpp` | 偶数点二次函数求和 | 枚举偶数点 + 直接代入 | `O((r-l)/2)` |
+| `csp/39/1.cpp` | 蒙特卡洛估算圆周率 | 圆内点统计 | `O(n)` |
+| `csp/39/2.cpp` | 阈值模板检测 | 固定模板扫描 + 差分标记 | `O(n^2 + L)` |
+| `csp/40/1.cpp` | 集合异或校验 | 子集异或摘要 + 顺序比对 | `O(元素总数)` |
+| `csp/41/1.cpp` | 二进制平衡数统计 | 二进制位计数 | `O(n log V)` |
+| `csp/41/2.cpp` | 咖啡时间优化 | 0/1 背包 + 分数贪心 | `O(m×普通任务数 + m×灵活任务数 log 灵活任务数)` |
 | `deliver_takeout.cpp` | 外卖配送路径统计 | 树上访问标记 + 深度抵扣 | `O(n + m)` |
 | `gplt/2026/all-things-i-can.cpp` | 已出现未获赞编号筛选 | 布尔标记 + 顺序扫描 | `O(n + U)` |
 | `gplt/2026/check-homework.cpp` | 作业检查分流 | 阈值分组 + 多轮筛选 | `O(n × 轮数)` |
@@ -45,13 +54,11 @@
 | `nursing-center.cpp` | 养老院管理统计朴素版 | 祖先链逐个查询 | 查询 `O(Nh)` |
 | `nursing-center-plus.cpp` | 养老院管理统计维护计数版 | 祖先链增减计数 | 查询 `O(1)`，转移 `O(h)` |
 | `nursing-center-pro.cpp` | 养老院管理统计树状数组版 | DFS 序 + 树状数组 | `O((N + M) log V)` |
-| `opposite-number.cpp` | 相反数对统计 | 哈希集合查找相反数 | `O(n)` |
 | `qinshidangan.cpp` | 寝室档案二叉编号 | 字符路径模拟完全二叉树编号 | `O(MN)` |
 | `random-fail.cpp` | 随机输赢策略模拟 | 周期计数 + 石头剪刀布映射 | `O(t)` |
 | `safe-cell.cpp` | 安全格子统计 | 行列去重标记 + 容斥统计 | `O(q + n + m)` |
 | `stack-calculator.cpp` | 堆栈计算器 | 双栈模拟逆序计算 | `O(n)` |
 | `stack_sequence_builder.cpp.cpp` | 栈辅助序列构造 | 栈 + 队列模拟 | `O(n)` |
-| `window.cpp` | 窗口点击模拟 | 逆序查找顶层窗口 + 点击后置顶 | `O(nm)` |
 
 ## 核心内容
 
@@ -63,6 +70,8 @@
 
 `chihuoguo.cpp` 按行读取文本直到遇到 `.`，统计出现关键词 `chi1 huo3 guo1` 的总行数和首次出现位置。
 
+`csp/` 目录按题号整理 CSP 赛题，当前包含相反数统计、窗口置顶、偶数点函数求和、蒙特卡洛估算圆周率、阈值模板检测、集合异或校验、二进制平衡数统计和咖啡时间优化等题，详见 [csp/README.md](./csp/README.md)。
+
 `deliver_takeout.cpp` 在树形路径上维护已访问节点和节点深度，每次新增订单只统计新走过的边，并用最深节点抵扣最后一次返程距离。
 
 `gplt/` 目录按年份整理 GPLT 练习题，当前 `2026/` 下包含编号筛选、作业分流、字符串操作和交通监控等模拟题，详见 [gplt/README.md](./gplt/README.md)。
@@ -72,8 +81,6 @@
 `guacaipiao.cpp` 先补全九宫格中缺失的数字，再按用户选择的行、列或对角线求和并映射到对应奖金。
 
 `nursing-center.cpp`、`nursing-center-plus.cpp` 和 `nursing-center-pro.cpp` 是同一类养老院管理统计题的三版实现，分别对应朴素祖先查询、维护祖先计数和 DFS 序 + 树状数组优化。
-
-`opposite-number.cpp` 使用哈希集合保存输入数字，只统计正数 `x` 是否存在对应的 `-x`，避免重复计算同一组相反数。
 
 `qinshidangan.cpp` 把由 `y` / 非 `y` 字符组成的路径映射到完全二叉树编号，用于快速输出每条路径对应的档案位置。
 
@@ -85,8 +92,6 @@
 
 `stack_sequence_builder.cpp.cpp` 使用队列表示传送带、栈表示辅助盒子，按非递增序列规则构造并输出每一条松枝。
 
-`window.cpp` 用数组顺序表示窗口从底到顶的层级，每次点击从末尾向前查找最上层命中窗口，命中后输出窗口编号并把它移动到顶层。
-
 ## 运行方式
 
 ```bash
@@ -94,6 +99,14 @@ g++ -std=c++11 abbreviation-check.cpp -o test && ./test
 g++ -std=c++11 bestAttract.cpp -o test && ./test
 g++ -std=c++11 boss-time.cpp -o test && ./test
 g++ -std=c++11 chihuoguo.cpp -o test && ./test
+g++ -std=c++11 csp/1/1.cpp -o test && ./test
+g++ -std=c++11 csp/1/2.cpp -o test && ./test
+g++ -std=c++11 csp/37/1.cpp -o test && ./test
+g++ -std=c++11 csp/39/1.cpp -o test && ./test
+g++ -std=c++11 csp/39/2.cpp -o test && ./test
+g++ -std=c++11 csp/40/1.cpp -o test && ./test
+g++ -std=c++11 csp/41/1.cpp -o test && ./test
+g++ -std=c++11 csp/41/2.cpp -o test && ./test
 g++ -std=c++11 deliver_takeout.cpp -o test && ./test
 g++ -std=c++11 gplt/2026/all-things-i-can.cpp -o test && ./test
 g++ -std=c++11 gplt/2026/check-homework.cpp -o test && ./test
@@ -104,13 +117,11 @@ g++ -std=c++11 guacaipiao.cpp -o test && ./test
 g++ -std=c++11 nursing-center.cpp -o test && ./test
 g++ -std=c++11 nursing-center-plus.cpp -o test && ./test
 g++ -std=c++11 nursing-center-pro.cpp -o test && ./test
-g++ -std=c++11 opposite-number.cpp -o test && ./test
 g++ -std=c++11 qinshidangan.cpp -o test && ./test
 gcc random-fail.cpp -o test && ./test
 g++ -std=c++11 safe-cell.cpp -o test && ./test
 g++ -std=c++11 stack-calculator.cpp -o test && ./test
 g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
-g++ -std=c++11 window.cpp -o test && ./test
 ```
 
 ## 注意事项
@@ -119,16 +130,17 @@ g++ -std=c++11 window.cpp -o test && ./test
 - `bestAttract.cpp` 的边输入使用 `编号:距离` 形式，结果分两行输出女性和男性候选编号。
 - `boss-time.cpp` 按 `HH:MM:SS - HH:MM:SS` 格式读取每个忙碌区间。
 - `chihuoguo.cpp` 使用整行读取，适合处理包含空格的句子。
+- `csp/` 中的题目按题号分目录保存，编译时需要带上相对路径。
+- `csp/39/2.cpp` 的核心是先为每个 5×9 窗口计算合法阈值区间，再用差分数组统一恢复所有可行阈值。
+- `csp/41/2.cpp` 同时使用 0/1 背包和按单位收益排序的分数贪心，适合复盘混合优化题。
 - `deliver_takeout.cpp` 会随着订单逐步输出当前最短配送总路程。
 - `gplt/` 中的题目按年份分目录保存，编译时需要带上相对路径。
 - `guacaipiao.cpp` 的奖金映射由九宫格选择后的和值决定。
 - `greedy_multi_round_selection.cpp` 中天梯赛分数段固定按 `175` 到 `290` 统计。
 - `nursing-center-pro.cpp` 使用树状数组，下标必须保持从 `1` 开始。
-- `opposite-number.cpp` 只遍历集合中的正数，因此一对 `x` 和 `-x` 只会被统计一次。
 - `qinshidangan.cpp` 按路径字符逐层更新完全二叉树中的节点编号。
 - `random-fail.cpp` 虽然扩展名是 `.cpp`，但使用的是 C 风格输入输出，`gcc` 或 `g++` 都可编译。
 - `safe-cell.cpp` 需要注意同一行或同一列被多次攻击时只能计算一次影响。
 - `stack-calculator.cpp` 的除法判断分母是先弹出的 `n1`，错误输出中的分子是后弹出的 `n2`。
 - `stack_sequence_builder.cpp.cpp` 文件名暂按当前源码保留，编译时请使用完整文件名。
-- `window.cpp` 的窗口边界按闭区间判断，命中窗口后要移动到数组末尾表示置顶。
 - 如果后续继续扩展补充题，建议保持“一题一文件 + 当前 README 统一索引”的组织方式。
