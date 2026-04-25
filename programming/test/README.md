@@ -20,13 +20,11 @@
 | `nursing-center.cpp` | 养老院管理统计朴素版 |
 | `nursing-center-plus.cpp` | 养老院管理统计维护计数版 |
 | `nursing-center-pro.cpp` | 养老院管理统计树状数组版 |
-| `opposite-number.cpp` | 相反数对统计 |
 | `qinshidangan.cpp` | 寝室档案二叉编号 |
 | `random-fail.cpp` | 随机输赢策略模拟 |
 | `safe-cell.cpp` | 安全格子统计 |
 | `stack-calculator.cpp` | 堆栈计算器 |
 | `stack_sequence_builder.cpp.cpp` | 栈辅助序列构造 |
-| `window.cpp` | 窗口点击模拟 |
 
 ## 题目列表
 
@@ -44,6 +42,7 @@
 | `csp/40/1.cpp` | 集合异或校验 | 子集异或摘要 + 顺序比对 | `O(元素总数)` |
 | `csp/41/1.cpp` | 二进制平衡数统计 | 二进制位计数 | `O(n log V)` |
 | `csp/41/2.cpp` | 咖啡时间优化 | 0/1 背包 + 分数贪心 | `O(m×普通任务数 + m×灵活任务数 log 灵活任务数)` |
+| `csp/41/3.cpp` | 消息队列区间分配模拟 | `set` / `map` 维护空闲段 + 循环发送 | `O(q log n)` |
 | `deliver_takeout.cpp` | 外卖配送路径统计 | 树上访问标记 + 深度抵扣 | `O(n + m)` |
 | `gplt/2026/all-things-i-can.cpp` | 已出现未获赞编号筛选 | 布尔标记 + 顺序扫描 | `O(n + U)` |
 | `gplt/2026/check-homework.cpp` | 作业检查分流 | 阈值分组 + 多轮筛选 | `O(n × 轮数)` |
@@ -71,6 +70,8 @@
 `chihuoguo.cpp` 按行读取文本直到遇到 `.`，统计出现关键词 `chi1 huo3 guo1` 的总行数和首次出现位置。
 
 `csp/` 目录按题号整理 CSP 赛题，当前包含相反数统计、窗口置顶、偶数点函数求和、蒙特卡洛估算圆周率、阈值模板检测、集合异或校验、二进制平衡数统计和咖啡时间优化等题，详见 [csp/README.md](./csp/README.md)。
+
+`csp/41/3.cpp` 维护一组可分配的连续空闲区间，支持按长度分配新段、删除后与相邻空闲段合并，以及按进程中的多个循环队列依次发送并更新下一个位置。
 
 `deliver_takeout.cpp` 在树形路径上维护已访问节点和节点深度，每次新增订单只统计新走过的边，并用最深节点抵扣最后一次返程距离。
 
@@ -107,6 +108,7 @@ g++ -std=c++11 csp/39/2.cpp -o test && ./test
 g++ -std=c++11 csp/40/1.cpp -o test && ./test
 g++ -std=c++11 csp/41/1.cpp -o test && ./test
 g++ -std=c++11 csp/41/2.cpp -o test && ./test
+g++ -std=c++11 csp/41/3.cpp -o test && ./test
 g++ -std=c++11 deliver_takeout.cpp -o test && ./test
 g++ -std=c++11 gplt/2026/all-things-i-can.cpp -o test && ./test
 g++ -std=c++11 gplt/2026/check-homework.cpp -o test && ./test
@@ -133,6 +135,7 @@ g++ -std=c++11 stack_sequence_builder.cpp.cpp -o test && ./test
 - `csp/` 中的题目按题号分目录保存，编译时需要带上相对路径。
 - `csp/39/2.cpp` 的核心是先为每个 5×9 窗口计算合法阈值区间，再用差分数组统一恢复所有可行阈值。
 - `csp/41/2.cpp` 同时使用 0/1 背包和按单位收益排序的分数贪心，适合复盘混合优化题。
+- `csp/41/3.cpp` 同时维护按左端点排序和按长度排序的空闲区间，便于处理分配、删除合并和最短可用段查询。
 - `deliver_takeout.cpp` 会随着订单逐步输出当前最短配送总路程。
 - `gplt/` 中的题目按年份分目录保存，编译时需要带上相对路径。
 - `guacaipiao.cpp` 的奖金映射由九宫格选择后的和值决定。
