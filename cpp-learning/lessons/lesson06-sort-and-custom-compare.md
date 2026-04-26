@@ -1,4 +1,4 @@
-﻿# 第 6 课：sort、比较器与多关键字排序
+# 第 6 课：sort、比较器与多关键字排序
 
 ## 本课目标
 
@@ -6,29 +6,19 @@
 
 ## 基础排序
 
+升序：
+
 ```cpp
 sort(a.begin(), a.end());
 ```
 
-默认升序。降序可以写：
+降序：
 
 ```cpp
 sort(a.begin(), a.end(), greater<int>());
 ```
 
-## 自定义比较函数
-
-```cpp
-bool cmp(int a, int b) {
-    return a > b;
-}
-
-sort(v.begin(), v.end(), cmp);
-```
-
-比较函数返回 `true` 表示 `a` 应该排在 `b` 前面。
-
-## lambda 写法
+## 自定义比较器
 
 ```cpp
 sort(v.begin(), v.end(), [](int a, int b) {
@@ -36,25 +26,26 @@ sort(v.begin(), v.end(), [](int a, int b) {
 });
 ```
 
-## 结构体排序
+比较器返回 `true` 表示 `a` 应该排在 `b` 前面。
+
+不要写：
 
 ```cpp
-struct Student {
-    string name;
-    int score;
-};
+return a >= b;
+```
 
+相等时比较器应返回 `false`，否则排序规则不严格，可能出问题。
+
+## 多关键字排序
+
+```cpp
 sort(students.begin(), students.end(), [](const Student &a, const Student &b) {
     if (a.score != b.score) return a.score > b.score;
     return a.name < b.name;
 });
 ```
 
-## 易错点
-
-- 不要写 `return a >= b;`
-- 相等时比较器应返回 `false`
-- 多关键字排序要先比较第一关键字，不相等就直接返回
+先比较第一关键字，不相等就直接返回；相等再比较第二关键字。
 
 ## 本课练习
 
@@ -62,23 +53,73 @@ sort(students.begin(), students.end(), [](const Student &a, const Student &b) {
 
 输入 `n` 和 `n` 个整数，按从大到小输出。
 
+测试输入：
+
+```text
+7
+3 -1 3 0 9 9 -5
+```
+
+测试输出：
+
+```text
+9 9 3 3 0 -1 -5
+```
+
 ### 练习 2：学生成绩排序
 
-输入 `n` 个学生姓名和分数，按分数从高到低排序；分数相同按姓名字典序升序。
+输入 `n` 个学生姓名和分数，按分数从高到低排序；分数相同按姓名字典序升序排序。
+
+测试输入：
+
+```text
+5
+Bob 90
+Alice 95
+Tom 90
+Ann 90
+Zed 95
+```
+
+测试输出：
+
+```text
+Alice 95
+Zed 95
+Ann 90
+Bob 90
+Tom 90
+```
 
 ### 练习 3：区间排序
 
 输入 `n` 个区间 `[l, r]`，按左端点升序排序；左端点相同按右端点升序排序。
 
-## 长题面训练方向
+测试输入：
 
-这一课要重点练“规则翻译”：
+```text
+6
+3 5
+1 9
+1 2
+-1 4
+3 1
+-1 0
+```
 
-题面如果写成：
+测试输出：
 
-- 先按 A 排
-- 如果 A 相同按 B 排
-- 如果 B 还相同按 C 排
+```text
+-1 0
+-1 4
+1 2
+1 9
+3 1
+3 5
+```
 
-你要先把它翻译成自然语言顺序，再写比较器，不要边想边写。
+## 复盘点
 
+- 比较器必须表达“严格排在前面”。
+- 多关键字排序要按题目顺序逐层判断。
+- 如果需要稳定保留原顺序，可以额外保存输入编号。

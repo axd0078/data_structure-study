@@ -1,54 +1,22 @@
-﻿# 第 4 课：函数拆分、引用、struct 与记录类题目
+# 第 4 课：函数、引用与 struct
 
 ## 本课目标
 
-从这一课开始，你要逐步摆脱“所有逻辑都写在 `main` 里”的习惯。
+把代码拆成更清楚的函数，掌握引用传参，学会用 `struct` 表示一条记录。
 
-本课重点不是语法本身，而是：
+## 函数拆分
 
-1. 什么时候该拆函数。
-2. 什么时候该传引用、什么时候传值。
-3. 什么时候该用 `struct` 表达一条记录。
-
-## 函数不是为了形式，而是为了减错
-
-如果一个题目里同时有：
-
-- 读入
-- 统计
-- 排序
-- 输出
-
-那把所有逻辑塞在 `main` 里很容易把变量写乱。
-
-比较实用的拆法：
+简单题也可以拆函数：
 
 ```cpp
-readInput(...)
-calcAnswer(...)
-printAnswer(...)
-```
-
-或者：
-
-```cpp
-bool check(...)
-int solve(...)
-```
-
-## 值传递和引用传递
-
-### 值传递
-
-```cpp
-void addOne(int x) {
-    x++;
+bool isPass(int score) {
+    return score >= 60;
 }
 ```
 
-外面的变量不会改变。
+拆函数的价值不是“显得高级”，而是让主流程更容易读。
 
-### 引用传递
+## 引用
 
 ```cpp
 void addOne(int &x) {
@@ -56,76 +24,122 @@ void addOne(int &x) {
 }
 ```
 
-这是直接改原变量。
+`&` 表示传引用，函数里修改的是原变量。
 
-### 常量引用
-
-如果参数比较大，又只读不改，优先写：
+读取大对象时常用 `const &`：
 
 ```cpp
-int sumVector(const vector<int> &a) {
-    int sum = 0;
-    for (int x : a) sum += x;
-    return sum;
+void printName(const string &name) {
+    cout << name << '\n';
 }
 ```
 
-这是刷题里最常见、也最推荐的函数参数写法。
-
-## struct 的作用
-
-当一组数据总是一起出现时，不要拆成多个平行数组，优先考虑 `struct`。
-
-例如学生信息：
+## struct
 
 ```cpp
 struct Student {
     string name;
     int score;
-    int id;
 };
 ```
 
-这样比下面这种更稳：
-
-```cpp
-vector<string> names;
-vector<int> scores;
-vector<int> ids;
-```
-
-因为后者排序时很容易同步错位。
-
-## 记录类题目的常见写法
-
-### 1. 找最优记录
-
-```cpp
-Student best = students[0];
-for (const Student &s : students) {
-    if (s.score > best.score) {
-        best = s;
-    }
-}
-```
-
-### 2. 排序后输出
-
-```cpp
-sort(students.begin(), students.end(), [](const Student &a, const Student &b) {
-    if (a.score != b.score) return a.score > b.score;
-    return a.name < b.name;
-});
-```
-
-## 这课最容易错的地方
-
-- `vector` 传参时忘了加 `const &`，导致不必要复制。
-- 用引用传参却不清楚函数会改原变量。
-- 结构体题目里相等情况没有写清楚。
-- 排序后想保留原输入顺序，却没有额外存编号。
+适合存姓名、分数、区间、坐标、任务等复合数据。
 
 ## 本课练习
 
-直接完成下面的练习。这一课开始，题目会更明显地要求你把代码“组织起来”。
+### 练习 1：函数求最大值
 
+输入三个整数，用函数返回最大值并输出。
+
+测试输入：
+
+```text
+3 9 5
+```
+
+测试输出：
+
+```text
+9
+```
+
+### 练习 2：引用交换
+
+输入两个整数，用引用函数交换它们，然后输出。
+
+测试输入：
+
+```text
+7 12
+```
+
+测试输出：
+
+```text
+12 7
+```
+
+### 练习 3：最高分学生
+
+输入 `n` 个学生的姓名和分数，输出分数最高的学生。若最高分有多个，输出最先出现的那个。
+
+测试输入：
+
+```text
+4
+Tom 80
+Ann 95
+Bob 95
+Ken 70
+```
+
+测试输出：
+
+```text
+Ann 95
+```
+
+边界测试输入：
+
+```text
+2
+Tom 0
+Ann 0
+```
+
+边界测试输出：
+
+```text
+Tom 0
+```
+
+### 练习 4：学生排序
+
+输入 `n` 个学生姓名和分数，按分数从高到低输出；分数相同按姓名字典序升序输出。
+
+测试输入：
+
+```text
+5
+Bob 90
+Alice 95
+Tom 90
+Ann 90
+Zed 95
+```
+
+测试输出：
+
+```text
+Alice 95
+Zed 95
+Ann 90
+Bob 90
+Tom 90
+```
+
+## 复盘点
+
+- 最高值初始化最好先读第一条真实数据。
+- 结构体类型名建议首字母大写，例如 `Student`。
+- 排序比较器中，相等时不要返回 `true`。
