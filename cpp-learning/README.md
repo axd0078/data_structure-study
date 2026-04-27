@@ -16,16 +16,16 @@
 
 | 文件 | 课程 | 核心内容 |
 |------|------|----------|
-| `lessons/lesson01-cpp-start.md` | 第 1 课：C 到 C++ 的最小迁移 | `iostream`、`string`、基础语法迁移 |
-| `lessons/lesson02-io-and-string.md` | 第 2 课：输入输出与字符串处理 | 快速输入、`getline`、字符串基础 |
+| `lessons/lesson01-cpp-start.md` | 第 1 课：从 C 过渡到 C++ | `iostream`、`string`、基础语法迁移 |
+| `lessons/lesson02-io-and-string.md` | 第 2 课：输入输出与 string | 快速输入、`getline`、字符串基础 |
 | `lessons/lesson03-vector-array.md` | 第 3 课：vector、数组替代与前缀和意识 | `vector`、数组建模、前缀和 |
-| `lessons/lesson04-function-reference-struct.md` | 第 4 课：函数拆分、引用、struct 与记录类题目 | 函数拆分、引用、结构体 |
-| `lessons/lesson05-stl-basic-containers.md` | 第 5 课：STL 基础容器、顺序维护与模拟 | `queue`、`stack`、`deque` 等容器 |
+| `lessons/lesson04-function-reference-struct.md` | 第 4 课：函数、引用与 struct | 函数拆分、引用、结构体 |
+| `lessons/lesson05-stl-basic-containers.md` | 第 5 课：stack、queue、deque 与 priority_queue | 线性容器、优先队列、基础模拟 |
 | `lessons/lesson06-sort-and-custom-compare.md` | 第 6 课：sort、比较器与多关键字排序 | `sort`、比较器、多关键字排序 |
 | `lessons/lesson07-map-set-pair.md` | 第 7 课：pair、map、set 与计数建模 | `pair`、`map`、`set`、计数 |
 | `lessons/lesson08-simulation-and-prefix-sum.md` | 第 8 课：模拟、前缀和与多步骤规则 | 模拟题拆解、前缀和 |
-| `lessons/lesson09-search-and-binary-search.md` | 第 9 课：查找、二分与可行性判断 | 查找、二分、单调性 |
-| `lessons/lesson10-comprehensive-practice-roadmap.md` | 第 10 课：综合训练路线 | 课程串联与阶段性训练建议 |
+| `lessons/lesson09-search-and-binary-search.md` | 第 9 课：查找、lower_bound 与二分 | 查找、二分、单调性 |
+| `lessons/lesson10-comprehensive-practice-roadmap.md` | 第 10 课：综合训练与复盘方法 | 课程串联与阶段性训练建议 |
 
 ## 核心内容
 
