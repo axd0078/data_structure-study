@@ -42,5 +42,6 @@
 
 # IDE and editor directories
 .vscode/
+.claude/
 
 cpp-learning/solution
