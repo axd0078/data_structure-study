@@ -10,7 +10,9 @@ int main(){
         int x;
         cin >> x;
         cnt[x]++;
-        cout << cnt[x] << " ";
+        if(i==0)
+            cout << cnt[x];
+        else cout << " " << cnt[x];
     }
     cout << endl;
 }

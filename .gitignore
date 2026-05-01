@@ -43,5 +43,8 @@
 # IDE and editor directories
 .vscode/
 .claude/
+.codex/
 
 cpp-learning/solution
+cpp-learning/csp-certification-problems/
+cpp-learning/csp-test-env/

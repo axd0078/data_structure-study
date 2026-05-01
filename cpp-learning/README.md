@@ -2,45 +2,35 @@
 
 ## 模块简介
 
-`cpp-learning` 目录用于整理面向刷题与算法学习的 C++ 分课讲义。当前包含 10 课 lesson 文档，覆盖从 C 到 C++ 的基础迁移、STL 容器、排序、映射与集合、前缀和、二分以及综合训练路线。
+`cpp-learning` 目录用于整理面向刷题、CSP 认证和算法训练的 C++ 学习资料。当前内容由三部分组成：10 课基础讲义、`csp-30days` 的 30 天复习计划，以及配套的认证题库与本地测试环境。
 
 ## 文件结构
 
 | 目录 | 说明 |
 |------|------|
-| `lessons/` | 10 课 C++ 学习讲义 |
-| `solution/` | 本地练习代码目录，默认不提交 |
+| `lessons/` | 10 课 C++ 基础与常用算法写法讲义 |
+| `csp-30days/` | 30 天 CSP 复习计划，按 `day1.md` 到 `day30.md` 平铺整理 |
+| `csp-certification-problems/` | CSP 认证题目题库资料，本地阅读用，默认忽略 |
+| `csp-test-env/` | CSP 本地测试与参考环境，默认忽略 |
+| `solution/` | 本地练习代码目录，默认忽略 |
 | `README.md` | 当前目录说明 |
-
-## 课程列表
-
-| 文件 | 课程 | 核心内容 |
-|------|------|----------|
-| `lessons/lesson01-cpp-start.md` | 第 1 课：从 C 过渡到 C++ | `iostream`、`string`、基础语法迁移 |
-| `lessons/lesson02-io-and-string.md` | 第 2 课：输入输出与 string | 快速输入、`getline`、字符串基础 |
-| `lessons/lesson03-vector-array.md` | 第 3 课：vector、数组替代与前缀和意识 | `vector`、数组建模、前缀和 |
-| `lessons/lesson04-function-reference-struct.md` | 第 4 课：函数、引用与 struct | 函数拆分、引用、结构体 |
-| `lessons/lesson05-stl-basic-containers.md` | 第 5 课：stack、queue、deque 与 priority_queue | 线性容器、优先队列、基础模拟 |
-| `lessons/lesson06-sort-and-custom-compare.md` | 第 6 课：sort、比较器与多关键字排序 | `sort`、比较器、多关键字排序 |
-| `lessons/lesson07-map-set-pair.md` | 第 7 课：pair、map、set 与计数建模 | `pair`、`map`、`set`、计数 |
-| `lessons/lesson08-simulation-and-prefix-sum.md` | 第 8 课：模拟、前缀和与多步骤规则 | 模拟题拆解、前缀和 |
-| `lessons/lesson09-search-and-binary-search.md` | 第 9 课：查找、lower_bound 与二分 | 查找、二分、单调性 |
-| `lessons/lesson10-comprehensive-practice-roadmap.md` | 第 10 课：综合训练与复盘方法 | 课程串联与阶段性训练建议 |
 
 ## 核心内容
 
-前 4 课重点解决从 C 写法向 C++ 刷题写法迁移，包括输入输出、字符串、函数拆分、引用和 `struct`。
+`lessons/` 负责补齐从 C 到 C++ 的基础迁移，包括输入输出、字符串、`vector`、函数拆分、`struct`、STL 容器、排序、`map` / `set`、模拟、前缀和和二分等高频知识点。
 
-第 5 到第 7 课聚焦 STL 基础容器、排序、自定义比较器、`map` / `set` / `pair` 这些最常见的刷题工具。
+`csp-30days/` 把近几次 CSP 认证题按 30 天节奏拆成逐日训练清单，强调读题流程、T1/T2 稳定拿分、按题型复盘和阶段性整套模拟。
 
-第 8 到第 10 课把模拟、前缀和、二分查找和综合训练路线串起来，适合作为进入 `programming/` 和赛题目录前的过渡材料。
+`csp-certification-problems/` 和 `csp-test-env/` 用于存放本地题库资料、测试脚本和参考环境，适合作为配套资源，不纳入仓库正式源码统计。
 
 ## 使用方式
 
-这个目录本身以文档学习为主，没有统一可执行程序。建议按 `lesson01` 到 `lesson10` 的顺序阅读，再在本地 `solution/lessonX/` 下写对应练习代码并单文件编译。
+建议先按 `lessons/lesson01` 到 `lessons/lesson10` 的顺序补齐 C++ 基础，再进入 [csp-30days/README.md](./csp-30days/README.md) 按日推进 CSP 训练。
+
+如果需要本地验证代码，可以在 `solution/` 下写练习程序，或在 `csp-test-env/` 中使用你已经准备好的测试环境与数据。
 
 ## 注意事项
 
-- `solution/` 目录用于本地练习，默认通过 `.gitignore` 忽略，不作为仓库正式源码统计的一部分。
-- lessons 更偏向“刷题用 C++”而不是完整语言教程，重点放在比赛与练习中高频出现的语法和容器。
-- 如果后续继续扩展课程，建议保持“lesson 编号 + 主题”的命名方式，方便按顺序阅读。
+- `solution/`、`csp-certification-problems/` 和 `csp-test-env/` 都按本地学习资料处理，已通过 `.gitignore` 忽略。
+- `csp-30days/` 已从原来的“按天建目录 + 子 README”整理为平铺的 `dayX.md` 文件，更适合连续阅读和快速跳转。
+- 这个模块更偏向“刷题用 C++”和“认证训练资料”，不是完整的语言教材。
