@@ -10,13 +10,12 @@ int main(){
         cin >> x;
         nums.insert(x);
     }
-    int num = 0;
-    for(int x:nums){
-        if(x > 0 && nums.count(-x)){
-            num++;
-        }
+    int ans = 0;
+    for(int num:nums){
+        if(num>0 && nums.count(-num))
+            ans ++;
     }
-    cout << num << endl;
+    cout << ans << endl;
     return 0;
 }
 //这题用查找的方式更好
