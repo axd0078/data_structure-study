@@ -7,7 +7,6 @@ int main(){
     cin >> n;
     vector<long long> a(n+1);
     vector<long long> b(n+1);
-    int suma = 0,sumb = 0;
     for(int i=0;i<=n;i++){
         cin >> a[i];
     }
@@ -33,6 +32,6 @@ int main(){
     for (int i = 1; i <= n; i++) {
         long long ans = max(pre_max[i - 1], suf_max[i] + b[i]);
         cout << ans << " \n"[i == n];
-    
+    }
     return 0;
 }

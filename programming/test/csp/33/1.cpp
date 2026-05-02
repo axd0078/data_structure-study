@@ -17,4 +17,8 @@ int main(){
             cnt[s]++;
         }
     }
+    for(int i=1;i<=m;i++){
+        cout << belong[i].size() << " " << cnt[i] << endl;
+    }
+    return 0;
 }
