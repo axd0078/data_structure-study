@@ -45,13 +45,13 @@ int main() {
     vector<int> latest(m + 1);
     for (int i = 1; i <= m; ++i) {
         latest[i] = n - t[i] + 1;
-    }
+    }//初始假设都没有依赖
 
     for (int i = m; i >= 1; --i) {
         if (p[i] != 0) {
             latest[p[i]] = min(latest[p[i]], latest[i] - t[p[i]]);
         }
-    }
+    }//i 对依赖项 p[i]添加约束 取 min 是因为 p[i] 可能被多个科目依赖，取最紧的那个。
 
     for (int i = 1; i <= m; ++i) {
         if (i > 1) {
