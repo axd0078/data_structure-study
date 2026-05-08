@@ -1,17 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
+
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+    int pre;
+    int x;
     int n;
     cin >> n;
-    int pre = 1001;
-    int cur;
+    cin >> x;
+    pre = x;
+    n--;
     int ans = 0;
-    for(int i=0;i<n;i++){
-        cin >> cur;
-        if(pre!=cur) ans++;
-        pre = cur;
+    while(n--){
+        cin >> x;
+        if(pre!=x) ans++;
+        pre = x;
     }
-    cout << ans << endl;
+    cout << ans+1 << endl;
+    return 0;
 }
