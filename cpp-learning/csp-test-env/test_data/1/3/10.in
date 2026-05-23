@@ -1,0 +1,4 @@
+a:b:c:d:
+2
+prog -a one -b two -c three -d four
+prog -a one -a two -b bee stop -c see

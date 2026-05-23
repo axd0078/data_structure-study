@@ -1,0 +1,4 @@
+Case 1: -x p -y q -z
+Case 2: -x a -z
+Case 3: -x -bad
+Case 4:

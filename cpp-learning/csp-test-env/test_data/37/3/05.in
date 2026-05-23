@@ -1,0 +1,7 @@
+6
+1 p one
+1 q two
+1 r $p $q three
+3 r
+2 r $p $q
+3 r

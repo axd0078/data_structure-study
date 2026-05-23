@@ -1,0 +1,1812 @@
+{
+  "source": "https://sim.csp.thusaac.com/contest/list",
+  "generatedAt": "2026-05-01T02:06:03.980Z",
+  "contestCount": 41,
+  "problemCount": 205,
+  "contests": [
+    {
+      "id": 1,
+      "title": "第01次CCF软件能力认证",
+      "startTime": 1394947800000,
+      "endTime": 1394962200000,
+      "directory": "01-第01次CCF软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 6,
+          "title": "相反数",
+          "descriptionToken": "6.3Tlb0K7oWDkd0FbX",
+          "file": "01-006-相反数.md"
+        },
+        {
+          "position": 2,
+          "id": 7,
+          "title": "窗口",
+          "descriptionToken": "7.m2AP8cwE8TmqH3J1",
+          "file": "02-007-窗口.md"
+        },
+        {
+          "position": 3,
+          "id": 8,
+          "title": "命令行选项",
+          "descriptionToken": "8.7QKhkXqPSvQVErRO",
+          "file": "03-008-命令行选项.md"
+        },
+        {
+          "position": 4,
+          "id": 9,
+          "title": "无线网络",
+          "descriptionToken": "9.xxy8xon8WqvT5ddR",
+          "file": "04-009-无线网络.md"
+        },
+        {
+          "position": 5,
+          "id": 10,
+          "title": "任务调度",
+          "descriptionToken": "10.qOD5yRzhQ7k1Fjlx",
+          "file": "05-010-任务调度.md"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "第02次CCF计算机软件能力认证",
+      "startTime": 1411277400000,
+      "endTime": 1411291800000,
+      "directory": "02-第02次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 11,
+          "title": "相邻数对",
+          "descriptionToken": "11.fIHUt5X6sICstfTx",
+          "file": "01-011-相邻数对.md"
+        },
+        {
+          "position": 2,
+          "id": 12,
+          "title": "画图",
+          "descriptionToken": "12.RiHA4QdWJ9NBcr6k",
+          "file": "02-012-画图.md"
+        },
+        {
+          "position": 3,
+          "id": 13,
+          "title": "字符串匹配",
+          "descriptionToken": "13.C6B9UZQbXF06P5yK",
+          "file": "03-013-字符串匹配.md"
+        },
+        {
+          "position": 4,
+          "id": 14,
+          "title": "最优配餐",
+          "descriptionToken": "14.RRXvdR7aOXksLdwL",
+          "file": "04-014-最优配餐.md"
+        },
+        {
+          "position": 5,
+          "id": 15,
+          "title": "拼图",
+          "descriptionToken": "15.62pLuy89HnNVnG6R",
+          "file": "05-015-拼图.md"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "第03次CCF计算机软件能力认证",
+      "startTime": 1418535000000,
+      "endTime": 1418549400000,
+      "directory": "03-第03次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 16,
+          "title": "门禁系统",
+          "descriptionToken": "16.OIEOP1z8y5sx0mpy",
+          "file": "01-016-门禁系统.md"
+        },
+        {
+          "position": 2,
+          "id": 17,
+          "title": "Z字形扫描",
+          "descriptionToken": "17.NAnhF3yqTwwEo06D",
+          "file": "02-017-Z字形扫描.md"
+        },
+        {
+          "position": 3,
+          "id": 18,
+          "title": "集合竞价",
+          "descriptionToken": "18.wYOL23JBrXLuIChM",
+          "file": "03-018-集合竞价.md"
+        },
+        {
+          "position": 4,
+          "id": 19,
+          "title": "最优灌溉",
+          "descriptionToken": "19.RJrzE4SDXtIlsrZr",
+          "file": "04-019-最优灌溉.md"
+        },
+        {
+          "position": 5,
+          "id": 20,
+          "title": "货物调度",
+          "descriptionToken": "20.YMtbMmjDUhLILFuS",
+          "file": "05-020-货物调度.md"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "第04次CCF计算机软件能力认证",
+      "startTime": 1427607000000,
+      "endTime": 1427621400000,
+      "directory": "04-第04次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 21,
+          "title": "图像旋转",
+          "descriptionToken": "21.BzO1dBVXVnGvhanr",
+          "file": "01-021-图像旋转.md"
+        },
+        {
+          "position": 2,
+          "id": 22,
+          "title": "数字排序",
+          "descriptionToken": "22.VZnVADiTu2TeYW44",
+          "file": "02-022-数字排序.md"
+        },
+        {
+          "position": 3,
+          "id": 23,
+          "title": "节日",
+          "descriptionToken": "23.VaFuU0GfT4uY8AXQ",
+          "file": "03-023-节日.md"
+        },
+        {
+          "position": 4,
+          "id": 24,
+          "title": "网络延时",
+          "descriptionToken": "24.cOKlv64ZLqaZkzny",
+          "file": "04-024-网络延时.md"
+        },
+        {
+          "position": 5,
+          "id": 25,
+          "title": "最小花费",
+          "descriptionToken": "25.b1oRUegfjsJKGK5S",
+          "file": "05-025-最小花费.md"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "第05次CCF计算机软件能力认证",
+      "startTime": 1442122200000,
+      "endTime": 1442136600000,
+      "directory": "05-第05次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 26,
+          "title": "数列分段",
+          "descriptionToken": "26.6oiaFOql0FXZDweq",
+          "file": "01-026-数列分段.md"
+        },
+        {
+          "position": 2,
+          "id": 27,
+          "title": "日期计算",
+          "descriptionToken": "27.nagr1BEMnfJcfadS",
+          "file": "02-027-日期计算.md"
+        },
+        {
+          "position": 3,
+          "id": 28,
+          "title": "模板生成系统",
+          "descriptionToken": "28.AEw6v0T9vxiQ7IyU",
+          "file": "03-028-模板生成系统.md"
+        },
+        {
+          "position": 4,
+          "id": 29,
+          "title": "高速公路",
+          "descriptionToken": "29.4bNjsNmjOUXD7qGO",
+          "file": "04-029-高速公路.md"
+        },
+        {
+          "position": 5,
+          "id": 30,
+          "title": "最佳文章",
+          "descriptionToken": "30.di7u47bHwX2eUnvz",
+          "file": "05-030-最佳文章.md"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "第06次CCF计算机软件能力认证",
+      "startTime": 1450589400000,
+      "endTime": 1450603800000,
+      "directory": "06-第06次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 31,
+          "title": "数位之和",
+          "descriptionToken": "31.i0c5CCJhmgDny1Ja",
+          "file": "01-031-数位之和.md"
+        },
+        {
+          "position": 2,
+          "id": 32,
+          "title": "消除类游戏",
+          "descriptionToken": "32.Jl8MK2XgFR6U2iXS",
+          "file": "02-032-消除类游戏.md"
+        },
+        {
+          "position": 3,
+          "id": 33,
+          "title": "画图",
+          "descriptionToken": "33.KGbGl2sP4p8DOUCV",
+          "file": "03-033-画图.md"
+        },
+        {
+          "position": 4,
+          "id": 34,
+          "title": "送货",
+          "descriptionToken": "34.5lQzRaj4rqUU20Ac",
+          "file": "04-034-送货.md"
+        },
+        {
+          "position": 5,
+          "id": 35,
+          "title": "矩阵",
+          "descriptionToken": "35.MGCtA4bcDysfdimx",
+          "file": "05-035-矩阵.md"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "第07次CCF计算机软件能力认证",
+      "startTime": 1460266200000,
+      "endTime": 1460280600000,
+      "directory": "07-第07次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 36,
+          "title": "折点计数",
+          "descriptionToken": "36.9bFao2j16ZicPzLf",
+          "file": "01-036-折点计数.md"
+        },
+        {
+          "position": 2,
+          "id": 37,
+          "title": "俄罗斯方块",
+          "descriptionToken": "37.EabTYDsxPQpmlsgP",
+          "file": "02-037-俄罗斯方块.md"
+        },
+        {
+          "position": 3,
+          "id": 38,
+          "title": "路径解析",
+          "descriptionToken": "38.4DOmkKfIFk8reuDq",
+          "file": "03-038-路径解析.md"
+        },
+        {
+          "position": 4,
+          "id": 39,
+          "title": "游戏",
+          "descriptionToken": "39.gQ4EIVxhQwhNQNjP",
+          "file": "04-039-游戏.md"
+        },
+        {
+          "position": 5,
+          "id": 40,
+          "title": "网络连接",
+          "descriptionToken": "40.eGIrJYdEniVucwgf",
+          "file": "05-040-网络连接.md"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "第08次CCF计算机软件能力认证",
+      "startTime": 1473571800000,
+      "endTime": 1473586200000,
+      "directory": "08-第08次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 41,
+          "title": "最大波动",
+          "descriptionToken": "41.Z23gtK7hwh4id7Mc",
+          "file": "01-041-最大波动.md"
+        },
+        {
+          "position": 2,
+          "id": 42,
+          "title": "火车购票",
+          "descriptionToken": "42.452E2VRnBUcoyh4y",
+          "file": "02-042-火车购票.md"
+        },
+        {
+          "position": 3,
+          "id": 43,
+          "title": "炉石传说",
+          "descriptionToken": "43.c4XW6KqEH8CMjU0C",
+          "file": "03-043-炉石传说.md"
+        },
+        {
+          "position": 4,
+          "id": 44,
+          "title": "交通规划",
+          "descriptionToken": "44.aquPc4dAo26PCmUb",
+          "file": "04-044-交通规划.md"
+        },
+        {
+          "position": 5,
+          "id": 45,
+          "title": "祭坛",
+          "descriptionToken": "45.8fCECTumH2JZNO1f",
+          "file": "05-045-祭坛.md"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "第09次CCF计算机软件能力认证",
+      "startTime": 1482039000000,
+      "endTime": 1482053400000,
+      "directory": "09-第09次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 46,
+          "title": "中间数",
+          "descriptionToken": "46.On8I4jbo9riPPZ7j",
+          "file": "01-046-中间数.md"
+        },
+        {
+          "position": 2,
+          "id": 47,
+          "title": "工资计算",
+          "descriptionToken": "47.uY9Nywafjt1CvQ1c",
+          "file": "02-047-工资计算.md"
+        },
+        {
+          "position": 3,
+          "id": 48,
+          "title": "权限查询",
+          "descriptionToken": "48.iDcLqsAsxsSeKTBB",
+          "file": "03-048-权限查询.md"
+        },
+        {
+          "position": 4,
+          "id": 49,
+          "title": "压缩编码",
+          "descriptionToken": "49.1fFHNJABN7cjq0fA",
+          "file": "04-049-压缩编码.md"
+        },
+        {
+          "position": 5,
+          "id": 50,
+          "title": "卡牌游戏",
+          "descriptionToken": "50.tU61UUgBfmhZmApc",
+          "file": "05-050-卡牌游戏.md"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "第10次CCF计算机软件能力认证",
+      "startTime": 1489901400000,
+      "endTime": 1489915800000,
+      "directory": "10-第10次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 51,
+          "title": "分蛋糕",
+          "descriptionToken": "51.glLzpRBwGGpXFlPw",
+          "file": "01-051-分蛋糕.md"
+        },
+        {
+          "position": 2,
+          "id": 52,
+          "title": "学生排队",
+          "descriptionToken": "52.YY2FBxhyBrsn1anB",
+          "file": "02-052-学生排队.md"
+        },
+        {
+          "position": 3,
+          "id": 53,
+          "title": "Markdown",
+          "descriptionToken": "53.xI1PQmCvuIwLdf3B",
+          "file": "03-053-Markdown.md"
+        },
+        {
+          "position": 4,
+          "id": 54,
+          "title": "地铁修建",
+          "descriptionToken": "54.ECiTp64Oh5mIqNhi",
+          "file": "04-054-地铁修建.md"
+        },
+        {
+          "position": 5,
+          "id": 55,
+          "title": "引水入城",
+          "descriptionToken": "55.CVHc6mC5Rfjh89mh",
+          "file": "05-055-引水入城.md"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "第11次CCF计算机软件能力认证",
+      "startTime": 1505626200000,
+      "endTime": 1505640600000,
+      "directory": "11-第11次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 56,
+          "title": "打酱油",
+          "descriptionToken": "56.l7oHEIXHp8rSLRKp",
+          "file": "01-056-打酱油.md"
+        },
+        {
+          "position": 2,
+          "id": 57,
+          "title": "公共钥匙盒",
+          "descriptionToken": "57.WTfpLEU8iRWIQzwu",
+          "file": "02-057-公共钥匙盒.md"
+        },
+        {
+          "position": 3,
+          "id": 58,
+          "title": "JSON查询",
+          "descriptionToken": "58.uuWP4F2QVIrziUt3",
+          "file": "03-058-JSON查询.md"
+        },
+        {
+          "position": 4,
+          "id": 59,
+          "title": "通信网络",
+          "descriptionToken": "59.ENYOd32EXsUmyVoB",
+          "file": "04-059-通信网络.md"
+        },
+        {
+          "position": 5,
+          "id": 60,
+          "title": "除法",
+          "descriptionToken": "60.56ZX8stqeX1lbW5E",
+          "file": "05-060-除法.md"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "第12次CCF计算机软件能力认证",
+      "startTime": 1512279000000,
+      "endTime": 1512293400000,
+      "directory": "12-第12次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 61,
+          "title": "最小差值",
+          "descriptionToken": "61.yugWNtMrKvgrRH7J",
+          "file": "01-061-最小差值.md"
+        },
+        {
+          "position": 2,
+          "id": 62,
+          "title": "游戏",
+          "descriptionToken": "62.42kO0MhTaASK1PrL",
+          "file": "02-062-游戏.md"
+        },
+        {
+          "position": 3,
+          "id": 63,
+          "title": "Crontab",
+          "descriptionToken": "63.z6GXIoNBYErzomrh",
+          "file": "03-063-Crontab.md"
+        },
+        {
+          "position": 4,
+          "id": 64,
+          "title": "行车路线",
+          "descriptionToken": "64.jTzaaGWRaI6e6tuw",
+          "file": "04-064-行车路线.md"
+        },
+        {
+          "position": 5,
+          "id": 65,
+          "title": "商路",
+          "descriptionToken": "65.XlyxAkbTv0rWMZZo",
+          "file": "05-065-商路.md"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "第13次CCF计算机软件能力认证",
+      "startTime": 1521351000000,
+      "endTime": 1521365400000,
+      "directory": "13-第13次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 66,
+          "title": "跳一跳",
+          "descriptionToken": "66.x6W2XxlWQZMyOpYs",
+          "file": "01-066-跳一跳.md"
+        },
+        {
+          "position": 2,
+          "id": 67,
+          "title": "碰撞的小球",
+          "descriptionToken": "67.37MACDCWg8umBYSg",
+          "file": "02-067-碰撞的小球.md"
+        },
+        {
+          "position": 3,
+          "id": 68,
+          "title": "URL映射",
+          "descriptionToken": "68.IkhfwnUFWtQNuevv",
+          "file": "03-068-URL映射.md"
+        },
+        {
+          "position": 4,
+          "id": 69,
+          "title": "棋局评估",
+          "descriptionToken": "69.EpRZsEX7CXk0fq7A",
+          "file": "04-069-棋局评估.md"
+        },
+        {
+          "position": 5,
+          "id": 70,
+          "title": "二次求和",
+          "descriptionToken": "70.DgW2sOsxQrFyJDn5",
+          "file": "05-070-二次求和.md"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "第14次CCF计算机软件能力认证",
+      "startTime": 1537075800000,
+      "endTime": 1537090200000,
+      "directory": "14-第14次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 71,
+          "title": "卖菜",
+          "descriptionToken": "71.Jx0seJjvgMvvfVJd",
+          "file": "01-071-卖菜.md"
+        },
+        {
+          "position": 2,
+          "id": 72,
+          "title": "买菜",
+          "descriptionToken": "72.stx7rvKQvKmWQQaf",
+          "file": "02-072-买菜.md"
+        },
+        {
+          "position": 3,
+          "id": 73,
+          "title": "元素选择器",
+          "descriptionToken": "73.PP708ORJUMVv1P8U",
+          "file": "03-073-元素选择器.md"
+        },
+        {
+          "position": 4,
+          "id": 74,
+          "title": "再卖菜",
+          "descriptionToken": "74.NRkXS4FAEV7n2loS",
+          "file": "04-074-再卖菜.md"
+        },
+        {
+          "position": 5,
+          "id": 75,
+          "title": "线性递推式",
+          "descriptionToken": "75.PJj6fURYisJmLtGt",
+          "file": "05-075-线性递推式.md"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "第15次CCF计算机软件能力认证",
+      "startTime": 1544938200000,
+      "endTime": 1544952600000,
+      "directory": "15-第15次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 76,
+          "title": "小明上学",
+          "descriptionToken": "76.Av8T3ku4ijyYvGvn",
+          "file": "01-076-小明上学.md"
+        },
+        {
+          "position": 2,
+          "id": 77,
+          "title": "小明放学",
+          "descriptionToken": "77.7kagy0Qaf2JzfAU1",
+          "file": "02-077-小明放学.md"
+        },
+        {
+          "position": 3,
+          "id": 78,
+          "title": "CIDR 合并",
+          "descriptionToken": "78.kNWSGv7bzp0crAYC",
+          "file": "03-078-CIDR 合并.md"
+        },
+        {
+          "position": 4,
+          "id": 79,
+          "title": "数据中心",
+          "descriptionToken": "79.CJUmHpQlYUpQd0dU",
+          "file": "04-079-数据中心.md"
+        },
+        {
+          "position": 5,
+          "id": 80,
+          "title": "管道清洁",
+          "descriptionToken": "80.ZPRVimZX59sxfqtz",
+          "file": "05-080-管道清洁.md"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "第16次CCF计算机软件能力认证",
+      "startTime": 1552800600000,
+      "endTime": 1552815000000,
+      "directory": "16-第16次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 81,
+          "title": "小中大",
+          "descriptionToken": "81.5BJ53e3Mm4FO0Wuv",
+          "file": "01-081-小中大.md"
+        },
+        {
+          "position": 2,
+          "id": 82,
+          "title": "二十四点",
+          "descriptionToken": "82.AxgJeNchiM6zyN7f",
+          "file": "02-082-二十四点.md"
+        },
+        {
+          "position": 3,
+          "id": 83,
+          "title": "损坏的 RAID5",
+          "descriptionToken": "83.amSZQ6xpNtONQz6T",
+          "file": "03-083-损坏的 RAID5.md"
+        },
+        {
+          "position": 4,
+          "id": 84,
+          "title": "消息传递接口",
+          "descriptionToken": "84.dgF8AmW0FA94VZXW",
+          "file": "04-084-消息传递接口.md"
+        },
+        {
+          "position": 5,
+          "id": 85,
+          "title": "317号子任务",
+          "descriptionToken": "85.UV31f7JWoB8EbWxd",
+          "file": "05-085-317号子任务.md"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "第17次CCF计算机软件能力认证",
+      "startTime": 1568525400000,
+      "endTime": 1568539800000,
+      "directory": "17-第17次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 86,
+          "title": "小明种苹果",
+          "descriptionToken": "86.VrpbEdieRCir6xny",
+          "file": "01-086-小明种苹果.md"
+        },
+        {
+          "position": 2,
+          "id": 87,
+          "title": "小明种苹果（续）",
+          "descriptionToken": "87.DuMLOVcqb9W29Eth",
+          "file": "02-087-小明种苹果（续）.md"
+        },
+        {
+          "position": 3,
+          "id": 88,
+          "title": "字符画",
+          "descriptionToken": "88.0sz14d3JfJy6j4Zc",
+          "file": "03-088-字符画.md"
+        },
+        {
+          "position": 4,
+          "id": 89,
+          "title": "推荐系统",
+          "descriptionToken": "89.rTjOmtgqOHaVFQyS",
+          "file": "04-089-推荐系统.md"
+        },
+        {
+          "position": 5,
+          "id": 90,
+          "title": "城市规划",
+          "descriptionToken": "90.u6WRxrcg93Cq9k36",
+          "file": "05-090-城市规划.md"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "第18次CCF计算机软件能力认证",
+      "startTime": 1576387800000,
+      "endTime": 1576402200000,
+      "directory": "18-第18次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 91,
+          "title": "报数",
+          "descriptionToken": "91.UdhwdWRu1PRuJ2bs",
+          "file": "01-091-报数.md"
+        },
+        {
+          "position": 2,
+          "id": 92,
+          "title": "回收站选址",
+          "descriptionToken": "92.9S8iA1nvOQRbLrVm",
+          "file": "02-092-回收站选址.md"
+        },
+        {
+          "position": 3,
+          "id": 93,
+          "title": "化学方程式",
+          "descriptionToken": "93.caAQf6496e3pPVhI",
+          "file": "03-093-化学方程式.md"
+        },
+        {
+          "position": 4,
+          "id": 94,
+          "title": "区块链",
+          "descriptionToken": "94.IXcQdgKVkEybb5Tm",
+          "file": "04-094-区块链.md"
+        },
+        {
+          "position": 5,
+          "id": 95,
+          "title": "魔数",
+          "descriptionToken": "95.CafcgKpk2w79WxTc",
+          "file": "05-095-魔数.md"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "第19次CCF计算机软件能力认证",
+      "startTime": 1593322200000,
+      "endTime": 1593336600000,
+      "directory": "19-第19次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 96,
+          "title": "线性分类器",
+          "descriptionToken": "96.JdFdObiOxdzmR8T2",
+          "file": "01-096-线性分类器.md"
+        },
+        {
+          "position": 2,
+          "id": 97,
+          "title": "稀疏向量",
+          "descriptionToken": "97.oQe9EMkBZhUbFK6d",
+          "file": "02-097-稀疏向量.md"
+        },
+        {
+          "position": 3,
+          "id": 98,
+          "title": "Markdown 渲染器",
+          "descriptionToken": "98.ePprwTvkQnZygKEb",
+          "file": "03-098-Markdown 渲染器.md"
+        },
+        {
+          "position": 4,
+          "id": 99,
+          "title": "1246",
+          "descriptionToken": "99.4J4tkCfHEkXaWb7T",
+          "file": "04-099-1246.md"
+        },
+        {
+          "position": 5,
+          "id": 100,
+          "title": "乔乔和牛牛逛超市",
+          "descriptionToken": "100.6zkmdSxrckEeaure",
+          "file": "05-100-乔乔和牛牛逛超市.md"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "第20次CCF计算机软件能力认证",
+      "startTime": 1599975000000,
+      "endTime": 1599989400000,
+      "directory": "20-第20次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 101,
+          "title": "检测点查询",
+          "descriptionToken": "101.Boyw96v0EMmpYOzf",
+          "file": "01-101-检测点查询.md"
+        },
+        {
+          "position": 2,
+          "id": 102,
+          "title": "风险人群筛查",
+          "descriptionToken": "102.JWYTz1EixpIYu2gr",
+          "file": "02-102-风险人群筛查.md"
+        },
+        {
+          "position": 3,
+          "id": 103,
+          "title": "点亮数字人生",
+          "descriptionToken": "103.OpcCFHrlxP7X8TU4",
+          "file": "03-103-点亮数字人生.md"
+        },
+        {
+          "position": 4,
+          "id": 104,
+          "title": "星际旅行",
+          "descriptionToken": "104.A0gp82saYOiDSe2q",
+          "file": "04-104-星际旅行.md"
+        },
+        {
+          "position": 5,
+          "id": 105,
+          "title": "密信与计数",
+          "descriptionToken": "105.g6htQcMnmgHCpcO0",
+          "file": "05-105-密信与计数.md"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "第21次CCF计算机软件能力认证",
+      "startTime": 1607837400000,
+      "endTime": 1607851800000,
+      "directory": "21-第21次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 106,
+          "title": "期末预测之安全指数",
+          "descriptionToken": "106.5Si3pJwKkVWUNifA",
+          "file": "01-106-期末预测之安全指数.md"
+        },
+        {
+          "position": 2,
+          "id": 107,
+          "title": "期末预测之最佳阈值",
+          "descriptionToken": "107.x1mSwsMyESRn0aNe",
+          "file": "02-107-期末预测之最佳阈值.md"
+        },
+        {
+          "position": 3,
+          "id": 108,
+          "title": "带配额的文件系统",
+          "descriptionToken": "108.xfUXrGvhEFrQ3exU",
+          "file": "03-108-带配额的文件系统.md"
+        },
+        {
+          "position": 4,
+          "id": 109,
+          "title": "食材运输",
+          "descriptionToken": "109.WdJuOzztYgTdLrcy",
+          "file": "04-109-食材运输.md"
+        },
+        {
+          "position": 5,
+          "id": 110,
+          "title": "星际旅行",
+          "descriptionToken": "110.tZAT80pQKP8V7NmI",
+          "file": "05-110-星际旅行.md"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "第22次CCF计算机软件能力认证",
+      "startTime": 1618119000000,
+      "endTime": 1618133400000,
+      "directory": "22-第22次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 111,
+          "title": "灰度直方图",
+          "descriptionToken": "111.Vov0YGclhNDnawoc",
+          "file": "01-111-灰度直方图.md"
+        },
+        {
+          "position": 2,
+          "id": 112,
+          "title": "邻域均值",
+          "descriptionToken": "112.XpSOITHa4bGCGEi2",
+          "file": "02-112-邻域均值.md"
+        },
+        {
+          "position": 3,
+          "id": 113,
+          "title": "DHCP 服务器",
+          "descriptionToken": "113.I1Mups8sUW1jUC92",
+          "file": "03-113-DHCP 服务器.md"
+        },
+        {
+          "position": 4,
+          "id": 114,
+          "title": "校门外的树",
+          "descriptionToken": "114.RzsGola3zpwIhdNd",
+          "file": "04-114-校门外的树.md"
+        },
+        {
+          "position": 5,
+          "id": 115,
+          "title": "疫苗运输",
+          "descriptionToken": "115.NTrYOpsTuNpsStQS",
+          "file": "05-115-疫苗运输.md"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "第23次CCF计算机软件能力认证",
+      "startTime": 1632029400000,
+      "endTime": 1632043800000,
+      "directory": "23-第23次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 116,
+          "title": "数组推导",
+          "descriptionToken": "116.OBIxENH2We1FN7Wt",
+          "file": "01-116-数组推导.md"
+        },
+        {
+          "position": 2,
+          "id": 117,
+          "title": "非零段划分",
+          "descriptionToken": "117.CZDGx9UU3WPnFt1K",
+          "file": "02-117-非零段划分.md"
+        },
+        {
+          "position": 3,
+          "id": 118,
+          "title": "脉冲神经网络",
+          "descriptionToken": "118.3un1P4oTObPo05w9",
+          "file": "03-118-脉冲神经网络.md"
+        },
+        {
+          "position": 4,
+          "id": 119,
+          "title": "收集卡牌",
+          "descriptionToken": "119.WuZuHyThxQUPoYsp",
+          "file": "04-119-收集卡牌.md"
+        },
+        {
+          "position": 5,
+          "id": 120,
+          "title": "箱根山岳险天下",
+          "descriptionToken": "120.TYySshuzH77zW7rm",
+          "file": "05-120-箱根山岳险天下.md"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "第24次CCF计算机软件能力认证",
+      "startTime": 1638682200000,
+      "endTime": 1638696600000,
+      "directory": "24-第24次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 121,
+          "title": "序列查询",
+          "descriptionToken": "121.4Xgsb7hJzQ62aiuR",
+          "file": "01-121-序列查询.md"
+        },
+        {
+          "position": 2,
+          "id": 122,
+          "title": "序列查询新解",
+          "descriptionToken": "122.ZELVpbRrOqyeSVg4",
+          "file": "02-122-序列查询新解.md"
+        },
+        {
+          "position": 3,
+          "id": 123,
+          "title": "登机牌条码",
+          "descriptionToken": "123.HeiTyEXPiDADbMu0",
+          "file": "03-123-登机牌条码.md"
+        },
+        {
+          "position": 4,
+          "id": 124,
+          "title": "磁盘文件操作",
+          "descriptionToken": "124.IEXbSpJJINMDQq8W",
+          "file": "04-124-磁盘文件操作.md"
+        },
+        {
+          "position": 5,
+          "id": 125,
+          "title": "极差路径",
+          "descriptionToken": "125.iLcDpF2LoprOjvm0",
+          "file": "05-125-极差路径.md"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "第25次CCF计算机软件能力认证",
+      "startTime": 1647754200000,
+      "endTime": 1647768600000,
+      "directory": "25-第25次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 126,
+          "title": "未初始化警告",
+          "descriptionToken": "126.0RAp6R7Mj7FsoZf9",
+          "file": "01-126-未初始化警告.md"
+        },
+        {
+          "position": 2,
+          "id": 127,
+          "title": "出行计划",
+          "descriptionToken": "127.OijcckKXVZUcjxPo",
+          "file": "02-127-出行计划.md"
+        },
+        {
+          "position": 3,
+          "id": 128,
+          "title": "计算资源调度器",
+          "descriptionToken": "128.MllquK51ERD2M6Wn",
+          "file": "03-128-计算资源调度器.md"
+        },
+        {
+          "position": 4,
+          "id": 129,
+          "title": "通信系统管理",
+          "descriptionToken": "129.5QcG1ROvQ7eM0oTr",
+          "file": "04-129-通信系统管理.md"
+        },
+        {
+          "position": 5,
+          "id": 130,
+          "title": "博弈论与石子合并",
+          "descriptionToken": "130.2NSvw2lEiBndpkkl",
+          "file": "05-130-博弈论与石子合并.md"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "第26次CCF计算机软件能力认证",
+      "startTime": 1655011800000,
+      "endTime": 1655026200000,
+      "directory": "26-第26次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 131,
+          "title": "归一化处理",
+          "descriptionToken": "131.ZsEmCmnd5f1iBFRK",
+          "file": "01-131-归一化处理.md"
+        },
+        {
+          "position": 2,
+          "id": 132,
+          "title": "寻宝！大冒险！",
+          "descriptionToken": "132.VK059vtzfekEZJRQ",
+          "file": "02-132-寻宝！大冒险！.md"
+        },
+        {
+          "position": 3,
+          "id": 133,
+          "title": "角色授权",
+          "descriptionToken": "133.T1u1fDoq4TuxrlZM",
+          "file": "03-133-角色授权.md"
+        },
+        {
+          "position": 4,
+          "id": 134,
+          "title": "光线追踪",
+          "descriptionToken": "134.sQuQRxDk8V4Ri1kO",
+          "file": "04-134-光线追踪.md"
+        },
+        {
+          "position": 5,
+          "id": 135,
+          "title": "PS无限版",
+          "descriptionToken": "135.TgKWU7fVm5qndvx3",
+          "file": "05-135-PS无限版.md"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "第27次CCF计算机软件能力认证",
+      "startTime": 1663479000000,
+      "endTime": 1663493400000,
+      "directory": "27-第27次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 136,
+          "title": "如此编码",
+          "descriptionToken": "136.Cv0t19ClrnUmNxIC",
+          "file": "01-136-如此编码.md"
+        },
+        {
+          "position": 2,
+          "id": 137,
+          "title": "何以包邮？",
+          "descriptionToken": "137.LNIa0pf6RLVWJujI",
+          "file": "02-137-何以包邮？.md"
+        },
+        {
+          "position": 3,
+          "id": 138,
+          "title": "防疫大数据",
+          "descriptionToken": "138.qHgahV43inOw0zoP",
+          "file": "03-138-防疫大数据.md"
+        },
+        {
+          "position": 4,
+          "id": 139,
+          "title": "吉祥物投票",
+          "descriptionToken": "139.SBAhHpAd11eYjhA9",
+          "file": "04-139-吉祥物投票.md"
+        },
+        {
+          "position": 5,
+          "id": 140,
+          "title": "高维亚空间超频物质变压缩技术",
+          "descriptionToken": "140.frnqrMn5ZDjirJHh",
+          "file": "05-140-高维亚空间超频物质变压缩技术.md"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "第28次CCF计算机软件能力认证",
+      "startTime": 1671341400000,
+      "endTime": 1671355800000,
+      "directory": "28-第28次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 141,
+          "title": "现值计算",
+          "descriptionToken": "141.ZH7QbU1wMOsdRGob",
+          "file": "01-141-现值计算.md"
+        },
+        {
+          "position": 2,
+          "id": 142,
+          "title": "训练计划",
+          "descriptionToken": "142.nvfrhj00GXFCgkgC",
+          "file": "02-142-训练计划.md"
+        },
+        {
+          "position": 3,
+          "id": 143,
+          "title": "JPEG 解码",
+          "descriptionToken": "143.RjNZXoodAqSvbxKE",
+          "file": "03-143-JPEG 解码.md"
+        },
+        {
+          "position": 4,
+          "id": 144,
+          "title": "聚集方差",
+          "descriptionToken": "144.amvVfA7qFHN6GPnp",
+          "file": "04-144-聚集方差.md"
+        },
+        {
+          "position": 5,
+          "id": 145,
+          "title": "星际网络",
+          "descriptionToken": "145.KI9z2MSSITqymx5u",
+          "file": "05-145-星际网络.md"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "第29次CCF计算机软件能力认证",
+      "startTime": 1679203800000,
+      "endTime": 1679218200000,
+      "directory": "29-第29次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 146,
+          "title": "田地丈量",
+          "descriptionToken": "146.VG12JraXhhOn3UDc",
+          "file": "01-146-田地丈量.md"
+        },
+        {
+          "position": 2,
+          "id": 147,
+          "title": "垦田计划",
+          "descriptionToken": "147.9XtCnp7A98fbzk5B",
+          "file": "02-147-垦田计划.md"
+        },
+        {
+          "position": 3,
+          "id": 148,
+          "title": "LDAP",
+          "descriptionToken": "148.VTDuIRl2cvcTfSsa",
+          "file": "03-148-LDAP.md"
+        },
+        {
+          "position": 4,
+          "id": 149,
+          "title": "星际网络II",
+          "descriptionToken": "149.EM7nEhbpelDBoJn4",
+          "file": "04-149-星际网络II.md"
+        },
+        {
+          "position": 5,
+          "id": 150,
+          "title": "施肥",
+          "descriptionToken": "150.cPkj317R3AgB8W4n",
+          "file": "05-150-施肥.md"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "第30次CCF计算机软件能力认证",
+      "startTime": 1685251800000,
+      "endTime": 1685266200000,
+      "directory": "30-第30次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 151,
+          "title": "重复局面",
+          "descriptionToken": "151.bg4ARFptAjtqGSG5",
+          "file": "01-151-重复局面.md"
+        },
+        {
+          "position": 2,
+          "id": 152,
+          "title": "矩阵运算",
+          "descriptionToken": "152.WFsGgqdCZYP0DIar",
+          "file": "02-152-矩阵运算.md"
+        },
+        {
+          "position": 3,
+          "id": 153,
+          "title": "解压缩",
+          "descriptionToken": "153.XTlCcshv29ezPwIK",
+          "file": "03-153-解压缩.md"
+        },
+        {
+          "position": 4,
+          "id": 154,
+          "title": "电力网络",
+          "descriptionToken": "154.QKgdOrc0b4bZchWm",
+          "file": "04-154-电力网络.md"
+        },
+        {
+          "position": 5,
+          "id": 155,
+          "title": "闪耀巡航",
+          "descriptionToken": "155.PWOuUD65zYDYtxUw",
+          "file": "05-155-闪耀巡航.md"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "第31次CCF计算机软件能力认证",
+      "startTime": 1694928600000,
+      "endTime": 1694943000000,
+      "directory": "31-第31次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 156,
+          "title": "坐标变换（其一）",
+          "descriptionToken": "156.doTxMbhRBAZBof6s",
+          "file": "01-156-坐标变换（其一）.md"
+        },
+        {
+          "position": 2,
+          "id": 157,
+          "title": "坐标变换（其二）",
+          "descriptionToken": "157.ndAHGvVfczn3qge3",
+          "file": "02-157-坐标变换（其二）.md"
+        },
+        {
+          "position": 3,
+          "id": 158,
+          "title": "梯度求解",
+          "descriptionToken": "158.39LaUIXjyN4M2Hkl",
+          "file": "03-158-梯度求解.md"
+        },
+        {
+          "position": 4,
+          "id": 159,
+          "title": "阴阳龙",
+          "descriptionToken": "159.75fWxwpvZDSWREfd",
+          "file": "04-159-阴阳龙.md"
+        },
+        {
+          "position": 5,
+          "id": 160,
+          "title": "阻击",
+          "descriptionToken": "160.gXsyOSm2mHotA1jh",
+          "file": "05-160-阻击.md"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "第32次CCF计算机软件能力认证",
+      "startTime": 1702186200000,
+      "endTime": 1702200600000,
+      "directory": "32-第32次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 161,
+          "title": "仓库规划",
+          "descriptionToken": "161.D3RE6OVKvCwSG2ej",
+          "file": "01-161-仓库规划.md"
+        },
+        {
+          "position": 2,
+          "id": 162,
+          "title": "因子化简",
+          "descriptionToken": "162.BHm6SgLxtqL7qCZe",
+          "file": "02-162-因子化简.md"
+        },
+        {
+          "position": 3,
+          "id": 163,
+          "title": "树上搜索",
+          "descriptionToken": "163.LDEgKa2yc1StOWV8",
+          "file": "03-163-树上搜索.md"
+        },
+        {
+          "position": 4,
+          "id": 164,
+          "title": "宝藏",
+          "descriptionToken": "164.tYSvbuPDPGoXbDoX",
+          "file": "04-164-宝藏.md"
+        },
+        {
+          "position": 5,
+          "id": 165,
+          "title": "彩色路径",
+          "descriptionToken": "165.kqM4ru2oTMPni4uD",
+          "file": "05-165-彩色路径.md"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "第33次CCF计算机软件能力认证",
+      "startTime": 1711863000000,
+      "endTime": 1711877400000,
+      "directory": "33-第33次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 166,
+          "title": "词频统计",
+          "descriptionToken": "166.tzqkIREaFrWCQFIQ",
+          "file": "01-166-词频统计.md"
+        },
+        {
+          "position": 2,
+          "id": 167,
+          "title": "相似度计算",
+          "descriptionToken": "167.c0m6yML1JsJ5M53e",
+          "file": "02-167-相似度计算.md"
+        },
+        {
+          "position": 3,
+          "id": 168,
+          "title": "化学方程式配平",
+          "descriptionToken": "168.V0tAvrGFy1DE4v5D",
+          "file": "03-168-化学方程式配平.md"
+        },
+        {
+          "position": 4,
+          "id": 169,
+          "title": "十滴水",
+          "descriptionToken": "169.mKjgvLXcuGs79zrQ",
+          "file": "04-169-十滴水.md"
+        },
+        {
+          "position": 5,
+          "id": 170,
+          "title": "文件夹合并",
+          "descriptionToken": "170.bk9a5UlXTkwrR1cs",
+          "file": "05-170-文件夹合并.md"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "第34次CCF计算机软件能力认证",
+      "startTime": 1717306200000,
+      "endTime": 1717320600000,
+      "directory": "34-第34次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 171,
+          "title": "矩阵重塑（其一）",
+          "descriptionToken": "171.zu7892miqsTY1X8M",
+          "file": "01-171-矩阵重塑（其一）.md"
+        },
+        {
+          "position": 2,
+          "id": 172,
+          "title": "矩阵重塑（其二）",
+          "descriptionToken": "172.hQuQelgc85a5Zq15",
+          "file": "02-172-矩阵重塑（其二）.md"
+        },
+        {
+          "position": 3,
+          "id": 173,
+          "title": "文本分词",
+          "descriptionToken": "173.EkJIsGWfzUAq2fTs",
+          "file": "03-173-文本分词.md"
+        },
+        {
+          "position": 4,
+          "id": 174,
+          "title": "货物调度",
+          "descriptionToken": "174.ZaxS6xjd2JkW1K3q",
+          "file": "04-174-货物调度.md"
+        },
+        {
+          "position": 5,
+          "id": 175,
+          "title": "哥德尔机",
+          "descriptionToken": "175.JXEw314rFTjdBjKf",
+          "file": "05-175-哥德尔机.md"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "第35次CCF计算机软件能力认证",
+      "startTime": 1726983000000,
+      "endTime": 1726997400000,
+      "directory": "35-第35次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 176,
+          "title": "密码",
+          "descriptionToken": "176.uDB7k0saMkSyf2K3",
+          "file": "01-176-密码.md"
+        },
+        {
+          "position": 2,
+          "id": 177,
+          "title": "字符串变换",
+          "descriptionToken": "177.LfC0Lz1CwYjEF881",
+          "file": "02-177-字符串变换.md"
+        },
+        {
+          "position": 3,
+          "id": 178,
+          "title": "补丁应用",
+          "descriptionToken": "178.WVYT0N8sNJG7sLIM",
+          "file": "03-178-补丁应用.md"
+        },
+        {
+          "position": 4,
+          "id": 179,
+          "title": "通讯延迟",
+          "descriptionToken": "179.LAIGxfVVomfJsBTC",
+          "file": "04-179-通讯延迟.md"
+        },
+        {
+          "position": 5,
+          "id": 180,
+          "title": "木板切割",
+          "descriptionToken": "180.in6pHb805vXeNQfD",
+          "file": "05-180-木板切割.md"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "第36次CCF计算机软件能力认证",
+      "startTime": 1733635800000,
+      "endTime": 1733650200000,
+      "directory": "36-第36次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 181,
+          "title": "移动",
+          "descriptionToken": "181.sQJKXTYcFn8IeSHY",
+          "file": "01-181-移动.md"
+        },
+        {
+          "position": 2,
+          "id": 182,
+          "title": "梦境巡查",
+          "descriptionToken": "182.3FmGAD6RWP1oNsMo",
+          "file": "02-182-梦境巡查.md"
+        },
+        {
+          "position": 3,
+          "id": 183,
+          "title": "缓存模拟",
+          "descriptionToken": "183.yTaqoyfeBvFa8pQP",
+          "file": "03-183-缓存模拟.md"
+        },
+        {
+          "position": 4,
+          "id": 184,
+          "title": "跳房子",
+          "descriptionToken": "184.94UCZ4WXcMV1UBSD",
+          "file": "04-184-跳房子.md"
+        },
+        {
+          "position": 5,
+          "id": 185,
+          "title": "梦魔",
+          "descriptionToken": "185.qKKXMoctznKtv7Yd",
+          "file": "05-185-梦魔.md"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "第37次CCF计算机软件能力认证",
+      "startTime": 1743312600000,
+      "endTime": 1743327000000,
+      "directory": "37-第37次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 186,
+          "title": "数值积分",
+          "descriptionToken": "186.eqMZbXNG9mOOtUz0",
+          "file": "01-186-数值积分.md"
+        },
+        {
+          "position": 2,
+          "id": 187,
+          "title": "机器人饲养指南",
+          "descriptionToken": "187.hVK33eLi8NHq1hyL",
+          "file": "02-187-机器人饲养指南.md"
+        },
+        {
+          "position": 3,
+          "id": 188,
+          "title": "模板展开",
+          "descriptionToken": "188.RtCH2GkQk0OQct9F",
+          "file": "03-188-模板展开.md"
+        },
+        {
+          "position": 4,
+          "id": 189,
+          "title": "集体锻炼",
+          "descriptionToken": "189.ikMxvpQk8a3aFbGl",
+          "file": "04-189-集体锻炼.md"
+        },
+        {
+          "position": 5,
+          "id": 190,
+          "title": "收费标准评估",
+          "descriptionToken": "190.oa3aJjlfzKLbzWVz",
+          "file": "05-190-收费标准评估.md"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "第38次CCF计算机软件能力认证",
+      "startTime": 1749360600000,
+      "endTime": 1749375000000,
+      "directory": "38-第38次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 191,
+          "title": "正态分布",
+          "descriptionToken": "191.pLPpCpJQdCciwUgN",
+          "file": "01-191-正态分布.md"
+        },
+        {
+          "position": 2,
+          "id": 192,
+          "title": "机器人复健指南",
+          "descriptionToken": "192.HqbvdCXgjEG8Lgcu",
+          "file": "02-192-机器人复健指南.md"
+        },
+        {
+          "position": 3,
+          "id": 193,
+          "title": "消息解码",
+          "descriptionToken": "193.fS3iDv4IDMxM08ER",
+          "file": "03-193-消息解码.md"
+        },
+        {
+          "position": 4,
+          "id": 194,
+          "title": "月票发行",
+          "descriptionToken": "194.AiDJCLvpyJ5J5wSW",
+          "file": "04-194-月票发行.md"
+        },
+        {
+          "position": 5,
+          "id": 195,
+          "title": "博物馆",
+          "descriptionToken": "195.kK0l4XI6ZBTMkUDs",
+          "file": "05-195-博物馆.md"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "title": "第39次CCF计算机软件能力认证",
+      "startTime": 1758432600000,
+      "endTime": 1758447000000,
+      "directory": "39-第39次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 196,
+          "title": "蒙特卡洛",
+          "descriptionToken": "196.LzNmuc1auGZWsB9R",
+          "file": "01-196-蒙特卡洛.md"
+        },
+        {
+          "position": 2,
+          "id": 197,
+          "title": "水印检查",
+          "descriptionToken": "197.hNBcDYBx2KeIeQ6N",
+          "file": "02-197-水印检查.md"
+        },
+        {
+          "position": 3,
+          "id": 198,
+          "title": "HTTP 头信息",
+          "descriptionToken": "198.A43DShMPd7Mm0xrZ",
+          "file": "03-198-HTTP 头信息.md"
+        },
+        {
+          "position": 4,
+          "id": 199,
+          "title": "造题计划（上）",
+          "descriptionToken": "199.UDydrTHR6w4BEdWg",
+          "file": "04-199-造题计划（上）.md"
+        },
+        {
+          "position": 5,
+          "id": 200,
+          "title": "造题计划（下）",
+          "descriptionToken": "200.9CTcksI9jXXdFT6k",
+          "file": "05-200-造题计划（下）.md"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "第40次CCF计算机软件能力认证",
+      "startTime": 1765085400000,
+      "endTime": 1765099800000,
+      "directory": "40-第40次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 201,
+          "title": "集合 (set)",
+          "descriptionToken": "201.CFjZTiLDcor8eMYI",
+          "file": "01-201-集合 (set).md"
+        },
+        {
+          "position": 2,
+          "id": 202,
+          "title": "数字变换 (transform)",
+          "descriptionToken": "202.4jwzkqiRt5SL1riW",
+          "file": "02-202-数字变换 (transform).md"
+        },
+        {
+          "position": 3,
+          "id": 203,
+          "title": "图片解码 (decode)",
+          "descriptionToken": "203.lUWmBeFBH6ZYym4p",
+          "file": "03-203-图片解码 (decode).md"
+        },
+        {
+          "position": 4,
+          "id": 204,
+          "title": "C形阵 (square)",
+          "descriptionToken": "204.ZY44b7CsON4ULi8c",
+          "file": "04-204-C形阵 (square).md"
+        },
+        {
+          "position": 5,
+          "id": 205,
+          "title": "数据抢修 (repair)",
+          "descriptionToken": "205.ldJGgyB7KGbK1H3Q",
+          "file": "05-205-数据抢修 (repair).md"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "第41次CCF计算机软件能力认证",
+      "startTime": 1774762200000,
+      "endTime": 1774776600000,
+      "directory": "41-第41次CCF计算机软件能力认证",
+      "problems": [
+        {
+          "position": 1,
+          "id": 206,
+          "title": "平衡数（balance）",
+          "descriptionToken": "206.UjQeTb14qfuzGrEQ",
+          "file": "01-206-平衡数（balance）.md"
+        },
+        {
+          "position": 2,
+          "id": 207,
+          "title": "机器人项目管理（crashing）",
+          "descriptionToken": "207.w0quas9iPmXSk2td",
+          "file": "02-207-机器人项目管理（crashing）.md"
+        },
+        {
+          "position": 3,
+          "id": 208,
+          "title": "进程通信（communicate）",
+          "descriptionToken": "208.6CxbvEBm0h5a1rCz",
+          "file": "03-208-进程通信（communicate）.md"
+        },
+        {
+          "position": 4,
+          "id": 209,
+          "title": "异或（xor）",
+          "descriptionToken": "209.GvibDWB1CQilm5fl",
+          "file": "04-209-异或（xor）.md"
+        },
+        {
+          "position": 5,
+          "id": 210,
+          "title": "旅游计划（travel）",
+          "descriptionToken": "210.lqYitnd0FIJxB2bm",
+          "file": "05-210-旅游计划（travel）.md"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+6
+1 base abc
+2 wrap L $base R
+1 base z
+3 wrap
+1 out $wrap $base
+3 out

@@ -1,0 +1,4 @@
+Case 1: -m mm -n -o -p -q
+Case 2: -p -m -q qq
+Case 3: -n
+Case 4: -o

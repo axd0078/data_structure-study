@@ -1,0 +1,5 @@
+ab:c:
+3
+tool -a -b x -c y
+tool -b first -b second -a
+tool -c missing -d tail

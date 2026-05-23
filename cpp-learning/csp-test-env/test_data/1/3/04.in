@@ -1,0 +1,5 @@
+p:q
+3
+cmd -p val -q
+cmd -q -p val
+cmd -p val extra -q

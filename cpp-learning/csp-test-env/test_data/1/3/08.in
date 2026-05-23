@@ -1,0 +1,5 @@
+h:i:j:k
+3
+make -h one -i two -j three -k
+make -k -j value -i
+make -h -- -k

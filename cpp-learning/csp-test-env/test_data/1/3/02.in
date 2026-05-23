@@ -1,0 +1,6 @@
+x:y:z
+4
+cmd -x p -y q -z
+cmd -z -x a
+cmd -x -bad
+cmd arg -x p

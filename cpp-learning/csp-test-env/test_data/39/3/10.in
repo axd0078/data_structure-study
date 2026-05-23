@@ -1,0 +1,103 @@
+20 5
+K1 V1
+K2 V2
+K3 V3
+K4 V4
+K5 V5
+K6 V6
+K7 V7
+K8 V8
+K9 V9
+K10 V10
+K11 V11
+K12 V12
+K13 V13
+K14 V14
+K15 V15
+K16 V16
+K17 V17
+K18 V18
+K19 V19
+K20 V20
+01a1b
+80
+2 0 Dyn1 Val1
+3 3 Raw2
+2 21 Copy3
+1 5
+2 0 Dyn5 Val5
+3 7 Raw6
+2 22 Copy7
+1 9
+2 0 Dyn9 Val9
+3 11 Raw10
+2 23 Copy11
+1 13
+2 0 Dyn13 Val13
+3 15 Raw14
+2 24 Copy15
+1 17
+2 0 Dyn17 Val17
+3 19 Raw18
+2 25 Copy19
+1 1
+2 0 Dyn21 Val21
+3 3 Raw22
+2 25 Copy23
+1 5
+2 0 Dyn25 Val25
+3 7 Raw26
+2 25 Copy27
+1 9
+2 0 Dyn29 Val29
+3 11 Raw30
+2 25 Copy31
+1 13
+2 0 Dyn33 Val33
+3 15 Raw34
+2 25 Copy35
+1 17
+2 0 Dyn37 Val37
+3 19 Raw38
+2 25 Copy39
+1 1
+2 0 Dyn41 Val41
+3 3 Raw42
+2 25 Copy43
+1 5
+2 0 Dyn45 Val45
+3 7 Raw46
+2 25 Copy47
+1 9
+2 0 Dyn49 Val49
+3 11 Raw50
+2 25 Copy51
+1 13
+2 0 Dyn53 Val53
+3 15 Raw54
+2 25 Copy55
+1 17
+2 0 Dyn57 Val57
+3 19 Raw58
+2 25 Copy59
+1 1
+2 0 Dyn61 Val61
+3 3 Raw62
+2 25 Copy63
+1 5
+2 0 Dyn65 Val65
+3 7 Raw66
+2 25 Copy67
+1 9
+2 0 Dyn69 Val69
+3 11 Raw70
+2 25 Copy71
+1 13
+2 0 Dyn73 Val73
+3 15 Raw74
+2 25 Copy75
+1 17
+2 0 Dyn77 Val77
+3 19 Raw78
+2 25 Copy79
+1 1

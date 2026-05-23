@@ -1,0 +1,7 @@
+3 6
+new 1 100
+send 1
+send 1
+send 1
+delete 1 1
+new 2 50

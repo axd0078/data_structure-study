@@ -1,0 +1,9 @@
+2 8
+new 1 5
+new 1 2
+send 1
+delete 1 1
+new 2 4
+send 1
+send 2
+new 1 1

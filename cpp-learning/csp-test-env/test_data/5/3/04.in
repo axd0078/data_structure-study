@@ -1,0 +1,5 @@
+2 2
+<p>{{ name }}</p>
+<p>{{ email }}</p>
+name "David Beckham"
+email "david@beckham.com"

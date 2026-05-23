@@ -1,0 +1,6 @@
+m:nop:q:
+4
+ls -m mm -n -o -p -q qq
+ls -q qq -p -m last
+ls -n -m
+ls -o file -p
