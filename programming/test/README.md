@@ -8,7 +8,7 @@
 - `csp/` 目录，按第 `1` 次到第 `41` 次 CSP 认证届次归档练习入口。
 - `gplt/` 目录，按年份归档 GPLT 赛题。
 
-当前 `csp/` 下共有 `65` 个 `.cpp` 文件，其中 `31` 个文件已经补有实现，`34` 个文件仍保留为空 `main` 的练习入口或占位骨架。详细状态见 [csp/README.md](./csp/README.md)。
+当前 `csp/` 下共有 `80` 个 `.cpp` 文件，其中 `37` 个文件已经补有实现，`43` 个文件仍保留为空 `main` 的练习入口或占位骨架。详细状态见 [csp/README.md](./csp/README.md)。
 
 ## 文件结构
 
@@ -58,9 +58,9 @@
 
 `csp/` 当前已经同时包含三种状态的文件：
 
-- 早期 T1 练习入口：`csp/1/1.cpp` 到 `csp/14/1.cpp` 已经补有实现。
+- 已实现的 T1 练习入口：`csp/1/1.cpp` 到 `csp/16/1.cpp` 已经补有实现，`csp/18/1.cpp` 也已补完。
 - 已实现的进阶题：如 `csp/22/2.cpp`、`csp/31/2.cpp`、`csp/35/2.cpp`、`csp/41/3.cpp` 等，继续保留在原届次目录下。
-- 保留为空 `main` 的练习入口：`csp/1/2.cpp`、`csp/2/2.cpp`、`csp/3/2.cpp`、`csp/4/2.cpp`，以及 `csp/15/1.cpp` 到 `csp/41/1.cpp` 中的大部分 T1 文件，方便继续按 `cpp-learning/csp-100days` 自己重做。
+- 保留为空 `main` 的练习入口：`csp/1/2.cpp`、`csp/2/2.cpp`、`csp/3/2.cpp`、`csp/4/2.cpp`，以及 `csp/15/1.cpp` 到 `csp/41/1.cpp` 中尚未补完的大部分 T1 文件，方便继续按 `cpp-learning/csp-100days` 自己重做。
 
 代表性的当前实现包括：
 
@@ -72,6 +72,12 @@
 | `csp/12/1.cpp` | 最小差值 | 排序 + 相邻差值扫描 | `O(n log n)` |
 | `csp/13/1.cpp` | 跳一跳 | 连续中心计分状态维护 | `O(n)` |
 | `csp/14/1.cpp` | 卖菜 | 邻域平均 + 原数组与结果数组分离 | `O(n)` |
+| `csp/15/1.cpp` | 小明上学 | 分类累加 + 红黄绿等待规则 | `O(n)` |
+| `csp/16/1.cpp` | 小中大 | 有序序列端点统计 + 中位数格式控制 | `O(n)` |
+| `csp/18/1.cpp` | 报数 | 顺序模拟 + 7 相关判定 | `O(last)` |
+| `csp/8/2.cpp` | 火车购票 | 固定座位矩阵状态维护 + 连续空位优先分配 | `O(常数)` |
+| `csp/9/2.cpp` | 工资计算 | 分段个税函数 + 二分税前工资 | `O(log M)` |
+| `csp/10/2.cpp` | 学生排队 | 顺序表删除插入 + 位置偏移维护 | `O(mn)` |
 | `csp/22/2.cpp` | 邻域均值 | 二维前缀和 + 区域平均比较 | `O(n^2)` |
 | `csp/31/2.cpp` | 坐标变换（其二） | 前缀缩放积 + 前缀旋转和 | `O(n + m)` |
 | `csp/35/2.cpp` | 字符串变换 | 二进制倍增 + 映射复合 | `O(n + qL log k)` |
@@ -98,6 +104,18 @@
 
 `csp/14/1.cpp` 把第一天价格放在 `first` 中，把第二天结果写到 `second` 中，避免边算边覆盖原值导致后续平均数被污染。
 
+`csp/15/1.cpp` 按 `k` 的四种取值分类累加总时间，不需要根据当前总用时再反推信号灯状态，属于规则直接翻译题。
+
+`csp/16/1.cpp` 直接利用“输入序列已排序”这一条件，只记录首尾和中间位置，不再额外排序；偶数长度时再按两数和的奇偶决定是否输出 `.5`。
+
+`csp/18/1.cpp` 用顺序模拟做报数统计。这里要分清“轮到的自然数”和“已经成功报出的数量”是两套计数，跳过的数不计入完成进度。
+
+`csp/8/2.cpp` 先尝试在单排内找连续空位，找不到再按座位编号从小到大零散分配，属于典型的固定容量状态模拟题。
+
+`csp/9/2.cpp` 把税后工资反推成“单调函数二分”。核心是先写好税前到税后的分段函数，再二分最小可行税前工资。
+
+`csp/10/2.cpp` 直接用 `vector` 维护当前队列顺序，按题意执行“找到当前位置 -> 删除 -> 在偏移后位置插回”的顺序表操作。
+
 `csp/35/2.cpp` 把字符变换视作函数复合，先为每个字符预处理 `2^bit` 次后的结果，再按查询轮数的二进制位逐层跳转。
 
 `csp/41/3.cpp` 维护“按左端点排序”的空闲区间映射和“按长度排序”的空闲区间集合，支持分配、删除合并和循环发送三类操作。
@@ -111,6 +129,11 @@
 ```bash
 g++ -std=c++11 programming/test/abbreviation-check.cpp -o test && ./test
 g++ -std=c++11 programming/test/csp/12/1.cpp -o test && ./test
+g++ -std=c++11 programming/test/csp/16/1.cpp -o test && ./test
+g++ -std=c++11 programming/test/csp/18/1.cpp -o test && ./test
+g++ -std=c++11 programming/test/csp/8/2.cpp -o test && ./test
+g++ -std=c++11 programming/test/csp/9/2.cpp -o test && ./test
+g++ -std=c++11 programming/test/csp/10/2.cpp -o test && ./test
 g++ -std=c++11 programming/test/csp/22/2.cpp -o test && ./test
 g++ -std=c++11 programming/test/csp/35/2.cpp -o test && ./test
 g++ -std=c++17 programming/test/csp/38/3.cpp -o test && ./test
@@ -127,7 +150,7 @@ g++ -std=c++11 -fsyntax-only programming/test/csp/14/1.cpp
 ## 注意事项
 
 - `programming/test/csp` 下的很多文件是“练习入口”，文档已经补齐不等于该入口一定已经写完。
-- `csp/1/2.cpp`、`csp/2/2.cpp`、`csp/3/2.cpp`、`csp/4/2.cpp` 以及 `csp/15/1.cpp` 之后的大量 T1 文件，当前都保留为空 `main`。
+- `csp/1/2.cpp`、`csp/2/2.cpp`、`csp/3/2.cpp`、`csp/4/2.cpp` 以及 `csp/17/1.cpp` 之后的大量 T1 文件，当前仍有不少保留为空 `main`。
 - `csp/38/3.cpp` 需要 `C++17` 编译，其余大多数文件按 `C++11` 即可。
 - `random-fail.cpp` 虽然扩展名是 `.cpp`，但使用的是 C 风格输入输出，`gcc` 或 `g++` 都可以编译。
 - 本地编译产物默认会被 `.gitignore` 忽略，建议只保留源码和文档。

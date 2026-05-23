@@ -7,7 +7,7 @@ int main() {
     int n;
     cin >> n;
     int temp = n;
-    int max = 0;
+    int max = INT_MIN;
     int min = INT_MAX;
     int a,b,num1,num2;
     if(n%2==1){
@@ -43,7 +43,7 @@ int main() {
     }
     else{
         ans = num1+num2;
-        if((num1+num2)%2==1)
+        if((num1+num2)%2!=0)
             cout << fixed << setprecision(1) << ans/2.0 << " ";
         else
             cout << ans/2 << " ";
