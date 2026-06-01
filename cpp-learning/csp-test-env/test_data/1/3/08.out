@@ -1,3 +1,2 @@
-Case 1: -h one -i two -j three -k
-Case 2: -j value -k
-Case 3: -h -- -k
+Case 1: -a -strange -b
+Case 2: -b

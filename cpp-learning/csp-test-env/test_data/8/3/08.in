@@ -1,0 +1,8 @@
+7
+summon 1 5 5
+end
+summon 1 4 4
+summon 2 3 3
+attack 1 1
+end
+attack 1 1

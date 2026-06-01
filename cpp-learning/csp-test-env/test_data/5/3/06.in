@@ -1,4 +1,4 @@
 1 2
-A{{ upper }}B{{ lower }}C
-upper "UP"
-lower "down"
+path={{ root }}/{{ file }}
+root "/tmp/data"
+file "a-b_c.txt"

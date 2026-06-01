@@ -37,23 +37,26 @@ int main() {
         return lhs.saved * rhs.coffee > rhs.saved * lhs.coffee;
     });
 
-    auto greedy = [&](int left) {
-        double saved = 0.0;
-        double remain = left;
-        for (const Task& task : flexible) {
-            double take = min(remain, double(task.coffee));
-            saved += take * task.saved / task.coffee;
-            remain -= take;
-            if (remain <= 0) {
-                break;
-            }
+    vector<double> flexible_saved(m + 1, 0.0);
+    int capacity = 0;
+    double saved = 0.0;
+    for (const Task& task : flexible) {
+        for (int take = 1; take <= task.coffee && capacity < m; ++take) {
+            ++capacity;
+            saved += task.saved / task.coffee;
+            flexible_saved[capacity] = saved;
         }
-        return saved;
-    };
+        if (capacity == m) {
+            break;
+        }
+    }
+    for (int i = capacity + 1; i <= m; ++i) {
+        flexible_saved[i] = saved;
+    }
 
     double best_saved = 0.0;
     for (int used = 0; used <= m; ++used) {
-        best_saved = max(best_saved, dp[used] + greedy(m - used));
+        best_saved = max(best_saved, dp[used] + flexible_saved[m - used]);
     }
 
     cout << fixed << setprecision(6) << total_time - best_saved << '\n';

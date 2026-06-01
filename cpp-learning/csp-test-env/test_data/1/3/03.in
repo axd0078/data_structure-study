@@ -1,5 +1,5 @@
-abc
+x:y:z
 3
-run -a -b -c
-run -a value -b
-run -d -a
+p -x -y arg -z zz
+p -x
+p -y -x -z ok

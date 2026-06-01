@@ -1,5 +1,4 @@
-z:
-3
-t -z abc-123
-t -z
-t --z abc
+abcdef
+2
+x -f -e -d -c -b -a
+x -a -a -a

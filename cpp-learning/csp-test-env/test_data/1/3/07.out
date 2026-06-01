@@ -1,2 +1,1 @@
-Case 1: -a -b
-Case 2: -a
+Case 1: -e 3 -q 1 -r 4 -t 5 -w 2 -y 6

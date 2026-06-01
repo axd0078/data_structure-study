@@ -1,5 +1,4 @@
-buy 1.00 10
-buy 2.00 10
-sell 1.50 15
-cancel 2
-sell 0.90 5
+buy 20.00 1000
+buy 19.99 300
+sell 19.50 700
+sell 20.00 100

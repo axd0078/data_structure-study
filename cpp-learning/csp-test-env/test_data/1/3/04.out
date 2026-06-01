@@ -1,3 +1,2 @@
-Case 1: -p val -q
-Case 2: -p val -q
-Case 3: -p val
+Case 1: -m
+Case 2: -m -n 123 -o

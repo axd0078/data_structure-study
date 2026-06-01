@@ -1,5 +1,4 @@
-p:q
-3
-cmd -p val -q
-cmd -q -p val
-cmd -p val extra -q
+mn:o
+2
+app -m -q -n abc
+app -n 123 -m -o

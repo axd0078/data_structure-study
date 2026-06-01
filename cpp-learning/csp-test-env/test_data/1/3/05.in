@@ -1,6 +1,4 @@
-m:nop:q:
-4
-ls -m mm -n -o -p -q qq
-ls -q qq -p -m last
-ls -n -m
-ls -o file -p
+a:b:c:
+2
+t -a first -b second -a final
+t -c -a -b data

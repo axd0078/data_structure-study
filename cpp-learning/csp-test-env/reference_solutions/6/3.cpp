@@ -37,7 +37,9 @@ int main() {
             int sr = row(y), sc = x;
             if (canvas[sr][sc] == '-' || canvas[sr][sc] == '|' || canvas[sr][sc] == '+') continue;
             queue<pair<int, int>> que;
+            vector<vector<int>> seen(n, vector<int>(m, 0));
             que.push({sr, sc});
+            seen[sr][sc] = 1;
             canvas[sr][sc] = c;
             const int dr[4] = {1, -1, 0, 0};
             const int dc[4] = {0, 0, 1, -1};
@@ -47,8 +49,10 @@ int main() {
                 for (int d = 0; d < 4; ++d) {
                     int nr = r + dr[d], nc = col + dc[d];
                     if (nr < 0 || nr >= n || nc < 0 || nc >= m) continue;
+                    if (seen[nr][nc]) continue;
                     char ch = canvas[nr][nc];
-                    if (ch == '-' || ch == '|' || ch == '+' || ch == c) continue;
+                    if (ch == '-' || ch == '|' || ch == '+') continue;
+                    seen[nr][nc] = 1;
                     canvas[nr][nc] = c;
                     que.push({nr, nc});
                 }

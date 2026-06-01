@@ -1,4 +1,2 @@
-Case 1: -m mm -n -o -p -q
-Case 2: -p -m -q qq
-Case 3: -n
-Case 4: -o
+Case 1: -a final -b second
+Case 2: -b data -c -a

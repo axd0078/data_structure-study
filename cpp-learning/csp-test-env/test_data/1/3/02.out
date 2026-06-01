@@ -1,4 +1,2 @@
-Case 1: -x p -y q -z
-Case 2: -x a -z
-Case 3: -x -bad
-Case 4:
+Case 1: -a -b value -c
+Case 2: -a -b newer

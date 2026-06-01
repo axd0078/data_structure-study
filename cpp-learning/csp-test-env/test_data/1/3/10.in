@@ -1,4 +1,22 @@
-a:b:c:d:
-2
-prog -a one -b two -c three -d four
-prog -a one -a two -b bee stop -c see
+ab:cd:
+20
+tool -a -b val0 -c -d 0-x rest
+tool -a -b val1 -c -d 1-x rest
+tool -a -b val2 -c -d 2-x rest
+tool -a -b val3 -c -d 3-x rest
+tool -a -b val4 -c -d 4-x rest
+tool -a -b val5 -c -d 5-x rest
+tool -a -b val6 -c -d 6-x rest
+tool -a -b val7 -c -d 7-x rest
+tool -a -b val8 -c -d 8-x rest
+tool -a -b val9 -c -d 9-x rest
+tool -a -b val10 -c -d 10-x rest
+tool -a -b val11 -c -d 11-x rest
+tool -a -b val12 -c -d 12-x rest
+tool -a -b val13 -c -d 13-x rest
+tool -a -b val14 -c -d 14-x rest
+tool -a -b val15 -c -d 15-x rest
+tool -a -b val16 -c -d 16-x rest
+tool -a -b val17 -c -d 17-x rest
+tool -a -b val18 -c -d 18-x rest
+tool -a -b val19 -c -d 19-x rest

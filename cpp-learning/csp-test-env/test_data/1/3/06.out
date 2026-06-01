@@ -1,3 +1,2 @@
-Case 1: -z abc-123
-Case 2:
-Case 3:
+Case 1: -a -b -c -d -e -f
+Case 2: -a

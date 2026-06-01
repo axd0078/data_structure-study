@@ -43,39 +43,40 @@ int main() {
         }
     }
 
-    vector<Order> active;
+    map<int, long long> buy_at_price;
+    map<int, long long> sell_at_price;
     set<int> prices;
     for (int i = 0; i < (int)records.size(); ++i) {
         if (canceled[i] || records[i][0] == "cancel") {
             continue;
         }
         Order order{records[i][0], parse_price(records[i][1]), stoll(records[i][2])};
-        active.push_back(order);
+        if (order.side == "buy") {
+            buy_at_price[order.price] += order.amount;
+        } else {
+            sell_at_price[order.price] += order.amount;
+        }
         prices.insert(order.price);
     }
 
     int best_price = 0;
-    long long best_volume = -1;
+    long long best_volume = 0;
+    map<int, long long> buy_ge;
+    long long buy_sum = 0;
+    for (auto it = prices.rbegin(); it != prices.rend(); ++it) {
+        buy_sum += buy_at_price[*it];
+        buy_ge[*it] = buy_sum;
+    }
+
+    long long sell_sum = 0;
     for (int price : prices) {
-        long long buy = 0, sell = 0;
-        for (const auto& order : active) {
-            if (order.side == "buy" && order.price >= price) {
-                buy += order.amount;
-            }
-            if (order.side == "sell" && order.price <= price) {
-                sell += order.amount;
-            }
-        }
-        long long volume = min(buy, sell);
+        sell_sum += sell_at_price[price];
+        long long volume = min(buy_ge[price], sell_sum);
         if (volume > best_volume || (volume == best_volume && price > best_price)) {
             best_volume = volume;
             best_price = price;
         }
     }
-    if (best_volume < 0) {
-        best_volume = 0;
-    }
     cout << best_price / 100 << '.' << setw(2) << setfill('0') << best_price % 100 << ' ' << best_volume << '\n';
     return 0;
 }
-

@@ -1,5 +1,3 @@
-2 2
-{{ a_b1 }}
-{{ A_b1 }}
-a_b1 "left"
-A_b1 "right"
+1 1
+spaces: {{ value }}.
+value " leading and trailing "

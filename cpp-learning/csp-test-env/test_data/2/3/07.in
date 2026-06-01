@@ -1,8 +1,6 @@
-Case
+LongPattern
 1
-5
-case
-Case
-MyCaseHere
-CASE
-NoMatch
+3
+LongPattern
+longpattern
+PrefixLongPatternSuffix

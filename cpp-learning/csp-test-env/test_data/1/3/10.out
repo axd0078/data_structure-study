@@ -1,2 +1,20 @@
-Case 1: -a one -b two -c three -d four
-Case 2: -a two -b bee
+Case 1: -a -b val0 -c -d 0-x
+Case 2: -a -b val1 -c -d 1-x
+Case 3: -a -b val2 -c -d 2-x
+Case 4: -a -b val3 -c -d 3-x
+Case 5: -a -b val4 -c -d 4-x
+Case 6: -a -b val5 -c -d 5-x
+Case 7: -a -b val6 -c -d 6-x
+Case 8: -a -b val7 -c -d 7-x
+Case 9: -a -b val8 -c -d 8-x
+Case 10: -a -b val9 -c -d 9-x
+Case 11: -a -b val10 -c -d 10-x
+Case 12: -a -b val11 -c -d 11-x
+Case 13: -a -b val12 -c -d 12-x
+Case 14: -a -b val13 -c -d 13-x
+Case 15: -a -b val14 -c -d 14-x
+Case 16: -a -b val15 -c -d 15-x
+Case 17: -a -b val16 -c -d 16-x
+Case 18: -a -b val17 -c -d 17-x
+Case 19: -a -b val18 -c -d 18-x
+Case 20: -a -b val19 -c -d 19-x
