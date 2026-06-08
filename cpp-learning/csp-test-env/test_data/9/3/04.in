@@ -1,0 +1,13 @@
+2
+x
+y:4
+2
+empty 0
+r 1 y:2
+2
+nobody 0
+tom 2 empty r
+3
+tom x
+tom y
+nobody y:0

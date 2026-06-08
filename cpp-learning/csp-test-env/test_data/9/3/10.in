@@ -1,0 +1,324 @@
+40
+perm0
+perm1
+perm2
+perm3
+perm4
+perm5
+perm6
+perm7
+perm8
+perm9
+perm10
+perm11
+perm12
+perm13
+perm14
+perm15
+perm16
+perm17
+perm18
+perm19
+level0:9
+level1:9
+level2:9
+level3:9
+level4:9
+level5:9
+level6:9
+level7:9
+level8:9
+level9:9
+level10:9
+level11:9
+level12:9
+level13:9
+level14:9
+level15:9
+level16:9
+level17:9
+level18:9
+level19:9
+30
+role0 2 perm0 level0:0
+role1 2 perm1 level1:1
+role2 2 perm2 level2:2
+role3 2 perm3 level3:3
+role4 2 perm4 level4:4
+role5 2 perm5 level5:5
+role6 2 perm6 level6:6
+role7 2 perm7 level7:7
+role8 2 perm8 level8:8
+role9 2 perm9 level9:9
+role10 2 perm10 level10:0
+role11 2 perm11 level11:1
+role12 2 perm12 level12:2
+role13 2 perm13 level13:3
+role14 2 perm14 level14:4
+role15 2 perm15 level15:5
+role16 2 perm16 level16:6
+role17 2 perm17 level17:7
+role18 2 perm18 level18:8
+role19 2 perm19 level19:9
+role20 2 perm0 level0:0
+role21 2 perm1 level1:1
+role22 2 perm2 level2:2
+role23 2 perm3 level3:3
+role24 2 perm4 level4:4
+role25 2 perm5 level5:5
+role26 2 perm6 level6:6
+role27 2 perm7 level7:7
+role28 2 perm8 level8:8
+role29 2 perm9 level9:9
+50
+user0 2 role0 role7
+user1 2 role1 role8
+user2 2 role2 role9
+user3 2 role3 role10
+user4 2 role4 role11
+user5 2 role5 role12
+user6 2 role6 role13
+user7 2 role7 role14
+user8 2 role8 role15
+user9 2 role9 role16
+user10 2 role10 role17
+user11 2 role11 role18
+user12 2 role12 role19
+user13 2 role13 role20
+user14 2 role14 role21
+user15 2 role15 role22
+user16 2 role16 role23
+user17 2 role17 role24
+user18 2 role18 role25
+user19 2 role19 role26
+user20 2 role20 role27
+user21 2 role21 role28
+user22 2 role22 role29
+user23 2 role23 role0
+user24 2 role24 role1
+user25 2 role25 role2
+user26 2 role26 role3
+user27 2 role27 role4
+user28 2 role28 role5
+user29 2 role29 role6
+user30 2 role0 role7
+user31 2 role1 role8
+user32 2 role2 role9
+user33 2 role3 role10
+user34 2 role4 role11
+user35 2 role5 role12
+user36 2 role6 role13
+user37 2 role7 role14
+user38 2 role8 role15
+user39 2 role9 role16
+user40 2 role10 role17
+user41 2 role11 role18
+user42 2 role12 role19
+user43 2 role13 role20
+user44 2 role14 role21
+user45 2 role15 role22
+user46 2 role16 role23
+user47 2 role17 role24
+user48 2 role18 role25
+user49 2 role19 role26
+200
+user0 level0
+user1 perm1
+user2 level2
+user3 perm3
+user4 level4
+user5 perm5
+user6 level6
+user7 perm7
+user8 level8
+user9 perm9
+user10 level10
+user11 perm11
+user12 level12
+user13 perm13
+user14 level14
+user15 perm15
+user16 level16
+user17 perm17
+user18 level18
+user19 perm19
+user20 level0
+user21 perm1
+user22 level2
+user23 perm3
+user24 level4
+user25 perm5
+user26 level6
+user27 perm7
+user28 level8
+user29 perm9
+user30 level10
+user31 perm11
+user32 level12
+user33 perm13
+user34 level14
+user35 perm15
+user36 level16
+user37 perm17
+user38 level18
+user39 perm19
+user40 level0
+user41 perm1
+user42 level2
+user43 perm3
+user44 level4
+user45 perm5
+user46 level6
+user47 perm7
+user48 level8
+user49 perm9
+user0 level10
+user1 perm11
+user2 level12
+user3 perm13
+user4 level14
+user5 perm15
+user6 level16
+user7 perm17
+user8 level18
+user9 perm19
+user10 level0
+user11 perm1
+user12 level2
+user13 perm3
+user14 level4
+user15 perm5
+user16 level6
+user17 perm7
+user18 level8
+user19 perm9
+user20 level10
+user21 perm11
+user22 level12
+user23 perm13
+user24 level14
+user25 perm15
+user26 level16
+user27 perm17
+user28 level18
+user29 perm19
+user30 level0
+user31 perm1
+user32 level2
+user33 perm3
+user34 level4
+user35 perm5
+user36 level6
+user37 perm7
+user38 level8
+user39 perm9
+user40 level10
+user41 perm11
+user42 level12
+user43 perm13
+user44 level14
+user45 perm15
+user46 level16
+user47 perm17
+user48 level18
+user49 perm19
+user0 level0
+user1 perm1
+user2 level2
+user3 perm3
+user4 level4
+user5 perm5
+user6 level6
+user7 perm7
+user8 level8
+user9 perm9
+user10 level10
+user11 perm11
+user12 level12
+user13 perm13
+user14 level14
+user15 perm15
+user16 level16
+user17 perm17
+user18 level18
+user19 perm19
+user20 level0
+user21 perm1
+user22 level2
+user23 perm3
+user24 level4
+user25 perm5
+user26 level6
+user27 perm7
+user28 level8
+user29 perm9
+user30 level10
+user31 perm11
+user32 level12
+user33 perm13
+user34 level14
+user35 perm15
+user36 level16
+user37 perm17
+user38 level18
+user39 perm19
+user40 level0
+user41 perm1
+user42 level2
+user43 perm3
+user44 level4
+user45 perm5
+user46 level6
+user47 perm7
+user48 level8
+user49 perm9
+user0 level10
+user1 perm11
+user2 level12
+user3 perm13
+user4 level14
+user5 perm15
+user6 level16
+user7 perm17
+user8 level18
+user9 perm19
+user10 level0
+user11 perm1
+user12 level2
+user13 perm3
+user14 level4
+user15 perm5
+user16 level6
+user17 perm7
+user18 level8
+user19 perm9
+user20 level10
+user21 perm11
+user22 level12
+user23 perm13
+user24 level14
+user25 perm15
+user26 level16
+user27 perm17
+user28 level18
+user29 perm19
+user30 level0
+user31 perm1
+user32 level2
+user33 perm3
+user34 level4
+user35 perm5
+user36 level6
+user37 perm7
+user38 level8
+user39 perm9
+user40 level10
+user41 perm11
+user42 level12
+user43 perm13
+user44 level14
+user45 perm15
+user46 level16
+user47 perm17
+user48 level18
+user49 perm19

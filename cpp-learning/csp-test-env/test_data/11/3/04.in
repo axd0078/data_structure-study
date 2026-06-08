@@ -1,0 +1,10 @@
+6 3
+{
+"root":{
+"left":"L",
+"right":{"deep":"D"}
+}
+}
+root
+root.right
+root.right.deep

@@ -1,0 +1,12 @@
+3
+read
+write
+disk:5
+1
+admin 3 read write disk:5
+1
+alice 1 admin
+3
+alice read
+alice disk
+alice disk:3

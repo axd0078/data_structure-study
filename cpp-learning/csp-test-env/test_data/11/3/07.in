@@ -1,0 +1,6 @@
+1 4
+{"A":"upper","a":"lower","mix":{"Key":"Value"}}
+A
+a
+mix.Key
+mix.key

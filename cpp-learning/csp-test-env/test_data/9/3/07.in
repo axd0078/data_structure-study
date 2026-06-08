@@ -1,0 +1,12 @@
+2
+alpha
+beta:1
+2
+ra 1 alpha
+rb 1 beta:1
+1
+mix 2 ra rb
+3
+mix beta:1
+mix beta
+mix gamma

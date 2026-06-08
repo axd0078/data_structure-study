@@ -1,0 +1,10 @@
+2
+read
+write
+1
+guest 1 read
+1
+bob 1 guest
+2
+bob write
+bob read

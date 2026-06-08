@@ -1,0 +1,181 @@
+60 120
+/api/v0/<int>/item/<str> r0
+/api/v1/<int>/item/<str> r1
+/api/v2/<int>/item/<str> r2
+/api/v3/<int>/item/<str> r3
+/api/v4/<int>/item/<str> r4
+/api/v5/<int>/item/<str> r5
+/api/v6/<int>/item/<str> r6
+/api/v7/<int>/item/<str> r7
+/api/v8/<int>/item/<str> r8
+/api/v9/<int>/item/<str> r9
+/api/v10/<int>/item/<str> r10
+/api/v11/<int>/item/<str> r11
+/api/v12/<int>/item/<str> r12
+/api/v13/<int>/item/<str> r13
+/api/v14/<int>/item/<str> r14
+/api/v15/<int>/item/<str> r15
+/api/v16/<int>/item/<str> r16
+/api/v17/<int>/item/<str> r17
+/api/v18/<int>/item/<str> r18
+/api/v19/<int>/item/<str> r19
+/api/v20/<int>/item/<str> r20
+/api/v21/<int>/item/<str> r21
+/api/v22/<int>/item/<str> r22
+/api/v23/<int>/item/<str> r23
+/api/v24/<int>/item/<str> r24
+/api/v25/<int>/item/<str> r25
+/api/v26/<int>/item/<str> r26
+/api/v27/<int>/item/<str> r27
+/api/v28/<int>/item/<str> r28
+/api/v29/<int>/item/<str> r29
+/api/v30/<int>/item/<str> r30
+/api/v31/<int>/item/<str> r31
+/api/v32/<int>/item/<str> r32
+/api/v33/<int>/item/<str> r33
+/api/v34/<int>/item/<str> r34
+/api/v35/<int>/item/<str> r35
+/api/v36/<int>/item/<str> r36
+/api/v37/<int>/item/<str> r37
+/api/v38/<int>/item/<str> r38
+/api/v39/<int>/item/<str> r39
+/api/v40/<int>/item/<str> r40
+/api/v41/<int>/item/<str> r41
+/api/v42/<int>/item/<str> r42
+/api/v43/<int>/item/<str> r43
+/api/v44/<int>/item/<str> r44
+/api/v45/<int>/item/<str> r45
+/api/v46/<int>/item/<str> r46
+/api/v47/<int>/item/<str> r47
+/api/v48/<int>/item/<str> r48
+/api/v49/<int>/item/<str> r49
+/api/v50/<int>/item/<str> r50
+/api/v51/<int>/item/<str> r51
+/api/v52/<int>/item/<str> r52
+/api/v53/<int>/item/<str> r53
+/api/v54/<int>/item/<str> r54
+/api/v55/<int>/item/<str> r55
+/api/v56/<int>/item/<str> r56
+/api/v57/<int>/item/<str> r57
+/api/v58/<int>/item/<str> r58
+/api/v59/<int>/item/<str> r59
+/api/v0/0000/item/name0
+/api/v1/0001/item/name1
+/api/v2/0002/item/name2
+/api/v3/0003/item/name3
+/api/v4/0004/item/name4
+/api/v5/0005/item/name5
+/api/v6/0006/item/name6
+/api/v7/0007/item/name7
+/api/v8/0008/item/name8
+/api/v9/0009/item/name9
+/api/v10/0010/item/name10
+/api/v11/0011/item/name11
+/api/v12/0012/item/name12
+/api/v13/0013/item/name13
+/api/v14/0014/item/name14
+/api/v15/0015/item/name15
+/api/v16/0016/item/name16
+/api/v17/0017/item/name17
+/api/v18/0018/item/name18
+/api/v19/0019/item/name19
+/api/v20/0020/item/name20
+/api/v21/0021/item/name21
+/api/v22/0022/item/name22
+/api/v23/0023/item/name23
+/api/v24/0024/item/name24
+/api/v25/0025/item/name25
+/api/v26/0026/item/name26
+/api/v27/0027/item/name27
+/api/v28/0028/item/name28
+/api/v29/0029/item/name29
+/api/v30/0030/item/name30
+/api/v31/0031/item/name31
+/api/v32/0032/item/name32
+/api/v33/0033/item/name33
+/api/v34/0034/item/name34
+/api/v35/0035/item/name35
+/api/v36/0036/item/name36
+/api/v37/0037/item/name37
+/api/v38/0038/item/name38
+/api/v39/0039/item/name39
+/api/v40/0040/item/name40
+/api/v41/0041/item/name41
+/api/v42/0042/item/name42
+/api/v43/0043/item/name43
+/api/v44/0044/item/name44
+/api/v45/0045/item/name45
+/api/v46/0046/item/name46
+/api/v47/0047/item/name47
+/api/v48/0048/item/name48
+/api/v49/0049/item/name49
+/api/v50/0050/item/name50
+/api/v51/0051/item/name51
+/api/v52/0052/item/name52
+/api/v53/0053/item/name53
+/api/v54/0054/item/name54
+/api/v55/0055/item/name55
+/api/v56/0056/item/name56
+/api/v57/0057/item/name57
+/api/v58/0058/item/name58
+/api/v59/0059/item/name59
+/api/v0/0060/item/name60
+/api/v1/0061/item/name61
+/api/v2/0062/item/name62
+/api/v3/0063/item/name63
+/api/v4/0064/item/name64
+/api/v5/0065/item/name65
+/api/v6/0066/item/name66
+/api/v7/0067/item/name67
+/api/v8/0068/item/name68
+/api/v9/0069/item/name69
+/api/v10/0070/item/name70
+/api/v11/0071/item/name71
+/api/v12/0072/item/name72
+/api/v13/0073/item/name73
+/api/v14/0074/item/name74
+/api/v15/0075/item/name75
+/api/v16/0076/item/name76
+/api/v17/0077/item/name77
+/api/v18/0078/item/name78
+/api/v19/0079/item/name79
+/api/v20/0080/item/name80
+/api/v21/0081/item/name81
+/api/v22/0082/item/name82
+/api/v23/0083/item/name83
+/api/v24/0084/item/name84
+/api/v25/0085/item/name85
+/api/v26/0086/item/name86
+/api/v27/0087/item/name87
+/api/v28/0088/item/name88
+/api/v29/0089/item/name89
+/api/v30/0090/item/name90
+/api/v31/0091/item/name91
+/api/v32/0092/item/name92
+/api/v33/0093/item/name93
+/api/v34/0094/item/name94
+/api/v35/0095/item/name95
+/api/v36/0096/item/name96
+/api/v37/0097/item/name97
+/api/v38/0098/item/name98
+/api/v39/0099/item/name99
+/api/v40/0100/item/name100
+/api/v41/0101/item/name101
+/api/v42/0102/item/name102
+/api/v43/0103/item/name103
+/api/v44/0104/item/name104
+/api/v45/0105/item/name105
+/api/v46/0106/item/name106
+/api/v47/0107/item/name107
+/api/v48/0108/item/name108
+/api/v49/0109/item/name109
+/api/v50/0110/item/name110
+/api/v51/0111/item/name111
+/api/v52/0112/item/name112
+/api/v53/0113/item/name113
+/api/v54/0114/item/name114
+/api/v55/0115/item/name115
+/api/v56/0116/item/name116
+/api/v57/0117/item/name117
+/api/v58/0118/item/name118
+/api/v59/0119/item/name119

@@ -1,0 +1,8 @@
+4 3
+ul
+..li #a
+..li #b
+....span
+ul li
+li span
+#b span

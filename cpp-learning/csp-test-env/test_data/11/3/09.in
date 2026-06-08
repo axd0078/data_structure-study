@@ -1,0 +1,5 @@
+1 3
+{"outer":{"inner":{"value":"123","escaped":"x\\y"}},"plain":"p"}
+outer.inner.escaped
+plain
+outer.inner

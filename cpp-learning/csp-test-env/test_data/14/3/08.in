@@ -1,0 +1,7 @@
+3 3
+Root #R
+..Child #C
+....Leaf #L
+root #C
+#R leaf
+#C #L

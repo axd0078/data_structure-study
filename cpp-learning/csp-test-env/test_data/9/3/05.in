@@ -1,0 +1,12 @@
+1
+p:9
+3
+low 1 p:2
+mid 1 p:5
+high 1 p:9
+1
+sam 2 low mid
+3
+sam p
+sam p:6
+sam p:5
